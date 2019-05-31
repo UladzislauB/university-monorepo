@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends 'news/base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content %}
+    <p>{{ headline.publishedAt }}</p>
+    <p>Author: {{ headline.author }}</p>
+    <img src='{{ headline.urlToImage }}' width="400" height="300">
+    <p>{{ headline.title }}</p>
+    <p>{{ headline.content }}</p>
+    <p>
+        To see more
+        <a href="{{ headline.url }} %}">{{ headline.url }}</a>
+    </p>
+{% endblock %}
+</body>
+</html>

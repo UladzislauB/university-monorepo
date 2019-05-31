@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <TITLE>News</TITLE>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'news/style.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'news/button_like.css' %}" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+</head>
+<body>
+<header class="container">
+    <div class="row text-center">
+        <h1 class="col-sm-4">
+            News API Post
+        </h1>
+        <nav class="col-sm-8">
+            {% if user.is_authenticated %}
+                <p>Hello, {{ user.username }}</p>
+                <a role="button" class='btn btn-primary' href="{% url 'users:logout' %}">Sign Out</a>
+            {% else %}
+                <a role="button" class='btn btn-primary' href="{% url 'users:login' %}">Sign In</a>
+                <a role="button" class='btn btn-primary' href="{% url 'users:register' %}">Sign Up</a>
+            {% endif %}
+            <p>About</p>
+        </nav>
+    </div>
+    <hr>
+</header>
+<section class="container">
+    <div class="row">
+        <ul class="col-sm-3">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        {% for elem in top_headlines|slice:":3" %}
+            <div class="col-sm-3 menu">
+                <img src="{{ elem.urlToImage }}" class="img-feed"/>
+                {% if elem.author != none %}
+                    <p class="author-feed">Author: {{ elem.author }}</p>
+                {% endif %}
+                <span class="news-title">{{ elem.title }}<br></span>
+                <span class="news-description">{{ elem.description }}<br></span>
+                <button class="like-btn" data-button-id={{ elem.id }} type="button">
+                    <i class="fa fa-heart"></i>
+                    <span id="total_likes{{ elem.id }}">{{ elem.total_likes }}</span>
+                </button>
+                <p>{{ elem.id }}</p>
+                <p>{{ elem.is_fan }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+</section>
+
+<script>
+    const btns = document.querySelectorAll(".like-btn");
+    var csrftoken = Cookies.get('csrftoken');
+
+    const url = 'http://localhost:8000/api/v1/top_headlines/';
+    const arr = [...btns];
+    arr.map((el, ind) => {
+        el.addEventListener("click", (e) => {
+            e.preventDefault();
+            const responseField = document.querySelector("#total_likes"+el.dataset.buttonId.toString());
+            let endpoint = url + el.dataset.buttonId.toString();
+            endpoint = endpoint + '/like/';
+            fetch(endpoint, {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': csrftoken
+                }
+            }).then(response => {
+                if (response.ok)
+                {
+                    return response.json()
+                }
+                throw new Error('POST request failed');
+            }).then(jsonResponse => {
+                console.log(jsonResponse["is_fan"], "here all is ok ");
+                console.log(responseField, 'name of responseField');
+                let is_fan = jsonResponse["is_fan"];
+                let old_value = responseField.innerHTML;
+                responseField.innerHTML = `${is_fan}`
+            }, networkError => console.log(networkError.message))
+        })
+    })
+
+
+</script>
+</body>
+</html>
