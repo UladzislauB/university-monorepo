@@ -2,6 +2,7 @@ from django.shortcuts import render
 import json
 from newsapi import NewsApiClient
 from news.models import TopHeadline
+from likes import services
 
 newsapi = NewsApiClient(api_key='959ed0e9826742709ee20cbc5632d5d5')
 
@@ -9,7 +10,11 @@ newsapi = NewsApiClient(api_key='959ed0e9826742709ee20cbc5632d5d5')
 # Create your views here.
 
 def index(request):
-    context = {'top_headlines': TopHeadline.objects.order_by('-publishedAt')[:6]}
+    top_headlines = TopHeadline.objects.order_by('-publishedAt')[:6]
+    pairs = []
+    for i in range(6):
+        pairs.append([top_headlines[i], services.is_fan(top_headlines[i], request.user)])
+    context = {'top_headlines': pairs}
     return render(request, "news/index.html", context)
 
 

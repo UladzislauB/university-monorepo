@@ -11,6 +11,7 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'news/style.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'news/button_like.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'news/label.css' %}" type="text/css">
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 </head>
 <body>
@@ -33,30 +34,57 @@
     <hr>
 </header>
 <section class="container">
-    <div class="row">
-        <ul class="col-sm-3">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-        </ul>
-        {% for elem in top_headlines|slice:":3" %}
-            <div class="col-sm-3 menu">
-                <img src="{{ elem.urlToImage }}" class="img-feed"/>
-                {% if elem.author != none %}
-                    <p class="author-feed">Author: {{ elem.author }}</p>
-                {% endif %}
-                <span class="news-title">{{ elem.title }}<br></span>
-                <span class="news-description">{{ elem.description }}<br></span>
-                <button class="like-btn" data-button-id={{ elem.id }} type="button">
-                    <i class="fa fa-heart"></i>
-                    <span id="total_likes{{ elem.id }}">{{ elem.total_likes }}</span>
-                </button>
-                <p>{{ elem.id }}</p>
-                <p>{{ elem.is_fan }}</p>
-            </div>
-        {% endfor %}
-    </div>
+
+    <ul class="col-sm-3">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <section class="col-sm-9">
+        <div class="row">
+            {% for elem in top_headlines|slice:":3" %}
+                <div class="col-sm-4 menu">
+                    <img src="{{ elem.0.urlToImage }}" class="img-feed"/>
+                    {% if elem.0.author != none and elem.0.author != '' %}
+                        <p class="author-feed">Author: {{ elem.0.author }}</p>
+                    {% endif %}
+                    <span class="news-title">{{ elem.0.title }}<br></span>
+                    <span class="news-description">{{ elem.0.description }}<br></span>
+                    <button class="like-btn" data-button-id={{ elem.0.id }} type="button">
+                        {% if elem.1 %}
+                            <i class="fa fa-heart" id="like-heart{{ elem.0.id }}" style="color: #cc4b37"></i>
+                        {% else %}
+                            <i class="fa fa-heart" id="like-heart{{ elem.0.id }}"></i>
+                        {% endif %}
+                    </button>
+                    <span class="label" id="total_likes{{ elem.0.id }}">{{ elem.0.total_likes }}</span>
+                    <p>{{ elem.0.id }}</p>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            {% for elem in top_headlines|slice:"3:6" %}
+                  <div class="col-sm-4 menu">
+                    <img src="{{ elem.0.urlToImage }}" class="img-feed"/>
+                    {% if elem.author != none and elem.0.author != '' %}
+                        <p class="author-feed">Author: {{ elem.0.author }}</p>
+                    {% endif %}
+                    <span class="news-title">{{ elem.0.title }}<br></span>
+                    <span class="news-description">{{ elem.0.description }}<br></span>
+                    <button class="like-btn" data-button-id={{ elem.0.id }} type="button">
+                        {% if elem.1 %}
+                            <i class="fa fa-heart" id="like-heart{{ elem.0.id }}" style="color: #cc4b37"></i>
+                        {% else %}
+                            <i class="fa fa-heart" id="like-heart{{ elem.0.id }}"></i>
+                        {% endif %}
+                    </button>
+                    <span class="label" id="total_likes{{ elem.0.id }}">{{ elem.0.total_likes }}</span>
+                    <p>{{ elem.0.id }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
 
 </section>
 
@@ -67,10 +95,13 @@
     const url = 'http://localhost:8000/api/v1/top_headlines/';
     const arr = [...btns];
     arr.map((el, ind) => {
+
         el.addEventListener("click", (e) => {
             e.preventDefault();
-            const responseField = document.querySelector("#total_likes"+el.dataset.buttonId.toString());
-            let endpoint = url + el.dataset.buttonId.toString();
+            let id = el.dataset.buttonId.toString();
+            const responseField = document.querySelector("#total_likes" + id);
+            const likeHeart = document.querySelector("#like-heart" + id);
+            let endpoint = url + id;
             endpoint = endpoint + '/like/';
             fetch(endpoint, {
                 method: 'POST',
@@ -80,8 +111,7 @@
                     'X-CSRFToken': csrftoken
                 }
             }).then(response => {
-                if (response.ok)
-                {
+                if (response.ok) {
                     return response.json()
                 }
                 throw new Error('POST request failed');
@@ -89,8 +119,17 @@
                 console.log(jsonResponse["is_fan"], "here all is ok ");
                 console.log(responseField, 'name of responseField');
                 let is_fan = jsonResponse["is_fan"];
-                let old_value = responseField.innerHTML;
-                responseField.innerHTML = `${is_fan}`
+                let old_value = parseInt(responseField.innerHTML, 10);
+                if (is_fan) {
+                    let new_value = old_value + 1;
+                    responseField.innerHTML = `${new_value}`;
+                    likeHeart.style = " color: #cc4b37";
+                } else {
+                    let new_value = old_value - 1;
+                    responseField.innerHTML = `${new_value}`;
+                    likeHeart.style = " color: #8a8a8a";
+                }
+
             }, networkError => console.log(networkError.message))
         })
     })
