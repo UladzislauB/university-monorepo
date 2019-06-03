@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="{% static 'news/style.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'news/button_like.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'news/label.css' %}" type="text/css">
+    <link rel="'stylesheet" href="{% static 'news/fonts/styles.css' %}">
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 </head>
 <body>
 <header class="container">
     <div class="row text-center">
-        <h1 class="col-sm-4">
+        <h1 class="col-sm-4" style="font-family: EngTowne">
             News API Post
         </h1>
         <nav class="col-sm-8">
@@ -46,11 +47,13 @@
             {% for elem in top_headlines|slice:":3" %}
                 <div class="col-sm-4 menu">
                     <img src="{{ elem.0.urlToImage }}" class="img-feed"/>
+                    <p class="author-feed">Posted at {{ elem.0.publishedAt|date:"P M j Y" }}<br></p>
                     {% if elem.0.author != none and elem.0.author != '' %}
                         <p class="author-feed">Author: {{ elem.0.author }}</p>
                     {% endif %}
                     <span class="news-title">{{ elem.0.title }}<br></span>
                     <span class="news-description">{{ elem.0.description }}<br></span>
+                    <a class="watch-link" href="{{ elem.0.url }}" data-button-id={{ elem.0.id }}>See more>>><br></a>
                     <button class="like-btn" data-button-id={{ elem.0.id }} type="button">
                         {% if elem.1 %}
                             <i class="fa fa-heart" id="like-heart{{ elem.0.id }}" style="color: #cc4b37"></i>
@@ -59,19 +62,27 @@
                         {% endif %}
                     </button>
                     <span class="label" id="total_likes{{ elem.0.id }}">{{ elem.0.total_likes }}</span>
+                    <span> <i class="fas fa-eye"></i></span>
+                    {% if elem.0.views >= 1000 %}
+                        <span id="views{{ elem.0.id }}" class="label">{{ elem.0.views|get_digit:"4" }}.{{ elem.0.views|get_digit:"3" }}k</span>
+                    {% else %}
+                        <span id="views{{ elem.0.id }}" class="label">{{ elem.0.views }}</span>
+                    {% endif %}
                     <p>{{ elem.0.id }}</p>
                 </div>
             {% endfor %}
         </div>
         <div class="row">
             {% for elem in top_headlines|slice:"3:6" %}
-                  <div class="col-sm-4 menu">
+                <div class="col-sm-4 menu">
                     <img src="{{ elem.0.urlToImage }}" class="img-feed"/>
-                    {% if elem.author != none and elem.0.author != '' %}
+                    <p class="author-feed">Posted at {{ elem.0.publishedAt|date:"P M j Y" }}<br></p>
+                    {% if elem.0.author != none and elem.0.author != '' %}
                         <p class="author-feed">Author: {{ elem.0.author }}</p>
                     {% endif %}
                     <span class="news-title">{{ elem.0.title }}<br></span>
                     <span class="news-description">{{ elem.0.description }}<br></span>
+                    <a class="watch-link" href="{{ elem.0.url }}" data-button-id={{ elem.0.id }}>See more>>><br></a>
                     <button class="like-btn" data-button-id={{ elem.0.id }} type="button">
                         {% if elem.1 %}
                             <i class="fa fa-heart" id="like-heart{{ elem.0.id }}" style="color: #cc4b37"></i>
@@ -80,6 +91,12 @@
                         {% endif %}
                     </button>
                     <span class="label" id="total_likes{{ elem.0.id }}">{{ elem.0.total_likes }}</span>
+                    <span> <i class="fas fa-eye"></i></span>
+                    {% if elem.0.views >= 1000 %}
+                        <span id="views{{ elem.0.id }}" class="label">{{ elem.0.views|get_digit:"4" }}.{{ elem.0.views|get_digit:"3" }}k</span>
+                    {% else %}
+                        <span id="views{{ elem.0.id }}" class="label">{{ elem.0.views }}</span>
+                    {% endif %}
                     <p>{{ elem.0.id }}</p>
                 </div>
             {% endfor %}
@@ -88,53 +105,7 @@
 
 </section>
 
-<script>
-    const btns = document.querySelectorAll(".like-btn");
-    var csrftoken = Cookies.get('csrftoken');
-
-    const url = 'http://localhost:8000/api/v1/top_headlines/';
-    const arr = [...btns];
-    arr.map((el, ind) => {
-
-        el.addEventListener("click", (e) => {
-            e.preventDefault();
-            let id = el.dataset.buttonId.toString();
-            const responseField = document.querySelector("#total_likes" + id);
-            const likeHeart = document.querySelector("#like-heart" + id);
-            let endpoint = url + id;
-            endpoint = endpoint + '/like/';
-            fetch(endpoint, {
-                method: 'POST',
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json',
-                    'X-CSRFToken': csrftoken
-                }
-            }).then(response => {
-                if (response.ok) {
-                    return response.json()
-                }
-                throw new Error('POST request failed');
-            }).then(jsonResponse => {
-                console.log(jsonResponse["is_fan"], "here all is ok ");
-                console.log(responseField, 'name of responseField');
-                let is_fan = jsonResponse["is_fan"];
-                let old_value = parseInt(responseField.innerHTML, 10);
-                if (is_fan) {
-                    let new_value = old_value + 1;
-                    responseField.innerHTML = `${new_value}`;
-                    likeHeart.style = " color: #cc4b37";
-                } else {
-                    let new_value = old_value - 1;
-                    responseField.innerHTML = `${new_value}`;
-                    likeHeart.style = " color: #8a8a8a";
-                }
-
-            }, networkError => console.log(networkError.message))
-        })
-    })
-
-
-</script>
+<script src="{% static 'news/scripts/likeBtnClick.js' %}"></script>
+<script src="{% static 'news/scripts/watchBtnClick.js' %}"></script>
 </body>
 </html>

@@ -71,3 +71,11 @@
     color: #fefefe;
 }
 
+.fa-eye:before {
+    position: relative;
+    display: inline-block;
+    color: #8a8a8a;
+    padding-top: 0.77rem;
+    vertical-align: middle;
+    content: "\f06e";
+}
