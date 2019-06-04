@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from django.core.paginator import Paginator
+from django.db.models import Q
+from django.views import View
 import json
 from newsapi import NewsApiClient
 from news.models import TopHeadline
@@ -10,11 +13,17 @@ newsapi = NewsApiClient(api_key='959ed0e9826742709ee20cbc5632d5d5')
 # Create your views here.
 
 def index(request):
-    top_headlines = TopHeadline.objects.order_by('-publishedAt')[:6]
+    top_headlines = TopHeadline.objects.order_by('-publishedAt')
+    paginator = Paginator(top_headlines, 6)
+
+    page = request.GET.get('page')
+    page_obj = paginator.get_page(page)
+    page_headlines = page_obj.object_list
     pairs = []
-    for i in range(6):
-        pairs.append([top_headlines[i], services.is_fan(top_headlines[i], request.user)])
-    context = {'top_headlines': pairs}
+    for i in range(len(page_obj)):
+        pairs.append([page_headlines[i], services.is_fan(page_headlines[i], request.user)])
+    context = {'top_headlines': pairs,
+               'page_obj': page_obj}
     return render(request, "news/index.html", context)
 
 
@@ -38,3 +47,39 @@ def article(request, article_id):
     headline = TopHeadline.objects.get(id=article_id)
     context = {'headline': headline}
     return render(request, 'news/article.html', context)
+
+
+class SearchView(View):
+    template_name = 'search.html'
+
+    def get(self, request, *args, **kwargs):
+        query = self.request.GET.get('q')
+        founded_news = TopHeadline.objects.filter(Q(title__icontains=query) or Q(description__icontains=query))
+        paginator = Paginator(founded_news, 6)
+
+        page = request.GET.get('page')
+        page_obj = paginator.get_page(page)
+        page_headlines = page_obj.object_list
+        pairs = []
+        for i in range(len(page_obj)):
+            pairs.append([page_headlines[i], services.is_fan(page_headlines[i], request.user)])
+        context = {'top_headlines': pairs,
+                   'page_obj': page_obj,
+                   'flag': True,
+                   'query': query}
+        return render(self.request, 'news/index.html', context)
+
+
+def favourites(request):
+    favourites = request.user.topheadline_set.all()
+    paginator = Paginator(favourites, 6)
+
+    page = request.GET.get('page')
+    page_obj = paginator.get_page(page)
+    page_headlines = page_obj.object_list
+    pairs = []
+    for i in range(len(page_obj)):
+        pairs.append([page_headlines[i], services.is_fan(page_headlines[i], request.user)])
+    context = {'top_headlines': pairs,
+               'page_obj': page_obj}
+    return render(request, "news/index.html", context)

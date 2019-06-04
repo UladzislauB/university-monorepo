@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load bootstrap4 %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -35,13 +36,23 @@
     <hr>
 </header>
 <section class="container">
-
-    <ul class="col-sm-3">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-    </ul>
+    <div class="col-sm-3 navbar">
+        <a role="button" class='btn btn-primary' href="{% url 'news:index' %}">Home</a></a>
+        {% if user.is_authenticated %}
+            <a role="button" class='btn btn-primary' href="{% url 'news:favourites' %}">Favourites</a>
+        {% endif %}
+        <form class="navbar-form" method="get" action="{% url 'news:search' %}">
+            <div class="form-group">
+                {% if flag %}
+                    <span>Finded results: {{ page_obj.paginator.count }}</span>
+                    <input type="text" class="form-control" name="q" value={{ query }}>
+                {% else %}
+                    <input type="text" class="form-control" name="q">
+                {% endif %}
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
     <section class="col-sm-9">
         <div class="row">
             {% for elem in top_headlines|slice:":3" %}
@@ -49,7 +60,9 @@
                     <img src="{{ elem.0.urlToImage }}" class="img-feed"/>
                     <p class="author-feed">Posted at {{ elem.0.publishedAt|date:"P M j Y" }}<br></p>
                     {% if elem.0.author != none and elem.0.author != '' %}
-                        <p class="author-feed">Author: {{ elem.0.author }}</p>
+                        <p class="author-feed">
+                            Author: {{ elem.0.author|slice:':30' }}<br>{{ elem.0.author|slice:'30:' }}</p>
+
                     {% endif %}
                     <span class="news-title">{{ elem.0.title }}<br></span>
                     <span class="news-description">{{ elem.0.description }}<br></span>
@@ -64,7 +77,8 @@
                     <span class="label" id="total_likes{{ elem.0.id }}">{{ elem.0.total_likes }}</span>
                     <span> <i class="fas fa-eye"></i></span>
                     {% if elem.0.views >= 1000 %}
-                        <span id="views{{ elem.0.id }}" class="label">{{ elem.0.views|get_digit:"4" }}.{{ elem.0.views|get_digit:"3" }}k</span>
+                        <span id="views{{ elem.0.id }}"
+                              class="label">{{ elem.0.views|get_digit:"4" }}.{{ elem.0.views|get_digit:"3" }}k</span>
                     {% else %}
                         <span id="views{{ elem.0.id }}" class="label">{{ elem.0.views }}</span>
                     {% endif %}
@@ -78,7 +92,8 @@
                     <img src="{{ elem.0.urlToImage }}" class="img-feed"/>
                     <p class="author-feed">Posted at {{ elem.0.publishedAt|date:"P M j Y" }}<br></p>
                     {% if elem.0.author != none and elem.0.author != '' %}
-                        <p class="author-feed">Author: {{ elem.0.author }}</p>
+                        <p class="author-feed">
+                            Author: {{ elem.0.author|slice:':30' }}<br>{{ elem.0.author|slice:'30:' }}</p>
                     {% endif %}
                     <span class="news-title">{{ elem.0.title }}<br></span>
                     <span class="news-description">{{ elem.0.description }}<br></span>
@@ -93,7 +108,8 @@
                     <span class="label" id="total_likes{{ elem.0.id }}">{{ elem.0.total_likes }}</span>
                     <span> <i class="fas fa-eye"></i></span>
                     {% if elem.0.views >= 1000 %}
-                        <span id="views{{ elem.0.id }}" class="label">{{ elem.0.views|get_digit:"4" }}.{{ elem.0.views|get_digit:"3" }}k</span>
+                        <span id="views{{ elem.0.id }}"
+                              class="label">{{ elem.0.views|get_digit:"4" }}.{{ elem.0.views|get_digit:"3" }}k</span>
                     {% else %}
                         <span id="views{{ elem.0.id }}" class="label">{{ elem.0.views }}</span>
                     {% endif %}
@@ -104,7 +120,25 @@
     </section>
 
 </section>
+<section class="container">
+    <div class="pagination">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+        {% endif %}
 
+        <span class="current">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">next</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+    </div>
+</section>
 <script src="{% static 'news/scripts/likeBtnClick.js' %}"></script>
 <script src="{% static 'news/scripts/watchBtnClick.js' %}"></script>
 </body>
