@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.contenttypes.fields import GenericRelation
+from django.conf import settings
 
 from likes.models import Like
 
@@ -13,6 +14,8 @@ class TopHeadline(models.Model):
     urlToImage = models.CharField(max_length=200)
     publishedAt = models.DateTimeField()
     likes = GenericRelation(Like)
+    views = models.IntegerField(default=0)
+    favourites = models.ManyToManyField(settings.AUTH_USER_MODEL)
 
     def __str__(self):
         return self.title

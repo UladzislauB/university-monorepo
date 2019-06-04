@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load bootstrap4 %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,12 +12,14 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'news/style.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'news/button_like.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'news/label.css' %}" type="text/css">
+    <link rel="'stylesheet" href="{% static 'news/fonts/styles.css' %}">
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 </head>
 <body>
 <header class="container">
     <div class="row text-center">
-        <h1 class="col-sm-4">
+        <h1 class="col-sm-4" style="font-family: EngTowne">
             News API Post
         </h1>
         <nav class="col-sm-8">
@@ -33,69 +36,110 @@
     <hr>
 </header>
 <section class="container">
-    <div class="row">
-        <ul class="col-sm-3">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-        </ul>
-        {% for elem in top_headlines|slice:":3" %}
-            <div class="col-sm-3 menu">
-                <img src="{{ elem.urlToImage }}" class="img-feed"/>
-                {% if elem.author != none %}
-                    <p class="author-feed">Author: {{ elem.author }}</p>
+    <div class="col-sm-3 navbar">
+        <a role="button" class='btn btn-primary' href="{% url 'news:index' %}">Home</a></a>
+        {% if user.is_authenticated %}
+            <a role="button" class='btn btn-primary' href="{% url 'news:favourites' %}">Favourites</a>
+        {% endif %}
+        <form class="navbar-form" method="get" action="{% url 'news:search' %}">
+            <div class="form-group">
+                {% if flag %}
+                    <span>Finded results: {{ page_obj.paginator.count }}</span>
+                    <input type="text" class="form-control" name="q" value={{ query }}>
+                {% else %}
+                    <input type="text" class="form-control" name="q">
                 {% endif %}
-                <span class="news-title">{{ elem.title }}<br></span>
-                <span class="news-description">{{ elem.description }}<br></span>
-                <button class="like-btn" data-button-id={{ elem.id }} type="button">
-                    <i class="fa fa-heart"></i>
-                    <span id="total_likes{{ elem.id }}">{{ elem.total_likes }}</span>
-                </button>
-                <p>{{ elem.id }}</p>
-                <p>{{ elem.is_fan }}</p>
             </div>
-        {% endfor %}
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
     </div>
+    <section class="col-sm-9">
+        <div class="row">
+            {% for elem in top_headlines|slice:":3" %}
+                <div class="col-sm-4 menu">
+                    <img src="{{ elem.0.urlToImage }}" class="img-feed"/>
+                    <p class="author-feed">Posted at {{ elem.0.publishedAt|date:"P M j Y" }}<br></p>
+                    {% if elem.0.author != none and elem.0.author != '' %}
+                        <p class="author-feed">
+                            Author: {{ elem.0.author|slice:':30' }}<br>{{ elem.0.author|slice:'30:' }}</p>
+
+                    {% endif %}
+                    <span class="news-title">{{ elem.0.title }}<br></span>
+                    <span class="news-description">{{ elem.0.description }}<br></span>
+                    <a class="watch-link" href="{{ elem.0.url }}" data-button-id={{ elem.0.id }}>See more>>><br></a>
+                    <button class="like-btn" data-button-id={{ elem.0.id }} type="button">
+                        {% if elem.1 %}
+                            <i class="fa fa-heart" id="like-heart{{ elem.0.id }}" style="color: #cc4b37"></i>
+                        {% else %}
+                            <i class="fa fa-heart" id="like-heart{{ elem.0.id }}"></i>
+                        {% endif %}
+                    </button>
+                    <span class="label" id="total_likes{{ elem.0.id }}">{{ elem.0.total_likes }}</span>
+                    <span> <i class="fas fa-eye"></i></span>
+                    {% if elem.0.views >= 1000 %}
+                        <span id="views{{ elem.0.id }}"
+                              class="label">{{ elem.0.views|get_digit:"4" }}.{{ elem.0.views|get_digit:"3" }}k</span>
+                    {% else %}
+                        <span id="views{{ elem.0.id }}" class="label">{{ elem.0.views }}</span>
+                    {% endif %}
+                    <p>{{ elem.0.id }}</p>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            {% for elem in top_headlines|slice:"3:6" %}
+                <div class="col-sm-4 menu">
+                    <img src="{{ elem.0.urlToImage }}" class="img-feed"/>
+                    <p class="author-feed">Posted at {{ elem.0.publishedAt|date:"P M j Y" }}<br></p>
+                    {% if elem.0.author != none and elem.0.author != '' %}
+                        <p class="author-feed">
+                            Author: {{ elem.0.author|slice:':30' }}<br>{{ elem.0.author|slice:'30:' }}</p>
+                    {% endif %}
+                    <span class="news-title">{{ elem.0.title }}<br></span>
+                    <span class="news-description">{{ elem.0.description }}<br></span>
+                    <a class="watch-link" href="{{ elem.0.url }}" data-button-id={{ elem.0.id }}>See more>>><br></a>
+                    <button class="like-btn" data-button-id={{ elem.0.id }} type="button">
+                        {% if elem.1 %}
+                            <i class="fa fa-heart" id="like-heart{{ elem.0.id }}" style="color: #cc4b37"></i>
+                        {% else %}
+                            <i class="fa fa-heart" id="like-heart{{ elem.0.id }}"></i>
+                        {% endif %}
+                    </button>
+                    <span class="label" id="total_likes{{ elem.0.id }}">{{ elem.0.total_likes }}</span>
+                    <span> <i class="fas fa-eye"></i></span>
+                    {% if elem.0.views >= 1000 %}
+                        <span id="views{{ elem.0.id }}"
+                              class="label">{{ elem.0.views|get_digit:"4" }}.{{ elem.0.views|get_digit:"3" }}k</span>
+                    {% else %}
+                        <span id="views{{ elem.0.id }}" class="label">{{ elem.0.views }}</span>
+                    {% endif %}
+                    <p>{{ elem.0.id }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
 
 </section>
+<section class="container">
+    <div class="pagination">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+        {% endif %}
 
-<script>
-    const btns = document.querySelectorAll(".like-btn");
-    var csrftoken = Cookies.get('csrftoken');
+        <span class="current">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
 
-    const url = 'http://localhost:8000/api/v1/top_headlines/';
-    const arr = [...btns];
-    arr.map((el, ind) => {
-        el.addEventListener("click", (e) => {
-            e.preventDefault();
-            const responseField = document.querySelector("#total_likes"+el.dataset.buttonId.toString());
-            let endpoint = url + el.dataset.buttonId.toString();
-            endpoint = endpoint + '/like/';
-            fetch(endpoint, {
-                method: 'POST',
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json',
-                    'X-CSRFToken': csrftoken
-                }
-            }).then(response => {
-                if (response.ok)
-                {
-                    return response.json()
-                }
-                throw new Error('POST request failed');
-            }).then(jsonResponse => {
-                console.log(jsonResponse["is_fan"], "here all is ok ");
-                console.log(responseField, 'name of responseField');
-                let is_fan = jsonResponse["is_fan"];
-                let old_value = responseField.innerHTML;
-                responseField.innerHTML = `${is_fan}`
-            }, networkError => console.log(networkError.message))
-        })
-    })
-
-
-</script>
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">next</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+    </div>
+</section>
+<script src="{% static 'news/scripts/likeBtnClick.js' %}"></script>
+<script src="{% static 'news/scripts/watchBtnClick.js' %}"></script>
 </body>
 </html>

@@ -1,11 +1,10 @@
 
 .like-btn {
-    border: 2px solid #8a8a8a;
+    border: white;
     background-color: transparent;
     text-decoration: none;
-    padding: 1rem;
-    padding-top: 0.2rem;
-    height: 27px;
+    padding: 0rem;
+    height: 14px;
     position: relative;
     vertical-align: middle;
     text-align: center;
@@ -72,3 +71,11 @@
     color: #fefefe;
 }
 
+.fa-eye:before {
+    position: relative;
+    display: inline-block;
+    color: #8a8a8a;
+    padding-top: 0.77rem;
+    vertical-align: middle;
+    content: "\f06e";
+}

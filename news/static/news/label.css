@@ -1,0 +1,16 @@
+.label {
+    background-color: transparent;
+    text-decoration: none;
+    padding: 0rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    height: 27px;
+    width: 3.5rem;
+    font-style: italic;
+    font-weight: lighter;
+    position: relative;
+    vertical-align: middle;
+    text-align: left;
+    display: inline-block;
+    color: #8a8a8a;
+}

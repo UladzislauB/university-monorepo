@@ -13,11 +13,14 @@ class LikedMixin:
         obj = self.get_object()
         if services.is_fan(obj, request.user):
             services.remove_like(obj, request.user)
+            request.user.topheadline_set.set(request.user.topheadline_set.exclude(id=obj.id))
         else:
             services.add_like(obj, request.user)
+            obj.favourites.add(request.user)
+        if obj.id == 234:
+            print(obj.favourites.all())
         is_fan = services.is_fan(obj, request.user)
-        # serializer = TopHeadlineSerializer(obj)
-        return Response({"is_fan": is_fan})
+        return Response({"is_fan": is_fan, "total_likes": obj.total_likes})
 
     @detail_route(methods=['POST'])
     def unlike(self, request, pk=None):
@@ -31,3 +34,11 @@ class LikedMixin:
         fans = services.get_fans(obj)
         serializer = FanSerializer(fans, many=True)
         return Response(serializer.data)
+
+    @detail_route(methods=['GET'])
+    def watch(self, request, pk=None):
+        obj = self.get_object()
+        obj.views = obj.views + 1
+        obj.save()
+        print(obj.views)
+        return Response({"views": obj.views})
