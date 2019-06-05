@@ -17,8 +17,6 @@ class LikedMixin:
         else:
             services.add_like(obj, request.user)
             obj.favourites.add(request.user)
-        if obj.id == 234:
-            print(obj.favourites.all())
         is_fan = services.is_fan(obj, request.user)
         return Response({"is_fan": is_fan, "total_likes": obj.total_likes})
 

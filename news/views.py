@@ -6,6 +6,7 @@ import json
 from newsapi import NewsApiClient
 from news.models import TopHeadline
 from likes import services
+from fake_news_detect.prediction import detecting_fake_news
 
 newsapi = NewsApiClient(api_key='959ed0e9826742709ee20cbc5632d5d5')
 
@@ -31,15 +32,21 @@ def top_headlines(request):
     top_headlines_source = newsapi.get_top_headlines(sources='google-news')
     encoded_headlines = json.dumps(top_headlines_source, sort_keys=True, indent=4)
     decoded_headlines = json.loads(encoded_headlines).get('articles')
+    print(decoded_headlines)
     for i in range(10):
         temp = decoded_headlines[i]
-        headline = TopHeadline(author=temp.get('author'), title=temp.get('title'), description=temp.get('description'),
-                               url=temp.get('url'), urlToImage=temp.get('urlToImage'),
-                               publishedAt=temp.get('publishedAt'))
+        headline, created = TopHeadline.objects.get_or_create(author=temp.get('author'), title=temp.get('title'),
+                                                              description=temp.get('description'),
+                                                              url=temp.get('url'), urlToImage=temp.get('urlToImage'),
+                                                              publishedAt=temp.get('publishedAt'))
 
-        if not TopHeadline.objects.filter(title=headline.title):
+        if created:
+            res = detecting_fake_news(headline.description)
+            print(res)
+            headline.is_true = res[0]
+            headline.is_true_prob = res[1]
             headline.save()
-    context = {'top_headlines': TopHeadline.objects.order_by('-publishedAt')[:6]}
+    context = {'top_headlines': TopHeadline.objects.all()}
     return render(request, "news/top_headlines.html", context)
 
 

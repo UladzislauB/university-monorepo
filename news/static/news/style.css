@@ -90,3 +90,9 @@ hr {
     vertical-align: middle;
     flex-direction: column;
 }
+
+.warning {
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+}

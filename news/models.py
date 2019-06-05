@@ -16,6 +16,8 @@ class TopHeadline(models.Model):
     likes = GenericRelation(Like)
     views = models.IntegerField(default=0)
     favourites = models.ManyToManyField(settings.AUTH_USER_MODEL)
+    is_true_prob = models.FloatField(default=0)
+    is_true = models.BooleanField(default=False)
 
     def __str__(self):
         return self.title

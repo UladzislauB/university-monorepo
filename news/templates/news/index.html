@@ -64,6 +64,9 @@
                             Author: {{ elem.0.author|slice:':30' }}<br>{{ elem.0.author|slice:'30:' }}</p>
 
                     {% endif %}
+                    {% if not elem.0.is_true %}
+                        <span class="warning">Warning: this information can be false<br></span>
+                    {% endif %}
                     <span class="news-title">{{ elem.0.title }}<br></span>
                     <span class="news-description">{{ elem.0.description }}<br></span>
                     <a class="watch-link" href="{{ elem.0.url }}" data-button-id={{ elem.0.id }}>See more>>><br></a>
@@ -82,7 +85,6 @@
                     {% else %}
                         <span id="views{{ elem.0.id }}" class="label">{{ elem.0.views }}</span>
                     {% endif %}
-                    <p>{{ elem.0.id }}</p>
                 </div>
             {% endfor %}
         </div>
@@ -95,6 +97,9 @@
                         <p class="author-feed">
                             Author: {{ elem.0.author|slice:':30' }}<br>{{ elem.0.author|slice:'30:' }}</p>
                     {% endif %}
+                    {% if not elem.0.is_true %}
+                        <span class="warning">Warning: this information can be false<br></span>
+                    {% endif %}
                     <span class="news-title">{{ elem.0.title }}<br></span>
                     <span class="news-description">{{ elem.0.description }}<br></span>
                     <a class="watch-link" href="{{ elem.0.url }}" data-button-id={{ elem.0.id }}>See more>>><br></a>
@@ -113,7 +118,6 @@
                     {% else %}
                         <span id="views{{ elem.0.id }}" class="label">{{ elem.0.views }}</span>
                     {% endif %}
-                    <p>{{ elem.0.id }}</p>
                 </div>
             {% endfor %}
         </div>
