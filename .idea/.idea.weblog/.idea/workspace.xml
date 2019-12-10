@@ -1,19 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2901d93a-a5e8-4fa7-b544-5302962e78a9" name="Default Changelist" comment="" />
+    <list default="true" id="2901d93a-a5e8-4fa7-b544-5302962e78a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/weblog/Views/Post/List.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weblog/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weblog/Views/_ViewImports.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weblog/wwwroot/content/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.weblog/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.weblog/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.weblog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.weblog/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/Models/Post.cs" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/Models/Post.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.dll" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.RazorTargetAssemblyInfo.cache" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.RazorTargetAssemblyInfo.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.dll" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.pdb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/weblog/Models/PostRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Models/CategoryRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/weblog/Views/_ViewStart.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Models/AppDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/weblog/Controllers/PostController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/weblog/ViewModels/PostListViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/weblog/Views/Post/List.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/weblog/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/weblog/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Models/Post.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Models/Category.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Models/ICategoryRepository.cs" root0="FORCE_HIGHLIGHTING" />
@@ -23,7 +54,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/weblog/Program.cs" />
-        <option value="$PROJECT_DIR$/weblog/Models/Post.cs" />
         <option value="$PROJECT_DIR$/weblog/Models/Category.cs" />
         <option value="$PROJECT_DIR$/weblog/Models/IPostRepository.cs" />
         <option value="$PROJECT_DIR$/weblog/Models/ICategoryRepository.cs" />
@@ -34,22 +64,35 @@
         <option value="$PROJECT_DIR$/weblog/weblog.csproj" />
         <option value="$PROJECT_DIR$/weblog/Startup.cs" />
         <option value="$PROJECT_DIR$/weblog/Models/PostRepository.cs" />
+        <option value="$PROJECT_DIR$/weblog/Views/Shared/_ViewImports.cshtml" />
+        <option value="$PROJECT_DIR$/weblog/wwwroot/style.css" />
+        <option value="$PROJECT_DIR$/weblog/wwwroot/content/style.css" />
+        <option value="$PROJECT_DIR$/weblog/Views/Shared/_ViewStart.cshtml" />
+        <option value="$PROJECT_DIR$/weblog/Models/Post.cs" />
+        <option value="$PROJECT_DIR$/weblog/ViewModels/PostListViewModel.cs" />
+        <option value="$PROJECT_DIR$/weblog/Views/_ViewImports.cshtml" />
+        <option value="$PROJECT_DIR$/weblog/Views/Post/List.cshtml" />
+        <option value="$PROJECT_DIR$/weblog/Controller/PostController.cs" />
+        <option value="$PROJECT_DIR$/weblog/Controllers/PostController.cs" />
+        <option value="$PROJECT_DIR$/weblog/Views/Shared/_Layout.cshtml" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1TxjrSfazIh2E3WuDRu3d35TfEg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../BethanyPieShop" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.environmentSetup" />
+    <property name="settings.editor.selected.configurable" value="CodeCleanupOptionsPage" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -111,7 +154,7 @@
       <workItem from="1575147371531" duration="1002000" />
       <workItem from="1575209948634" duration="24000" />
       <workItem from="1575917417832" duration="3623000" />
-      <workItem from="1575978962140" duration="4106000" />
+      <workItem from="1575978962140" duration="8115000" />
     </task>
     <servers />
   </component>
@@ -120,6 +163,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
   </component>

@@ -8,6 +8,14 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="weblog" t="IncludeRecursive">
+        <e p="Controllers" t="Include">
+          <e p="PostController.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20191210182427_InitialMigration.Designer.cs" t="Include" />
+          <e p="20191210182427_InitialMigration.cs" t="Include" />
+          <e p="AppDbContextModelSnapshot.cs" t="Include" />
+        </e>
         <e p="Models" t="Include">
           <e p="AppDbContext.cs" t="Include" />
           <e p="Category.cs" t="Include" />
@@ -22,6 +30,19 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
+        <e p="ViewModels" t="Include">
+          <e p="PostListViewModel.cs" t="Include" />
+        </e>
+        <e p="Views" t="Include">
+          <e p="Post" t="Include">
+            <e p="List.cshtml" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+          </e>
+          <e p="_ViewImports.cshtml" t="Include" />
+          <e p="_ViewStart.cshtml" t="Include" />
+        </e>
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
@@ -33,6 +54,11 @@
           </e>
         </e>
         <e p="weblog.csproj" t="IncludeRecursive" />
+        <e p="wwwroot" t="Include">
+          <e p="content" t="Include">
+            <e p="style.css" t="Include" />
+          </e>
+        </e>
       </e>
       <e p="weblog.sln" t="IncludeFlat" />
     </e>
