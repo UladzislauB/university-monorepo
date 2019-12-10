@@ -1,0 +1,100 @@
+/home/qwerty/5semester/MediumC#/weblog/weblog/bin/Debug/netcoreapp3.0/appsettings.Development.json
+/home/qwerty/5semester/MediumC#/weblog/weblog/bin/Debug/netcoreapp3.0/appsettings.json
+/home/qwerty/5semester/MediumC#/weblog/weblog/bin/Debug/netcoreapp3.0/Properties/launchSettings.json
+/home/qwerty/5semester/MediumC#/weblog/weblog/bin/Debug/netcoreapp3.0/weblog
+/home/qwerty/5semester/MediumC#/weblog/weblog/bin/Debug/netcoreapp3.0/weblog.deps.json
+/home/qwerty/5semester/MediumC#/weblog/weblog/bin/Debug/netcoreapp3.0/weblog.runtimeconfig.json
+/home/qwerty/5semester/MediumC#/weblog/weblog/bin/Debug/netcoreapp3.0/weblog.runtimeconfig.dev.json
+/home/qwerty/5semester/MediumC#/weblog/weblog/bin/Debug/netcoreapp3.0/weblog.dll
+/home/qwerty/5semester/MediumC#/weblog/weblog/bin/Debug/netcoreapp3.0/weblog.pdb
+/home/qwerty/5semester/MediumC#/weblog/weblog/obj/Debug/netcoreapp3.0/weblog.csprojAssemblyReference.cache
+/home/qwerty/5semester/MediumC#/weblog/weblog/obj/Debug/netcoreapp3.0/staticwebassets/weblog.StaticWebAssets.Manifest.cache
+/home/qwerty/5semester/MediumC#/weblog/weblog/obj/Debug/netcoreapp3.0/staticwebassets/weblog.StaticWebAssets.xml
+/home/qwerty/5semester/MediumC#/weblog/weblog/obj/Debug/netcoreapp3.0/weblog.MvcApplicationPartsAssemblyInfo.cache
+/home/qwerty/5semester/MediumC#/weblog/weblog/obj/Debug/netcoreapp3.0/weblog.AssemblyInfoInputs.cache
+/home/qwerty/5semester/MediumC#/weblog/weblog/obj/Debug/netcoreapp3.0/weblog.AssemblyInfo.cs
+/home/qwerty/5semester/MediumC#/weblog/weblog/obj/Debug/netcoreapp3.0/weblog.RazorTargetAssemblyInfo.cache
+/home/qwerty/5semester/MediumC#/weblog/weblog/obj/Debug/netcoreapp3.0/weblog.dll
+/home/qwerty/5semester/MediumC#/weblog/weblog/obj/Debug/netcoreapp3.0/weblog.pdb
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/appsettings.Development.json
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/appsettings.json
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Properties/launchSettings.json
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/weblog
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/weblog.deps.json
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/weblog.runtimeconfig.json
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/weblog.runtimeconfig.dev.json
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/weblog.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/weblog.pdb
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/weblog.csprojAssemblyReference.cache
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/staticwebassets/weblog.StaticWebAssets.Manifest.cache
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/staticwebassets/weblog.StaticWebAssets.xml
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/weblog.MvcApplicationPartsAssemblyInfo.cache
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/weblog.AssemblyInfoInputs.cache
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/weblog.AssemblyInfo.cs
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/weblog.RazorTargetAssemblyInfo.cache
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/weblog.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/weblog.pdb
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/EntityFramework.SqlServer.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/EntityFramework.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.Bcl.AsyncInterfaces.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.Bcl.HashCode.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.Data.SqlClient.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.Design.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.Relational.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Caching.Abstractions.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Caching.Memory.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Configuration.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Configuration.Binder.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Logging.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Logging.Abstractions.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Options.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Primitives.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.Identity.Client.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.Win32.Registry.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/MySqlConnector.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Newtonsoft.Json.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Pomelo.EntityFrameworkCore.MySql.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Pomelo.JsonObject.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/System.CodeDom.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/System.Collections.Immutable.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/System.ComponentModel.Annotations.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/System.Configuration.ConfigurationManager.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/System.Data.SqlClient.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/System.Diagnostics.DiagnosticSource.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/System.Drawing.Common.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/System.Runtime.Caching.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/System.Runtime.CompilerServices.Unsafe.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/System.Security.AccessControl.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/System.Security.Cryptography.ProtectedData.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/System.Security.Permissions.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/System.Security.Principal.Windows.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/System.Text.Encoding.CodePages.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/System.Windows.Extensions.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/runtimes/unix/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/runtimes/win-arm64/native/sni.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/runtimes/win-x64/native/sni.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/runtimes/win-x86/native/sni.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/weblog.csproj.CopyComplete
