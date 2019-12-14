@@ -17,5 +17,8 @@ namespace weblog.Models
 
 
         public Post GetPostById(int postId) => _appDbContext.Posts.FirstOrDefault(p => p.PostId == postId);
+
+        public IEnumerable<Post> SandboxPosts => _appDbContext.Posts.Include(c => c.Category).Where(p => p.InSandbox);
+        public IEnumerable<Post> ApprovedPosts => _appDbContext.Posts.Include(c => c.Category).Where(p => !p.InSandbox);
     }
 }

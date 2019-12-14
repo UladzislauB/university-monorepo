@@ -14,6 +14,10 @@
         <e p="Migrations" t="Include">
           <e p="20191210182427_InitialMigration.Designer.cs" t="Include" />
           <e p="20191210182427_InitialMigration.cs" t="Include" />
+          <e p="20191210195658_PostModelChanged.Designer.cs" t="Include" />
+          <e p="20191210195658_PostModelChanged.cs" t="Include" />
+          <e p="20191212205654_SeedDataAdded.Designer.cs" t="Include" />
+          <e p="20191212205654_SeedDataAdded.cs" t="Include" />
           <e p="AppDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
@@ -35,6 +39,7 @@
         </e>
         <e p="Views" t="Include">
           <e p="Post" t="Include">
+            <e p="Detail.cshtml" t="Include" />
             <e p="List.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
@@ -55,6 +60,20 @@
         </e>
         <e p="weblog.csproj" t="IncludeRecursive" />
         <e p="wwwroot" t="Include">
+          <e p="Images" t="Include">
+            <e p="Post" t="Include">
+              <e p="Image1.jpeg" t="Include" />
+              <e p="Image2.jpg" t="Include" />
+              <e p="Image3.png" t="Include" />
+              <e p="Image4.jpg" t="Include" />
+              <e p="Image5.jpeg" t="Include" />
+            </e>
+            <e p="image1.jpg" t="Include" />
+            <e p="image2.jpg" t="Include" />
+            <e p="image3.jpg" t="Include" />
+            <e p="image4.jpg" t="Include" />
+            <e p="image5.jpg" t="Include" />
+          </e>
           <e p="content" t="Include">
             <e p="style.css" t="Include" />
           </e>

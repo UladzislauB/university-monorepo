@@ -40,5 +40,13 @@ namespace weblog.Controllers
                 CurrentCategory = currentCategory
             });
         }
+
+        public IActionResult Detail(int id)
+        {
+            var post = _postRepository.GetPostById(id);
+            if (post == null)
+                return NotFound();
+            return View(post);
+        }
     }
 }

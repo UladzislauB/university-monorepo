@@ -7,6 +7,9 @@ namespace weblog.Models
     {
         IEnumerable<Post> AllPosts { get; }
         Post GetPostById(int postId);
+        
+        IEnumerable<Post> SandboxPosts { get; }
+        IEnumerable<Post> ApprovedPosts { get; }
 
     }
 }

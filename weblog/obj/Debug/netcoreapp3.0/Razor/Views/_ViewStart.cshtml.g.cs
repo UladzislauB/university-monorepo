@@ -26,8 +26,15 @@ using weblog.ViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
+using Microsoft.AspNetCore.Html;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c0cb7f826af1de6ea245782a012ca2e0f93097b2", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dacaad7c94daadbf63efbd583a603bf0873c2b1f", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c7812561d9f3509f3d735029705ecf587e1e22ae", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

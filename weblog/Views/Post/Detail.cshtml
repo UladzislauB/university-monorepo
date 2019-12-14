@@ -1,0 +1,32 @@
+@model Post
+
+
+<div class="detail bg-white">
+  <div class="jumbotron bg-white pt-1">
+    <div class="row">
+      <div class="d-flex flex-column col-6 justify-content-center">
+        @if (Model.IsForSubscribersOnly)
+        {
+          <h6 class="pl-3 text-dark">PREMIUM MEMBER STORIES</h6>
+        }
+        <h1 class="pl-3">
+          @Model.Title
+        </h1>
+        <h3 class="pl-3 text-secondary">
+          @Model.ShortDescription
+        </h3>
+      </div>
+      <div class="col-6">
+        <img src=@Model.ImageUrl alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        @(new HtmlString(Model.Text))
+      </div>
+    </div>
+  </div>
+</div>

@@ -111,3 +111,4 @@
 /home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/weblog.Views.pdb
 /home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Post/List.cshtml.g.cs
 /home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/_ViewStart.cshtml.g.cs
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Post/Detail.cshtml.g.cs

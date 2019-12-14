@@ -29,6 +29,38 @@ namespace weblog.Migrations
                     b.HasKey("CategoryId");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            CategoryId = 1,
+                            Title = "Tech"
+                        },
+                        new
+                        {
+                            CategoryId = 2,
+                            Title = "Politics"
+                        },
+                        new
+                        {
+                            CategoryId = 3,
+                            Title = "Life"
+                        },
+                        new
+                        {
+                            CategoryId = 4,
+                            Title = "Science"
+                        },
+                        new
+                        {
+                            CategoryId = 5,
+                            Title = "Sport"
+                        },
+                        new
+                        {
+                            CategoryId = 7,
+                            Title = "Zen"
+                        });
                 });
 
             modelBuilder.Entity("weblog.Models.Post", b =>
@@ -40,13 +72,22 @@ namespace weblog.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("DateChanged")
+                        .HasColumnType("datetime(6)");
+
                     b.Property<DateTime>("DatePosted")
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("ImageUrl")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
+                    b.Property<bool>("InSandbox")
+                        .HasColumnType("tinyint(1)");
+
                     b.Property<bool>("IsForSubscribersOnly")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<bool>("IsLocked")
                         .HasColumnType("tinyint(1)");
 
                     b.Property<string>("ShortDescription")
@@ -63,6 +104,78 @@ namespace weblog.Migrations
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Posts");
+
+                    b.HasData(
+                        new
+                        {
+                            PostId = 1,
+                            CategoryId = 1,
+                            DateChanged = new DateTime(2019, 12, 12, 23, 56, 53, 901, DateTimeKind.Local).AddTicks(5430),
+                            DatePosted = new DateTime(2019, 12, 12, 23, 56, 53, 897, DateTimeKind.Local).AddTicks(45),
+                            ImageUrl = "~/Images/image1.jpg",
+                            InSandbox = true,
+                            IsForSubscribersOnly = false,
+                            IsLocked = false,
+                            ShortDescription = "Autonomous Driving Updates, HyperAutomation, and More",
+                            Text = "",
+                            Title = "Here Is A Rundown of 5 Major Tech Trends Hitting 2020"
+                        },
+                        new
+                        {
+                            PostId = 2,
+                            CategoryId = 2,
+                            DateChanged = new DateTime(2019, 12, 12, 23, 56, 53, 901, DateTimeKind.Local).AddTicks(7526),
+                            DatePosted = new DateTime(2019, 12, 12, 23, 56, 53, 901, DateTimeKind.Local).AddTicks(7507),
+                            ImageUrl = "~/Images/image2.jpg",
+                            InSandbox = true,
+                            IsForSubscribersOnly = false,
+                            IsLocked = false,
+                            ShortDescription = "Lorem ipsum dolor sit amet",
+                            Text = "",
+                            Title = "Lorem Ipsum"
+                        },
+                        new
+                        {
+                            PostId = 3,
+                            CategoryId = 2,
+                            DateChanged = new DateTime(2019, 12, 12, 23, 56, 53, 901, DateTimeKind.Local).AddTicks(7607),
+                            DatePosted = new DateTime(2019, 12, 12, 23, 56, 53, 901, DateTimeKind.Local).AddTicks(7605),
+                            ImageUrl = "~/Images/image3.jpg",
+                            InSandbox = true,
+                            IsForSubscribersOnly = false,
+                            IsLocked = false,
+                            ShortDescription = "Lorem ipsum dolor sit amet",
+                            Text = "",
+                            Title = "Lorem Ipsum"
+                        },
+                        new
+                        {
+                            PostId = 4,
+                            CategoryId = 2,
+                            DateChanged = new DateTime(2019, 12, 12, 23, 56, 53, 901, DateTimeKind.Local).AddTicks(7629),
+                            DatePosted = new DateTime(2019, 12, 12, 23, 56, 53, 901, DateTimeKind.Local).AddTicks(7627),
+                            ImageUrl = "~/Images/image4.jpg",
+                            InSandbox = true,
+                            IsForSubscribersOnly = false,
+                            IsLocked = false,
+                            ShortDescription = "Lorem ipsum dolor sit amet",
+                            Text = "",
+                            Title = "Lorem Ipsum"
+                        },
+                        new
+                        {
+                            PostId = 5,
+                            CategoryId = 2,
+                            DateChanged = new DateTime(2019, 12, 12, 23, 56, 53, 901, DateTimeKind.Local).AddTicks(7651),
+                            DatePosted = new DateTime(2019, 12, 12, 23, 56, 53, 901, DateTimeKind.Local).AddTicks(7649),
+                            ImageUrl = "~/Images/image5.jpg",
+                            InSandbox = true,
+                            IsForSubscribersOnly = false,
+                            IsLocked = false,
+                            ShortDescription = "Lorem ipsum dolor sit amet",
+                            Text = "",
+                            Title = "Lorem Ipsum"
+                        });
                 });
 
             modelBuilder.Entity("weblog.Models.Post", b =>
