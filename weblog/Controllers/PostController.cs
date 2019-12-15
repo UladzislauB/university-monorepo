@@ -34,6 +34,7 @@ namespace weblog.Controllers
                     .OrderByDescending(p => p.DatePosted);
                 currentCategory = _categoryRepository.AllCategories.FirstOrDefault(c => c.Title == category)?.Title;
             }
+            ViewData["category"] = "";
             return View(new PostListViewModel
             {
                 Posts = posts,
@@ -46,6 +47,9 @@ namespace weblog.Controllers
             var post = _postRepository.GetPostById(id);
             if (post == null)
                 return NotFound();
+            post.Category = _categoryRepository.AllCategories.FirstOrDefault(c =>
+                                       c.CategoryId == post.CategoryId);
+            ViewData["category"] = post.Category?.Title;
             return View(post);
         }
     }

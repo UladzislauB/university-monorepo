@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace weblog.Models
 {
@@ -14,6 +15,8 @@ namespace weblog.Models
         public bool InSandbox { get; set; }
         public bool IsLocked { get; set; }
         public bool IsForSubscribersOnly { get; set; }
+        public int TimeToRead { get; set; }
+        public int Claps { get; set; }
         public int CategoryId { get; set; }
         public Category Category { get; set; }
     }

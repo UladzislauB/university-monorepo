@@ -30,3 +30,23 @@
     </div>
   </div>
 </div>
+<div class="fixed hidden"></div>
+<script>
+      var $win = $(window),
+        $fixed = $(".fixed"),
+        limit = 300;
+
+      function tgl(state) {
+        $fixed.toggleClass("hidden", state);
+      }
+
+      $win.on("scroll", function() {
+        var top = $win.scrollTop();
+
+        if (top < limit) {
+          tgl(true);
+        } else {
+          tgl(false);
+        }
+      });
+</script>

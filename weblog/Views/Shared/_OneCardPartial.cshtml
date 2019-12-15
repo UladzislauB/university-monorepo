@@ -1,0 +1,20 @@
+@model Post
+
+<div class="col-4 card border-white one-card">
+  <img
+    src= "@Model.ImageUrl"
+    alt=""
+    class="card-img-top pt-3"
+  />
+  <div class="card-body px-0">
+    <div class="card-title h4">@Model.Title</div>
+    <div class="card-subtitle text-secondary h6">
+      @Model.ShortDescription
+    </div>
+    <div class="author mt-3 text-dark card-subtitle">Author's Name</div>
+    <div class="mt-1 text-muted card-subtitle star">
+      @Model.DatePosted.ToString("MMM dd") · 4 min read ★
+    </div>
+  </div>
+</div>
+

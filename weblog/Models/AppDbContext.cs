@@ -97,6 +97,132 @@ namespace weblog.Models
                 IsForSubscribersOnly = false,
                 CategoryId = 2
             });
+            modelBuilder.Entity<Post>().HasData(new Post
+            {
+                PostId = 6,
+                Title = "Lorem Ipsum",
+                ShortDescription = "Lorem ipsum dolor sit amet",
+                Text = "",
+                ImageUrl = "~/Images/image2.jpg",
+                DatePosted = DateTime.Now,
+                DateChanged = DateTime.Now,
+                InSandbox = true,
+                IsLocked = false,
+                IsForSubscribersOnly = false,
+                CategoryId = 1
+            });
+            modelBuilder.Entity<Post>().HasData(new Post
+            {
+                PostId = 7,
+                Title = "Lorem Ipsum",
+                ShortDescription = "Lorem ipsum dolor sit amet",
+                Text = "",
+                ImageUrl = "~/Images/image3.jpg",
+                DatePosted = DateTime.Now,
+                DateChanged = DateTime.Now,
+                InSandbox = true,
+                IsLocked = false,
+                IsForSubscribersOnly = false,
+                CategoryId = 1
+            });
+            modelBuilder.Entity<Post>().HasData(new Post
+            {
+                PostId = 8,
+                Title = "Lorem Ipsum",
+                ShortDescription = "Lorem ipsum dolor sit amet",
+                Text = "",
+                ImageUrl = "~/Images/image4.jpg",
+                DatePosted = DateTime.Now,
+                DateChanged = DateTime.Now,
+                InSandbox = true,
+                IsLocked = false,
+                IsForSubscribersOnly = false,
+                CategoryId = 1
+            });
+            modelBuilder.Entity<Post>().HasData(new Post
+            {
+                PostId = 9,
+                Title = "Lorem Ipsum",
+                ShortDescription = "Lorem ipsum dolor sit amet",
+                Text = "",
+                ImageUrl = "~/Images/image5.jpg",
+                DatePosted = DateTime.Now,
+                DateChanged = DateTime.Now,
+                InSandbox = true,
+                IsLocked = false,
+                IsForSubscribersOnly = false,
+                CategoryId = 1
+            });
+             modelBuilder.Entity<Post>().HasData(new Post
+            {
+                PostId = 10,
+                Title = "Lorem Ipsum",
+                ShortDescription = "Lorem ipsum dolor sit amet",
+                Text = "",
+                ImageUrl = "~/Images/image5.jpg",
+                DatePosted = DateTime.Now,
+                DateChanged = DateTime.Now,
+                InSandbox = true,
+                IsLocked = false,
+                IsForSubscribersOnly = false,
+                CategoryId = 3
+            });
+            modelBuilder.Entity<Post>().HasData(new Post
+            {
+                PostId = 11,
+                Title = "Lorem Ipsum",
+                ShortDescription = "Lorem ipsum dolor sit amet",
+                Text = "",
+                ImageUrl = "~/Images/image2.jpg",
+                DatePosted = DateTime.Now,
+                DateChanged = DateTime.Now,
+                InSandbox = true,
+                IsLocked = false,
+                IsForSubscribersOnly = false,
+                CategoryId = 3
+            });
+            modelBuilder.Entity<Post>().HasData(new Post
+            {
+                PostId = 12,
+                Title = "Lorem Ipsum",
+                ShortDescription = "Lorem ipsum dolor sit amet",
+                Text = "",
+                ImageUrl = "~/Images/image3.jpg",
+                DatePosted = DateTime.Now,
+                DateChanged = DateTime.Now,
+                InSandbox = true,
+                IsLocked = false,
+                IsForSubscribersOnly = false,
+                CategoryId = 3
+            });
+            modelBuilder.Entity<Post>().HasData(new Post
+            {
+                PostId = 13,
+                Title = "Lorem Ipsum",
+                ShortDescription = "Lorem ipsum dolor sit amet",
+                Text = "",
+                ImageUrl = "~/Images/image4.jpg",
+                DatePosted = DateTime.Now,
+                DateChanged = DateTime.Now,
+                InSandbox = true,
+                IsLocked = false,
+                IsForSubscribersOnly = false,
+                CategoryId = 3
+            });
+            modelBuilder.Entity<Post>().HasData(new Post
+            {
+                PostId = 14,
+                Title = "Lorem Ipsum",
+                ShortDescription = "Lorem ipsum dolor sit amet",
+                Text = "",
+                ImageUrl = "~/Images/image5.jpg",
+                DatePosted = DateTime.Now,
+                DateChanged = DateTime.Now,
+                InSandbox = true,
+                IsLocked = false,
+                IsForSubscribersOnly = false,
+                CategoryId = 3
+            });
         }
     }
 }
