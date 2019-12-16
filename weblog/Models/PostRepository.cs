@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
 namespace weblog.Models
@@ -13,7 +13,10 @@ namespace weblog.Models
             _appDbContext = appDbContext;
         }
 
-        public IEnumerable<Post> AllPosts => _appDbContext.Posts.Include(c => c.Category);
+        public IEnumerable<Post> AllPosts
+        {
+            get { return _appDbContext.Posts.Include(c => c.Category); }
+        }
 
 
         public Post GetPostById(int postId) => _appDbContext.Posts.FirstOrDefault(p => p.PostId == postId);

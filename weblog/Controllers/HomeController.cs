@@ -21,7 +21,7 @@ namespace weblog.Controllers
             var homeViewModel = new HomeViewModel
             {
                 FirstCategoryPosts = _postRepository.AllPosts.Where(p => p.CategoryId == 1).ToList(),
-                SecondCategoryPosts = _postRepository.AllPosts.Where(p => p.CategoryId == 2),
+                SecondCategoryPosts = _postRepository.AllPosts,
                 ThirdCategoryPosts = _postRepository.AllPosts.Where(p => p.CategoryId == 3),
             };
             return View(homeViewModel);

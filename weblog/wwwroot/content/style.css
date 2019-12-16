@@ -98,3 +98,23 @@
     height: 100px;
     object-fit: cover;
 }
+
+.card .category {
+    font-weight: 400;
+    font-size: 15px;
+    --x-height-multiplier: 0.342;
+    --baseline-multiplier: 0.22;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+    sans-serif;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.three-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+a:hover {
+    text-decoration: none;
+}

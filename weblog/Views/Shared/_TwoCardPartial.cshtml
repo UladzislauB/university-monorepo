@@ -10,12 +10,16 @@
             />
         </div>
         <div class="pl-3 col d-flex flex-column">
-            <div class="card-title h5 mb-auto">
-                @Model.Title
-            </div>
+            <a asp-controller="Post" asp-action="Detail" asp-route-id="@Model.PostId">
+                <div class="card-title h5 mb-auto">
+                    @Model.Title
+                </div>
+            </a>
             <div class="author text-dark card-subtitle">Author's Name</div>
             <div class="pt-1 text-muted card-subtitle star">
-                @Model.DatePosted.ToString("MMM dd") · 4 min read ★
+                @Model.DatePosted.ToString("MMM dd") · @Model.TimeToRead min read @if (Model.IsForSubscribersOnly){
+                                                                                      <span>★</span>
+                                                                                  }
             </div>
         </div>
     </div>

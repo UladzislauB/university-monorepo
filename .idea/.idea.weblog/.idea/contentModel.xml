@@ -3,8 +3,8 @@
   <component name="ContentModelStore">
     <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
     <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2019.2/system/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2019.2/system/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_weblog.-1465108193.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.3/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.3/system/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_weblog.-1465108193.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="weblog" t="IncludeRecursive">
@@ -23,6 +23,8 @@
           <e p="20191215154034_ModelChangesAdded.cs" t="Include" />
           <e p="20191215160238_MoreSeedPostsAdded.Designer.cs" t="Include" />
           <e p="20191215160238_MoreSeedPostsAdded.cs" t="Include" />
+          <e p="20191216201028_SeedDataReturned.Designer.cs" t="Include" />
+          <e p="20191216201028_SeedDataReturned.cs" t="Include" />
           <e p="AppDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
@@ -55,6 +57,7 @@
             <e p="_Layout.cshtml" t="Include" />
             <e p="_NavbarPartial.cshtml" t="Include" />
             <e p="_OneCardPartial.cshtml" t="Include" />
+            <e p="_ThreeCardPartial.cshtml" t="Include" />
             <e p="_TwoCardPartial.cshtml" t="Include" />
           </e>
           <e p="_ViewImports.cshtml" t="Include" />
@@ -67,6 +70,7 @@
           <e p="Debug" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="weblog.AssemblyInfo.cs" t="Include" />
+              <e p="weblog.RazorAssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
