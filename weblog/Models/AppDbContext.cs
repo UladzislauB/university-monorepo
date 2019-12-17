@@ -18,12 +18,36 @@ namespace weblog.Models
             base.OnModelCreating(modelBuilder);
             
             //seed categories
-            modelBuilder.Entity<Category>().HasData(new Category {CategoryId = 1, Title = "Tech"});
-            modelBuilder.Entity<Category>().HasData(new Category {CategoryId = 2, Title = "Politics"});
-            modelBuilder.Entity<Category>().HasData(new Category {CategoryId = 3, Title = "Life"});
-            modelBuilder.Entity<Category>().HasData(new Category {CategoryId = 4, Title = "Science"});
-            modelBuilder.Entity<Category>().HasData(new Category {CategoryId = 5, Title = "Sport"});
-            modelBuilder.Entity<Category>().HasData(new Category {CategoryId = 7, Title = "Zen"});
+            modelBuilder.Entity<Category>().HasData(new Category
+            {
+                CategoryId = 1, Title = "Tech",
+                ShortDescription = "Medium's largest active publications about Tech. Follow us to join our community."
+            });
+            modelBuilder.Entity<Category>().HasData(new Category
+            {
+                CategoryId = 2, Title = "Politics",
+                ShortDescription = "Medium's largest active publications about Politics. Follow us to join our community."
+            });
+            modelBuilder.Entity<Category>().HasData(new Category
+            {
+                CategoryId = 3, Title = "Life",
+                ShortDescription = "Medium's largest active publications about Life. Follow us to join our community."
+            });
+            modelBuilder.Entity<Category>().HasData(new Category
+            {
+                CategoryId = 4, Title = "Science",
+                ShortDescription = "Medium's largest active publications about Science. Follow us to join our community."
+            });
+            modelBuilder.Entity<Category>().HasData(new Category
+            {
+                CategoryId = 5, Title = "Sport",
+                ShortDescription = "Medium's largest active publications about Sport. Follow us to join our community."
+            });
+            modelBuilder.Entity<Category>().HasData(new Category
+            {
+                CategoryId = 7, Title = "Zen",
+                ShortDescription = "Medium's largest active publications about Zen. Follow us to join our community."
+            });
             
             
             //seed posts
@@ -33,7 +57,7 @@ namespace weblog.Models
                 Title = "Here Is A Rundown of 5 Major Tech Trends Hitting 2020",
                 ShortDescription = "Autonomous Driving Updates, HyperAutomation, and More",
                 Text = "",
-                ImageUrl = "~/Images/image1.jpg",
+                ImageUrl = "https://localhost:5001/Images/image1.jpg",
                 DatePosted = DateTime.Now,
                 DateChanged = DateTime.Now,
                 InSandbox = true,

@@ -9,8 +9,8 @@ using weblog.Models;
 namespace weblog.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20191215160238_MoreSeedPostsAdded")]
-    partial class MoreSeedPostsAdded
+    [Migration("20191217084418_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -39,31 +39,37 @@ namespace weblog.Migrations
                         new
                         {
                             CategoryId = 1,
+                            ShortDescription = "Medium's largest active publications about Tech. Follow us to join our community.",
                             Title = "Tech"
                         },
                         new
                         {
                             CategoryId = 2,
+                            ShortDescription = "Medium's largest active publications about Politics. Follow us to join our community.",
                             Title = "Politics"
                         },
                         new
                         {
                             CategoryId = 3,
+                            ShortDescription = "Medium's largest active publications about Life. Follow us to join our community.",
                             Title = "Life"
                         },
                         new
                         {
                             CategoryId = 4,
+                            ShortDescription = "Medium's largest active publications about Science. Follow us to join our community.",
                             Title = "Science"
                         },
                         new
                         {
                             CategoryId = 5,
+                            ShortDescription = "Medium's largest active publications about Sport. Follow us to join our community.",
                             Title = "Sport"
                         },
                         new
                         {
                             CategoryId = 7,
+                            ShortDescription = "Medium's largest active publications about Zen. Follow us to join our community.",
                             Title = "Zen"
                         });
                 });
@@ -122,9 +128,9 @@ namespace weblog.Migrations
                             PostId = 1,
                             CategoryId = 1,
                             Claps = 0,
-                            DateChanged = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(892),
-                            DatePosted = new DateTime(2019, 12, 15, 19, 2, 38, 116, DateTimeKind.Local).AddTicks(3089),
-                            ImageUrl = "~/Images/image1.jpg",
+                            DateChanged = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(3245),
+                            DatePosted = new DateTime(2019, 12, 17, 11, 44, 18, 455, DateTimeKind.Local).AddTicks(6282),
+                            ImageUrl = "https://localhost:5001/Images/image1.jpg",
                             InSandbox = true,
                             IsForSubscribersOnly = false,
                             IsLocked = false,
@@ -138,9 +144,9 @@ namespace weblog.Migrations
                             PostId = 2,
                             CategoryId = 2,
                             Claps = 0,
-                            DateChanged = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(2791),
-                            DatePosted = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(2774),
-                            ImageUrl = "~/Images/image2.jpg",
+                            DateChanged = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5102),
+                            DatePosted = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5083),
+                            ImageUrl = "https://source.unsplash.com/random/800x501",
                             InSandbox = true,
                             IsForSubscribersOnly = false,
                             IsLocked = false,
@@ -154,9 +160,9 @@ namespace weblog.Migrations
                             PostId = 3,
                             CategoryId = 2,
                             Claps = 0,
-                            DateChanged = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(2872),
-                            DatePosted = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(2869),
-                            ImageUrl = "~/Images/image3.jpg",
+                            DateChanged = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5178),
+                            DatePosted = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5175),
+                            ImageUrl = "https://source.unsplash.com/random/800x502",
                             InSandbox = true,
                             IsForSubscribersOnly = false,
                             IsLocked = false,
@@ -170,9 +176,9 @@ namespace weblog.Migrations
                             PostId = 4,
                             CategoryId = 2,
                             Claps = 0,
-                            DateChanged = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(2896),
-                            DatePosted = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(2894),
-                            ImageUrl = "~/Images/image4.jpg",
+                            DateChanged = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5202),
+                            DatePosted = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5200),
+                            ImageUrl = "https://source.unsplash.com/random/800x503",
                             InSandbox = true,
                             IsForSubscribersOnly = false,
                             IsLocked = false,
@@ -186,9 +192,9 @@ namespace weblog.Migrations
                             PostId = 5,
                             CategoryId = 2,
                             Claps = 0,
-                            DateChanged = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(2919),
-                            DatePosted = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(2916),
-                            ImageUrl = "~/Images/image5.jpg",
+                            DateChanged = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5225),
+                            DatePosted = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5223),
+                            ImageUrl = "https://source.unsplash.com/random/800x504",
                             InSandbox = true,
                             IsForSubscribersOnly = false,
                             IsLocked = false,
@@ -202,9 +208,9 @@ namespace weblog.Migrations
                             PostId = 6,
                             CategoryId = 1,
                             Claps = 0,
-                            DateChanged = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(2944),
-                            DatePosted = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(2942),
-                            ImageUrl = "~/Images/image2.jpg",
+                            DateChanged = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5252),
+                            DatePosted = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5250),
+                            ImageUrl = "https://source.unsplash.com/random/800x505",
                             InSandbox = true,
                             IsForSubscribersOnly = false,
                             IsLocked = false,
@@ -218,9 +224,9 @@ namespace weblog.Migrations
                             PostId = 7,
                             CategoryId = 1,
                             Claps = 0,
-                            DateChanged = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(2966),
-                            DatePosted = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(2964),
-                            ImageUrl = "~/Images/image3.jpg",
+                            DateChanged = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5274),
+                            DatePosted = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5272),
+                            ImageUrl = "https://source.unsplash.com/random/800x500",
                             InSandbox = true,
                             IsForSubscribersOnly = false,
                             IsLocked = false,
@@ -234,9 +240,9 @@ namespace weblog.Migrations
                             PostId = 8,
                             CategoryId = 1,
                             Claps = 0,
-                            DateChanged = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(2988),
-                            DatePosted = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(2986),
-                            ImageUrl = "~/Images/image4.jpg",
+                            DateChanged = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5296),
+                            DatePosted = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5294),
+                            ImageUrl = "https://source.unsplash.com/random/800x507",
                             InSandbox = true,
                             IsForSubscribersOnly = false,
                             IsLocked = false,
@@ -250,9 +256,9 @@ namespace weblog.Migrations
                             PostId = 9,
                             CategoryId = 1,
                             Claps = 0,
-                            DateChanged = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(3010),
-                            DatePosted = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(3008),
-                            ImageUrl = "~/Images/image5.jpg",
+                            DateChanged = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5317),
+                            DatePosted = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5315),
+                            ImageUrl = "https://source.unsplash.com/random/800x508",
                             InSandbox = true,
                             IsForSubscribersOnly = false,
                             IsLocked = false,
@@ -266,9 +272,9 @@ namespace weblog.Migrations
                             PostId = 10,
                             CategoryId = 3,
                             Claps = 0,
-                            DateChanged = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(3033),
-                            DatePosted = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(3031),
-                            ImageUrl = "~/Images/image5.jpg",
+                            DateChanged = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5341),
+                            DatePosted = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5338),
+                            ImageUrl = "https://source.unsplash.com/random/800x510",
                             InSandbox = true,
                             IsForSubscribersOnly = false,
                             IsLocked = false,
@@ -282,9 +288,9 @@ namespace weblog.Migrations
                             PostId = 11,
                             CategoryId = 3,
                             Claps = 0,
-                            DateChanged = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(3055),
-                            DatePosted = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(3053),
-                            ImageUrl = "~/Images/image2.jpg",
+                            DateChanged = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5362),
+                            DatePosted = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5360),
+                            ImageUrl = "https://source.unsplash.com/random/800x511",
                             InSandbox = true,
                             IsForSubscribersOnly = false,
                             IsLocked = false,
@@ -298,9 +304,9 @@ namespace weblog.Migrations
                             PostId = 12,
                             CategoryId = 3,
                             Claps = 0,
-                            DateChanged = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(3076),
-                            DatePosted = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(3074),
-                            ImageUrl = "~/Images/image3.jpg",
+                            DateChanged = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5383),
+                            DatePosted = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5381),
+                            ImageUrl = "https://source.unsplash.com/random/800x512",
                             InSandbox = true,
                             IsForSubscribersOnly = false,
                             IsLocked = false,
@@ -314,9 +320,9 @@ namespace weblog.Migrations
                             PostId = 13,
                             CategoryId = 3,
                             Claps = 0,
-                            DateChanged = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(3212),
-                            DatePosted = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(3209),
-                            ImageUrl = "~/Images/image4.jpg",
+                            DateChanged = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5404),
+                            DatePosted = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5402),
+                            ImageUrl = "https://source.unsplash.com/random/800x513",
                             InSandbox = true,
                             IsForSubscribersOnly = false,
                             IsLocked = false,
@@ -330,9 +336,9 @@ namespace weblog.Migrations
                             PostId = 14,
                             CategoryId = 3,
                             Claps = 0,
-                            DateChanged = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(3236),
-                            DatePosted = new DateTime(2019, 12, 15, 19, 2, 38, 120, DateTimeKind.Local).AddTicks(3234),
-                            ImageUrl = "~/Images/image5.jpg",
+                            DateChanged = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5483),
+                            DatePosted = new DateTime(2019, 12, 17, 11, 44, 18, 459, DateTimeKind.Local).AddTicks(5481),
+                            ImageUrl = "https://source.unsplash.com/random/800x514",
                             InSandbox = true,
                             IsForSubscribersOnly = false,
                             IsLocked = false,

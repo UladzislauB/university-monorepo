@@ -13,18 +13,8 @@
           <e p="PostController.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
-          <e p="20191210182427_InitialMigration.Designer.cs" t="Include" />
-          <e p="20191210182427_InitialMigration.cs" t="Include" />
-          <e p="20191210195658_PostModelChanged.Designer.cs" t="Include" />
-          <e p="20191210195658_PostModelChanged.cs" t="Include" />
-          <e p="20191212205654_SeedDataAdded.Designer.cs" t="Include" />
-          <e p="20191212205654_SeedDataAdded.cs" t="Include" />
-          <e p="20191215154034_ModelChangesAdded.Designer.cs" t="Include" />
-          <e p="20191215154034_ModelChangesAdded.cs" t="Include" />
-          <e p="20191215160238_MoreSeedPostsAdded.Designer.cs" t="Include" />
-          <e p="20191215160238_MoreSeedPostsAdded.cs" t="Include" />
-          <e p="20191216201028_SeedDataReturned.Designer.cs" t="Include" />
-          <e p="20191216201028_SeedDataReturned.cs" t="Include" />
+          <e p="20191217084418_Initial.Designer.cs" t="Include" />
+          <e p="20191217084418_Initial.cs" t="Include" />
           <e p="AppDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">

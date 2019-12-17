@@ -4,33 +4,33 @@
     <list default="true" id="2901d93a-a5e8-4fa7-b544-5302962e78a9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.weblog/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.weblog/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.weblog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.weblog/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblog/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblog/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/Migrations/20191210182427_InitialMigration.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/Migrations/20191210182427_InitialMigration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/Migrations/20191210195658_PostModelChanged.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/Migrations/20191210195658_PostModelChanged.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/Migrations/20191212205654_SeedDataAdded.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/Migrations/20191212205654_SeedDataAdded.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/Migrations/20191215154034_ModelChangesAdded.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/Migrations/20191215154034_ModelChangesAdded.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/Migrations/20191215160238_MoreSeedPostsAdded.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/Migrations/20191215160238_MoreSeedPostsAdded.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/Models/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/Models/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblog/Models/PostRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/Models/PostRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblog/Views/Shared/_OneCardPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/Views/Shared/_OneCardPartial.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblog/Views/Shared/_TwoCardPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/Views/Shared/_TwoCardPartial.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/Views/Post/Detail.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/Views/Post/Detail.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/Views/Shared/_ThreeCardPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/Views/Shared/_ThreeCardPartial.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.dll" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Home/Index.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Home/Index.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Shared/_OneCardPartial.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Shared/_OneCardPartial.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Shared/_TwoCardPartial.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Shared/_TwoCardPartial.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.RazorCoreGenerate.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Post/Detail.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Post/Detail.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Shared/_ThreeCardPartial.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Shared/_ThreeCardPartial.cshtml.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.dll" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblog/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblog/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblog/obj/weblog.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/weblog.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblog/obj/weblog.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/weblog.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblog/obj/weblog.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/weblog.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblog/wwwroot/content/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/wwwroot/content/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,29 +48,32 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/weblog/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Models/IPostRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/weblog/Views/Shared/_ThreeCardPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/ViewModels/PostListViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/weblog/Models/CategoryRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Models/Category.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Models/Post.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/weblog/Views/_ViewStart.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Models/AppDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Models/PostRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Views/Post/List.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/weblog/Migrations/20191217084418_Initial.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Views/Post/Detail.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Views/Shared/_NavbarPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/weblog/Migrations/AppDbContextModelSnapshot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Controllers/PostController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Models/ICategoryRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/ViewModels/HomeViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Views/Shared/_OneCardPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Views/Shared/_TwoCardPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/weblog/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/weblog/Models/CategoryRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/weblog/obj/project.packagespec.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/weblog/Views/_ViewStart.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/weblog/Views/Shared/_ThreeCardPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -89,7 +92,6 @@
         <option value="$PROJECT_DIR$/weblog/Models/IPostRepository.cs" />
         <option value="$PROJECT_DIR$/weblog/Startup.cs" />
         <option value="$PROJECT_DIR$/weblog/Views/Shared/_Layout.cshtml" />
-        <option value="$PROJECT_DIR$/weblog/Views/Post/Detail.cshtml" />
         <option value="$PROJECT_DIR$/weblog/Controllers/PostController.cs" />
         <option value="$PROJECT_DIR$/weblog/Models/Category.cs" />
         <option value="$PROJECT_DIR$/weblog/Models/Post.cs" />
@@ -97,14 +99,15 @@
         <option value="$PROJECT_DIR$/weblog/Views/_ViewImports.cshtml" />
         <option value="$PROJECT_DIR$/weblog/Views/Post/List.cshtml" />
         <option value="$PROJECT_DIR$/weblog/ViewModels/HomeViewModel.cs" />
-        <option value="$PROJECT_DIR$/weblog/Views/Home/Index.cshtml" />
         <option value="$PROJECT_DIR$/weblog/Controllers/HomeController.cs" />
         <option value="$PROJECT_DIR$/weblog/Models/PostRepository.cs" />
         <option value="$PROJECT_DIR$/weblog/Views/Shared/_OneCardPartial.cshtml" />
         <option value="$PROJECT_DIR$/weblog/wwwroot/content/style.css" />
         <option value="$PROJECT_DIR$/weblog/Views/Shared/_TwoCardPartial.cshtml" />
-        <option value="$PROJECT_DIR$/weblog/Views/Shared/_ThreeCardPartial.cshtml" />
+        <option value="$PROJECT_DIR$/weblog/Views/Post/Detail.cshtml" />
         <option value="$PROJECT_DIR$/weblog/Models/AppDbContext.cs" />
+        <option value="$PROJECT_DIR$/weblog/Views/Home/Index.cshtml" />
+        <option value="$PROJECT_DIR$/weblog/Views/Shared/_ThreeCardPartial.cshtml" />
       </list>
     </option>
   </component>
@@ -204,6 +207,7 @@
       <workItem from="1576424349999" duration="4357000" />
       <workItem from="1576430604096" duration="3454000" />
       <workItem from="1576515389838" duration="7391000" />
+      <workItem from="1576567087415" duration="4329000" />
     </task>
     <servers />
   </component>
@@ -230,22 +234,22 @@
       <screen x="67" y="27" width="1533" height="873" />
     </state>
     <state x="616" y="220" width="424" height="484" key="FileChooserDialogImpl/67.27.1533.873@67.27.1533.873" timestamp="1576523000063" />
-    <state width="1487" height="218" key="GridCell.Tab.0.bottom" timestamp="1576526440344">
+    <state width="1487" height="218" key="GridCell.Tab.0.bottom" timestamp="1576573204484">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1487" height="218" key="GridCell.Tab.0.bottom/67.27.1533.873@67.27.1533.873" timestamp="1576526440344" />
-    <state width="1487" height="218" key="GridCell.Tab.0.center" timestamp="1576526440342">
+    <state width="1487" height="218" key="GridCell.Tab.0.bottom/67.27.1533.873@67.27.1533.873" timestamp="1576573204484" />
+    <state width="1487" height="218" key="GridCell.Tab.0.center" timestamp="1576573204483">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1487" height="218" key="GridCell.Tab.0.center/67.27.1533.873@67.27.1533.873" timestamp="1576526440342" />
-    <state width="1487" height="218" key="GridCell.Tab.0.left" timestamp="1576526440341">
+    <state width="1487" height="218" key="GridCell.Tab.0.center/67.27.1533.873@67.27.1533.873" timestamp="1576573204483" />
+    <state width="1487" height="218" key="GridCell.Tab.0.left" timestamp="1576573204483">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1487" height="218" key="GridCell.Tab.0.left/67.27.1533.873@67.27.1533.873" timestamp="1576526440341" />
-    <state width="1487" height="218" key="GridCell.Tab.0.right" timestamp="1576526440343">
+    <state width="1487" height="218" key="GridCell.Tab.0.left/67.27.1533.873@67.27.1533.873" timestamp="1576573204483" />
+    <state width="1487" height="218" key="GridCell.Tab.0.right" timestamp="1576573204484">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1487" height="218" key="GridCell.Tab.0.right/67.27.1533.873@67.27.1533.873" timestamp="1576526440343" />
+    <state width="1487" height="218" key="GridCell.Tab.0.right/67.27.1533.873@67.27.1533.873" timestamp="1576573204484" />
     <state x="496" y="212" width="672" height="678" key="search.everywhere.popup" timestamp="1576522171679">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
