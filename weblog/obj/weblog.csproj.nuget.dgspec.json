@@ -17,7 +17,7 @@
           "/usr/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/home/qwerty/.config/NuGet/NuGet.Config"
+          "/home/qwerty/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -43,6 +43,14 @@
               "target": "Package",
               "version": "[6.4.0, )"
             },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Abstractions": {
               "target": "Package",
               "version": "[3.1.0, )"
@@ -63,21 +71,17 @@
               "target": "Package",
               "version": "[3.1.0, )"
             },
-            "Newtonsoft.Json": {
+            "Microsoft.EntityFrameworkCore.Tools.DotNet": {
               "target": "Package",
-              "version": "[12.0.3, )"
+              "version": "[2.0.3, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[3.1.0-rc1.final, )"
-            },
-            "PusherServer": {
-              "target": "Package",
-              "version": "[4.2.0, )"
-            },
-            "WebSocket4Net": {
-              "target": "Package",
-              "version": "[0.15.2, )"
             }
           },
           "imports": [

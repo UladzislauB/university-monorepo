@@ -8,6 +8,25 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="weblog" t="IncludeRecursive">
+        <e p="Areas" t="Include">
+          <e p="Identity" t="Include">
+            <e p="IdentityHostingStartup.cs" t="Include" />
+            <e p="Pages" t="Include">
+              <e p="Account" t="Include">
+                <e p="Login.cshtml" t="Include" />
+                <e p="Login.cshtml.cs" t="Include" />
+                <e p="Logout.cshtml" t="Include" />
+                <e p="Logout.cshtml.cs" t="Include" />
+                <e p="Register.cshtml" t="Include" />
+                <e p="Register.cshtml.cs" t="Include" />
+                <e p="_ViewImports.cshtml" t="Include" />
+              </e>
+              <e p="_ValidationScriptsPartial.cshtml" t="Include" />
+              <e p="_ViewImports.cshtml" t="Include" />
+              <e p="_ViewStart.cshtml" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Controllers" t="Include">
           <e p="HomeController.cs" t="Include" />
           <e p="PostController.cs" t="Include" />
@@ -20,6 +39,8 @@
           <e p="20191217084418_Initial.cs" t="Include" />
           <e p="20191219092654_CommentModelAdded.Designer.cs" t="Include" />
           <e p="20191219092654_CommentModelAdded.cs" t="Include" />
+          <e p="20191219205810_CommentDateAdded.Designer.cs" t="Include" />
+          <e p="20191219205810_CommentDateAdded.cs" t="Include" />
           <e p="AppDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
@@ -38,6 +59,7 @@
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
+        <e p="ScaffoldingReadme.txt" t="Include" />
         <e p="Startup.cs" t="Include" />
         <e p="ViewModels" t="Include">
           <e p="HomeViewModel.cs" t="Include" />
@@ -53,7 +75,9 @@
             <e p="List.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
+            <e p="_CookieConsentPartial.cshtml" t="Include" />
             <e p="_Layout.cshtml" t="Include" />
+            <e p="_LoginPartial.cshtml" t="Include" />
             <e p="_NavbarPartial.cshtml" t="Include" />
             <e p="_OneCardPartial.cshtml" t="Include" />
             <e p="_ThreeCardPartial.cshtml" t="Include" />

@@ -16,10 +16,10 @@
     <partial name="_OneCardPartial" model="@Model.FirstCategoryPosts[4]"/>
   </div>
   <hr style="border: 1px solid lightgray;" />
-    <div class="col-7">
-      @foreach (var post in Model.SecondCategoryPosts)
-      {
-        <partial name="_ThreeCardPartial" model="@post"/>
-      }
-    </div>
+  <div class="col-7">
+    @foreach (var post in Model.SecondCategoryPosts)
+    {
+      <partial name="_ThreeCardPartial" model="@post"/>
+    }
+  </div>
 </div>

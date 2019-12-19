@@ -11,5 +11,7 @@ namespace weblog.Models
         public string Body { get; set; }
         
         public int PostId { get; set; }
+        
+        public string Date { get; set; }
     }
 }

@@ -3,17 +3,27 @@
         <div class="container" style="justify-content: center;">
             <ul class="navbar-nav">
                 <li class="nav-item mx-3">
-                    <a class="nav-link" href="#">HOME</a>
+                    <a class="nav-link" asp-controller="Home" asp-action="Index">HOME</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link" href="#">ABOUT</a>
+                    <a class="nav-link" asp-controller="Post" asp-action="List" asp-route-category="Tech">TECH</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link" href="#">SERVICES</a>
+                    <a class="nav-link" asp-controller="Post" asp-action="List" asp-route-category="Politics">POLITICS</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link" href="#">CONTACT</a>
+                    <a class="nav-link" asp-controller="Post" asp-action="List" asp-route-category="Life">LIFE</a>
                 </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" asp-controller="Post" asp-action="List" asp-route-category="Science">SCIENCE</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" asp-controller="Post" asp-action="List" asp-route-category="Sport">SPORT</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" asp-controller="Post" asp-action="List" asp-route-category="Zen">ZEN</a>
+                </li>
+                
             </ul>
         </div>
     </nav>

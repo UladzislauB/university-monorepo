@@ -3,7 +3,6 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using weblog.Models;
 using weblog.ViewModels;
-using PusherServer;
 using System.Threading.Tasks;
 using System.Web;
 
@@ -59,7 +58,8 @@ namespace weblog.Controllers
             post.Category = _categoryRepository.AllCategories.FirstOrDefault(c =>
                                        c.CategoryId == post.CategoryId);
             ViewData["category"] = post.Category?.Title;
-            var comments = _commentRepository.AllComments.Where(com => com.PostId == id);
+            var comments = _commentRepository.AllComments.
+                Where(com => com.PostId == id).OrderByDescending(com => com.CommentId);
             return View(new PostDetailViewModel
             {
                 Post = post,
