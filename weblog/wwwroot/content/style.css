@@ -40,6 +40,23 @@
     font-family: Georgia, Cambria, Times, "Times New Roman", serif;
 }
 
+.detail .container .col-8 b {
+    padding-bottom: 1rem;
+    font-size: 1.35rem;
+    font-family: Georgia, Cambria, Times, "Times New Roman", serif;
+}
+
+.detail .container .col-8 li {
+    padding-bottom: 1rem;
+    font-size: 1.35rem;
+    font-family: Georgia, Cambria, Times, "Times New Roman", serif;
+}
+
+.detail .container .col-8 a {
+    color: rgba(132, 133, 133, 1);
+    text-decoration: underline;
+}
+
 .detail .container blockquote {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 1.7rem;

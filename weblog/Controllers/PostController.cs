@@ -59,7 +59,12 @@ namespace weblog.Controllers
             post.Category = _categoryRepository.AllCategories.FirstOrDefault(c =>
                                        c.CategoryId == post.CategoryId);
             ViewData["category"] = post.Category?.Title;
-            return View(post);
+            var comments = _commentRepository.AllComments.Where(com => com.PostId == id);
+            return View(new PostDetailViewModel
+            {
+                Post = post,
+                Comments = comments
+            });
         }
     }
 }

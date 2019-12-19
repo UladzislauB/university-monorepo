@@ -120,3 +120,4 @@
 /home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/PusherServer.Core.dll
 /home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/SuperSocket.ClientEngine.dll
 /home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/WebSocket4Net.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/libman.json

@@ -5,29 +5,24 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.weblog/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.weblog/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.weblog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.weblog/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/Controllers/PostController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/Controllers/PostController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblog/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblog/Models/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/Models/AppDbContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/Views/Post/Detail.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/Views/Post/Detail.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/Newtonsoft.Json.dll" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/Newtonsoft.Json.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.dll" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Post/Detail.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Post/Detail.cshtml.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.dll" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblog/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/obj/weblog.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/weblog.csproj.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/obj/weblog.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/weblog.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weblog/weblog.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/weblog.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/obj/weblog.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/weblog.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/wwwroot/content/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/wwwroot/content/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -48,6 +44,7 @@
     <setting file="file://$PROJECT_DIR$/weblog/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Models/IPostRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/weblog/Hubs/CommentHub.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/ViewModels/PostListViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Models/Category.cs" root0="FORCE_HIGHLIGHTING" />
@@ -74,6 +71,7 @@
     <setting file="file://$PROJECT_DIR$/weblog/obj/project.packagespec.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Views/_ViewStart.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/weblog/Views/Shared/_ThreeCardPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/weblog/ViewModels/PostDetailViewModel.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -87,7 +85,6 @@
         <option value="$PROJECT_DIR$/weblog/Views/Shared/_ViewImports.cshtml" />
         <option value="$PROJECT_DIR$/weblog/wwwroot/style.css" />
         <option value="$PROJECT_DIR$/weblog/Views/Shared/_ViewStart.cshtml" />
-        <option value="$PROJECT_DIR$/weblog/ViewModels/PostListViewModel.cs" />
         <option value="$PROJECT_DIR$/weblog/Controller/PostController.cs" />
         <option value="$PROJECT_DIR$/weblog/Models/IPostRepository.cs" />
         <option value="$PROJECT_DIR$/weblog/Views/Shared/_Layout.cshtml" />
@@ -100,7 +97,6 @@
         <option value="$PROJECT_DIR$/weblog/Controllers/HomeController.cs" />
         <option value="$PROJECT_DIR$/weblog/Models/PostRepository.cs" />
         <option value="$PROJECT_DIR$/weblog/Views/Shared/_OneCardPartial.cshtml" />
-        <option value="$PROJECT_DIR$/weblog/wwwroot/content/style.css" />
         <option value="$PROJECT_DIR$/weblog/Views/Home/Index.cshtml" />
         <option value="$PROJECT_DIR$/weblog/Views/Shared/_ThreeCardPartial.cshtml" />
         <option value="$PROJECT_DIR$/weblog/Views/Shared/_TwoCardPartial.cshtml" />
@@ -108,9 +104,15 @@
         <option value="$PROJECT_DIR$/weblog/Models/AppDbContext.cs" />
         <option value="$PROJECT_DIR$/weblog/Models/CommentRepository.cs" />
         <option value="$PROJECT_DIR$/weblog/Models/ICommentRepository.cs" />
-        <option value="$PROJECT_DIR$/weblog/Views/Post/Detail.cshtml" />
-        <option value="$PROJECT_DIR$/weblog/Controllers/PostController.cs" />
+        <option value="$PROJECT_DIR$/weblog/wwwroot/js/comment.js" />
         <option value="$PROJECT_DIR$/weblog/Startup.cs" />
+        <option value="$PROJECT_DIR$/weblog/Hubs/CommentHub.cs" />
+        <option value="$PROJECT_DIR$/weblog/ViewModels/PostListViewModel.cs" />
+        <option value="$PROJECT_DIR$/weblog/ViewModels/PostDetailViewModel.cs" />
+        <option value="$PROJECT_DIR$/weblog/Controllers/PostController.cs" />
+        <option value="$PROJECT_DIR$/weblog/wwwroot/js/comments.js" />
+        <option value="$PROJECT_DIR$/weblog/Views/Post/Detail.cshtml" />
+        <option value="$PROJECT_DIR$/weblog/wwwroot/content/style.css" />
       </list>
     </option>
   </component>
@@ -211,7 +213,8 @@
       <workItem from="1576430604096" duration="3454000" />
       <workItem from="1576515389838" duration="7391000" />
       <workItem from="1576567087415" duration="10659000" />
-      <workItem from="1576746286614" duration="1117000" />
+      <workItem from="1576746286614" duration="2523000" />
+      <workItem from="1576776342193" duration="5237000" />
     </task>
     <servers />
   </component>
@@ -238,22 +241,22 @@
       <screen x="67" y="27" width="1533" height="873" />
     </state>
     <state x="616" y="220" width="424" height="484" key="FileChooserDialogImpl/67.27.1533.873@67.27.1533.873" timestamp="1576594047141" />
-    <state width="1487" height="218" key="GridCell.Tab.0.bottom" timestamp="1576610995974">
+    <state width="1487" height="218" key="GridCell.Tab.0.bottom" timestamp="1576781355963">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1487" height="218" key="GridCell.Tab.0.bottom/67.27.1533.873@67.27.1533.873" timestamp="1576610995974" />
-    <state width="1487" height="218" key="GridCell.Tab.0.center" timestamp="1576610995973">
+    <state width="1487" height="218" key="GridCell.Tab.0.bottom/67.27.1533.873@67.27.1533.873" timestamp="1576781355963" />
+    <state width="1487" height="218" key="GridCell.Tab.0.center" timestamp="1576781355961">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1487" height="218" key="GridCell.Tab.0.center/67.27.1533.873@67.27.1533.873" timestamp="1576610995973" />
-    <state width="1487" height="218" key="GridCell.Tab.0.left" timestamp="1576610995971">
+    <state width="1487" height="218" key="GridCell.Tab.0.center/67.27.1533.873@67.27.1533.873" timestamp="1576781355961" />
+    <state width="1487" height="218" key="GridCell.Tab.0.left" timestamp="1576781355961">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1487" height="218" key="GridCell.Tab.0.left/67.27.1533.873@67.27.1533.873" timestamp="1576610995971" />
-    <state width="1487" height="218" key="GridCell.Tab.0.right" timestamp="1576610995974">
+    <state width="1487" height="218" key="GridCell.Tab.0.left/67.27.1533.873@67.27.1533.873" timestamp="1576781355961" />
+    <state width="1487" height="218" key="GridCell.Tab.0.right" timestamp="1576781355963">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1487" height="218" key="GridCell.Tab.0.right/67.27.1533.873@67.27.1533.873" timestamp="1576610995974" />
+    <state width="1487" height="218" key="GridCell.Tab.0.right/67.27.1533.873@67.27.1533.873" timestamp="1576781355963" />
     <state x="428" y="197" width="800" height="530" key="Rider.ProjectTemplateDialog.Size" timestamp="1576610988576">
       <screen x="67" y="27" width="1533" height="873" />
     </state>

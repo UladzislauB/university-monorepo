@@ -1,62 +1,67 @@
-@model Post
-
- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
-<script src="//js.pusher.com/4.0/pusher.min.js"></script>
+@model PostDetailViewModel
 
 
 <div class="detail bg-white">
   <div class="jumbotron bg-white pt-1">
     <div class="row">
       <div class="d-flex flex-column col-6 justify-content-center">
-        @if (Model.IsForSubscribersOnly)
+        @if (Model.Post.IsForSubscribersOnly)
         {
           <h6 class="pl-3 text-dark">PREMIUM MEMBER STORIES</h6>
         }
         <h1 class="pl-3">
-          @Model.Title
+          @Model.Post.Title
         </h1>
         <h3 class="pl-3 text-secondary">
-          @Model.ShortDescription
+          @Model.Post.ShortDescription
         </h3>
       </div>
       <div class="col-6">
-        <img src="@Model.ImageUrl" alt="" />
+        <img src="@Model.Post.ImageUrl" alt="" />
       </div>
     </div>
   </div>
   <div class="container">
     <div class="col-8 offset-2">
-      @(new HtmlString(Model.Text))
+      @(new HtmlString(Model.Post.Text))
     </div>
   </div>
 </div>
+
+<!-- Comments section -->
+
 <div class="container">
   <div class="row">
-    <div class="col-md-8">
-      <div class="page-header">
-        <h1><small class="pull-right">{{comments.length}} comments</small> Comments </h1>
-      </div>
-      <div class="comments-list">
-        <div class="media" v-for="com in comments">
-          <div class="media-body">
-            <h4 class="media-heading user_name">{{com.Name}}</h4>
-            {{com.Body}}
-          </div>
-        </div>
-      </div>
+    <div class="col-2" data-post-id="@Model.Post.PostId">User</div>
+    <div class="col-4"><input type="text" id="userInput"/></div>
+  </div>
+  <div class="row">
+    <div class="col-2">Comments</div>
+    <div class="col-4"><input type="text" id="commentInput"/></div>
+  </div>
+  <div class="row">&nbsp;</div>
+  <div class="row">
+    <div class="col-6">
+      <input type="button" id="sendButton" value="Send Message"/>
     </div>
   </div>
 </div>
-<div class="container">
-  <br />
-  <p>Your Comment</p>
-  <form onsubmit="return false;">
-    <input type="text" id="Name" placeholder="Your Name" v-model="comment.Name" class="form-control" />
-    <textarea rows="3" placeholder="Your Comment" id="Body" v-model="comment.Body" class="form-control"></textarea>
-    <button class="btn btn-success" v-on:click="submit_comment()">save</button>
-  </form>
+<div class="row">
+  <div class="col-12">
+    <hr />
+  </div>
 </div>
+<div class="row">
+  <div class="col-6">
+    <ul id="messagesList">
+      @foreach (var comment in Model.Comments)
+      {
+        <li>@comment.Name says @comment.Body</li>
+      }
+    </ul>
+  </div>
+</div>
+
 
 <div class="fixed hidden"></div>
 <script>
@@ -78,3 +83,5 @@
         }
       });
 </script>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/comments.js"></script>

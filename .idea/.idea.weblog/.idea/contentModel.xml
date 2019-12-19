@@ -12,6 +12,9 @@
           <e p="HomeController.cs" t="Include" />
           <e p="PostController.cs" t="Include" />
         </e>
+        <e p="Hubs" t="Include">
+          <e p="CommentHub.cs" t="Include" />
+        </e>
         <e p="Migrations" t="Include">
           <e p="20191217084418_Initial.Designer.cs" t="Include" />
           <e p="20191217084418_Initial.cs" t="Include" />
@@ -38,6 +41,7 @@
         <e p="Startup.cs" t="Include" />
         <e p="ViewModels" t="Include">
           <e p="HomeViewModel.cs" t="Include" />
+          <e p="PostDetailViewModel.cs" t="Include" />
           <e p="PostListViewModel.cs" t="Include" />
         </e>
         <e p="Views" t="Include">
@@ -61,6 +65,7 @@
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="libman.json" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.0" t="Include">
@@ -87,6 +92,17 @@
           </e>
           <e p="content" t="Include">
             <e p="style.css" t="Include" />
+          </e>
+          <e p="js" t="Include">
+            <e p="comments.js" t="Include" />
+            <e p="signalr" t="Include">
+              <e p="dist" t="Include">
+                <e p="browser" t="Include">
+                  <e p="signalr.js" t="Include" />
+                  <e p="signalr.min.js" t="Include" />
+                </e>
+              </e>
+            </e>
           </e>
         </e>
       </e>

@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using weblog.Models;
+using weblog.Hubs;
 
 namespace weblog
 {
@@ -38,8 +39,8 @@ namespace weblog
             services.AddScoped<ICommentRepository, CommentRepository>();
             services.AddScoped<IPostRepository, PostRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
-            
-            
+
+            services.AddSignalR();
             services.AddHttpContextAccessor();
             
             services.AddControllersWithViews();
@@ -63,6 +64,7 @@ namespace weblog
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapHub<CommentHub>("/comments");
             });
         }
     }
