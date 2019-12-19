@@ -1,5 +1,9 @@
 @model Post
 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
+<script src="//js.pusher.com/4.0/pusher.min.js"></script>
+
 
 <div class="detail bg-white">
   <div class="jumbotron bg-white pt-1">
@@ -27,6 +31,33 @@
     </div>
   </div>
 </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="page-header">
+        <h1><small class="pull-right">{{comments.length}} comments</small> Comments </h1>
+      </div>
+      <div class="comments-list">
+        <div class="media" v-for="com in comments">
+          <div class="media-body">
+            <h4 class="media-heading user_name">{{com.Name}}</h4>
+            {{com.Body}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <br />
+  <p>Your Comment</p>
+  <form onsubmit="return false;">
+    <input type="text" id="Name" placeholder="Your Name" v-model="comment.Name" class="form-control" />
+    <textarea rows="3" placeholder="Your Comment" id="Body" v-model="comment.Body" class="form-control"></textarea>
+    <button class="btn btn-success" v-on:click="submit_comment()">save</button>
+  </form>
+</div>
+
 <div class="fixed hidden"></div>
 <script>
       var $win = $(window),

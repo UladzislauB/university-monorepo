@@ -53,9 +53,21 @@
           "target": "Package",
           "version": "[3.1.0, )"
         },
+        "Newtonsoft.Json": {
+          "target": "Package",
+          "version": "[12.0.3, )"
+        },
         "Pomelo.EntityFrameworkCore.MySql": {
           "target": "Package",
           "version": "[3.1.0-rc1.final, )"
+        },
+        "PusherServer": {
+          "target": "Package",
+          "version": "[4.2.0, )"
+        },
+        "WebSocket4Net": {
+          "target": "Package",
+          "version": "[0.15.2, )"
         }
       },
       "imports": [

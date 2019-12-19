@@ -117,3 +117,6 @@
 /home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Shared/_OneCardPartial.cshtml.g.cs
 /home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Shared/_TwoCardPartial.cshtml.g.cs
 /home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Shared/_ThreeCardPartial.cshtml.g.cs
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/PusherServer.Core.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/SuperSocket.ClientEngine.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/WebSocket4Net.dll

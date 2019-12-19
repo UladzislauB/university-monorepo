@@ -3,6 +3,10 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using weblog.Models;
 using weblog.ViewModels;
+using PusherServer;
+using System.Threading.Tasks;
+using System.Web;
+
 
 namespace weblog.Controllers
 {
@@ -10,11 +14,16 @@ namespace weblog.Controllers
     {
         private readonly IPostRepository _postRepository;
         private readonly ICategoryRepository _categoryRepository;
-
-        public PostController(ICategoryRepository categoryRepository, IPostRepository postRepository)
+        private readonly ICommentRepository _commentRepository;
+        private readonly AppDbContext _appDbContext;
+        
+        public PostController(ICategoryRepository categoryRepository, IPostRepository postRepository,
+            ICommentRepository commentRepository, AppDbContext appDbContext)
         {
             _categoryRepository = categoryRepository;
             _postRepository = postRepository;
+            _commentRepository = commentRepository;
+            _appDbContext = appDbContext;
         }
         
         

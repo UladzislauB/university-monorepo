@@ -15,13 +15,18 @@
         <e p="Migrations" t="Include">
           <e p="20191217084418_Initial.Designer.cs" t="Include" />
           <e p="20191217084418_Initial.cs" t="Include" />
+          <e p="20191219092654_CommentModelAdded.Designer.cs" t="Include" />
+          <e p="20191219092654_CommentModelAdded.cs" t="Include" />
           <e p="AppDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
           <e p="AppDbContext.cs" t="Include" />
           <e p="Category.cs" t="Include" />
           <e p="CategoryRepository.cs" t="Include" />
+          <e p="Comment.cs" t="Include" />
+          <e p="CommentRepository.cs" t="Include" />
           <e p="ICategoryRepository.cs" t="Include" />
+          <e p="ICommentRepository.cs" t="Include" />
           <e p="IPostRepository.cs" t="Include" />
           <e p="Post.cs" t="Include" />
           <e p="PostRepository.cs" t="Include" />
