@@ -214,3 +214,4 @@
 /home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/MimeKit.dll
 /home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/BouncyCastle.Crypto.dll
 /home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Contact/Index.cshtml.g.cs
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Google.dll

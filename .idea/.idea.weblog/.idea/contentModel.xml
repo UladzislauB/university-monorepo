@@ -45,6 +45,8 @@
           <e p="20191219092654_CommentModelAdded.cs" t="Include" />
           <e p="20191219205810_CommentDateAdded.Designer.cs" t="Include" />
           <e p="20191219205810_CommentDateAdded.cs" t="Include" />
+          <e p="20191220110721_IdentityAdded.Designer.cs" t="Include" />
+          <e p="20191220110721_IdentityAdded.cs" t="Include" />
           <e p="AppDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">

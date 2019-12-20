@@ -37,6 +37,10 @@
           "target": "Package",
           "version": "[2.4.1, )"
         },
+        "Microsoft.AspNetCore.Authentication.Google": {
+          "target": "Package",
+          "version": "[3.0.0, )"
+        },
         "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
           "target": "Package",
           "version": "[3.0.0, )"
