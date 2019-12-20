@@ -14,27 +14,41 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
-using weblog.Models;
+using weblog;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 2 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
-using weblog.ViewModels;
+using weblog.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 3 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
+using weblog.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
+using weblog.Pages;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
 using Microsoft.AspNetCore.Html;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"558f256af58b9c0ba933b27b2ceca447b408d394", @"/Views/Post/List.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"01dd52a87ef2159f5f0d8abca1e8df52d9ae04ea", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4c089dfe6a9abe1dce7396c8efda09a12aac1c26", @"/Views/_ViewImports.cshtml")]
     public class Views_Post_List : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<PostListViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("name", "_NavbarPartial", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -64,7 +78,7 @@ using Microsoft.AspNetCore.Html;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "558f256af58b9c0ba933b27b2ceca447b408d3943780", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "558f256af58b9c0ba933b27b2ceca447b408d3944110", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -88,7 +102,7 @@ using Microsoft.AspNetCore.Html;
 #line hidden
 #nullable disable
             WriteLiteral("            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "558f256af58b9c0ba933b27b2ceca447b408d3945184", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "558f256af58b9c0ba933b27b2ceca447b408d3945514", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

@@ -28,7 +28,12 @@
   </div>
 </div>
 
-<!-- Comments section -->
+  <!-- Comments section -->
+<div class="row">
+  <div class="col-12">
+    <hr />
+  </div>
+</div>
 
 <div class="container">
   <div class="row">
@@ -41,26 +46,29 @@
   </div>
   <div class="row">&nbsp;</div>
   <div class="row">
-    <div class="col-6">
+    <div class="col-6 mb-3">
       <input type="button" id="sendButton" value="Send Message"/>
     </div>
   </div>
 </div>
-<div class="row">
-  <div class="col-12">
-    <hr />
-  </div>
-</div>
+
+
 <div class="row">
   <div class="col-6">
-    <ul id="messagesList">
+    <div id="messagesList">
       @foreach (var comment in Model.Comments)
       {
-        <li>@comment.Name says @comment.Body</li>
+        <div class="message">
+          <hr />
+          <h3 class="h4 text-dark">@comment.Name</h3>
+          <h4 class="h5 text-muted">@comment.Body</h4>
+          <h6 class="text-dark">@comment.Date</h6>
+        </div>
       }
-    </ul>
+    </div>
   </div>
 </div>
+
 
 
 <div class="fixed hidden"></div>

@@ -14,27 +14,41 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
-using weblog.Models;
+using weblog;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 2 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
-using weblog.ViewModels;
+using weblog.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 3 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
+using weblog.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
+using weblog.Pages;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
 using Microsoft.AspNetCore.Html;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c0cb7f826af1de6ea245782a012ca2e0f93097b2", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"01dd52a87ef2159f5f0d8abca1e8df52d9ae04ea", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4c089dfe6a9abe1dce7396c8efda09a12aac1c26", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

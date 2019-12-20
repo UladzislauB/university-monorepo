@@ -206,3 +206,7 @@
 /home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/Razor/Areas/Identity/Pages/_ViewStart.cshtml.g.cs
 /home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Shared/_CookieConsentPartial.cshtml.g.cs
 /home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Shared/_LoginPartial.cshtml.g.cs
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/Razor/Pages/Error.cshtml.g.cs
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/Razor/Pages/Shared/_Layout.cshtml.g.cs
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/Razor/Pages/Shared/_ValidationScriptsPartial.cshtml.g.cs
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/Razor/Pages/_ViewImports.cshtml.g.cs

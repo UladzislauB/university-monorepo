@@ -14,20 +14,34 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
-using weblog.Models;
+using weblog;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 2 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
-using weblog.ViewModels;
+using weblog.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 3 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
+using weblog.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
+using weblog.Pages;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
 using Microsoft.AspNetCore.Html;
 
 #line default
@@ -41,7 +55,7 @@ using Microsoft.AspNetCore.Identity;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"712e91e40a778ad43411b06b311eb9c16b3997c2", @"/Views/Shared/_LoginPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"01dd52a87ef2159f5f0d8abca1e8df52d9ae04ea", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4c089dfe6a9abe1dce7396c8efda09a12aac1c26", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__LoginPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("id", new global::Microsoft.AspNetCore.Html.HtmlString("manage"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -93,7 +107,7 @@ using Microsoft.AspNetCore.Identity;
 #line hidden
 #nullable disable
             WriteLiteral("    <li class=\"nav-item\">\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "712e91e40a778ad43411b06b311eb9c16b3997c27984", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "712e91e40a778ad43411b06b311eb9c16b3997c28314", async() => {
                 WriteLiteral("Hello ");
 #nullable restore
 #line 10 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/Shared/_LoginPartial.cshtml"
@@ -122,7 +136,7 @@ using Microsoft.AspNetCore.Identity;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n    </li>\r\n    <li class=\"nav-item\">\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "712e91e40a778ad43411b06b311eb9c16b3997c29966", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "712e91e40a778ad43411b06b311eb9c16b3997c210296", async() => {
                 WriteLiteral("\r\n            <button id=\"logout\" type=\"submit\" class=\"nav-link btn btn-link text-dark\">Logout</button>\r\n        ");
             }
             );
@@ -169,7 +183,7 @@ else
 #line hidden
 #nullable disable
             WriteLiteral("    <li class=\"nav-item\">\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "712e91e40a778ad43411b06b311eb9c16b3997c213214", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "712e91e40a778ad43411b06b311eb9c16b3997c213545", async() => {
                 WriteLiteral("Register");
             }
             );
@@ -189,7 +203,7 @@ else
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n    </li>\r\n    <li class=\"nav-item\">\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "712e91e40a778ad43411b06b311eb9c16b3997c214768", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "712e91e40a778ad43411b06b311eb9c16b3997c215099", async() => {
                 WriteLiteral("Login");
             }
             );

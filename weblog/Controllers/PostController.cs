@@ -38,14 +38,16 @@ namespace weblog.Controllers
             {
                 posts = _postRepository.AllPosts.OrderByDescending(p => p.DatePosted);
                 currentCategory = "All post";
+                ViewData["category"] = "";
             }
             else
             {
                 posts = _postRepository.AllPosts.Where(p => p.Category.Title == category)
                     .OrderByDescending(p => p.DatePosted);
                 currentCategory = _categoryRepository.AllCategories.FirstOrDefault(c => c.Title == category)?.Title;
+                ViewData["category"] = currentCategory;
             }
-            ViewData["category"] = "";
+            
             return View(new PostListViewModel
             {
                 Posts = posts,

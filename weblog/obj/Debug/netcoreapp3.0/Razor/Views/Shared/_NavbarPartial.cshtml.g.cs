@@ -14,27 +14,41 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
-using weblog.Models;
+using weblog;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 2 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
-using weblog.ViewModels;
+using weblog.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 3 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
+using weblog.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
+using weblog.Pages;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
 using Microsoft.AspNetCore.Html;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e62044cc3d577f80ca9f02db48edbc70a948d609", @"/Views/Shared/_NavbarPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"01dd52a87ef2159f5f0d8abca1e8df52d9ae04ea", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4c089dfe6a9abe1dce7396c8efda09a12aac1c26", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__NavbarPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("nav-link"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -73,7 +87,7 @@ using Microsoft.AspNetCore.Html;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<div class=\"list\">\n    <nav class=\"navbar navbar-expand-sm navbar-light pt-0\">\n        <div class=\"container\" style=\"justify-content: center;\">\n            <ul class=\"navbar-nav\">\n                <li class=\"nav-item mx-3\">\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e62044cc3d577f80ca9f02db48edbc70a948d6096873", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e62044cc3d577f80ca9f02db48edbc70a948d6097203", async() => {
                 WriteLiteral("HOME");
             }
             );
@@ -92,7 +106,7 @@ using Microsoft.AspNetCore.Html;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n                </li>\n                <li class=\"nav-item mx-3\">\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e62044cc3d577f80ca9f02db48edbc70a948d6098383", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e62044cc3d577f80ca9f02db48edbc70a948d6098713", async() => {
                 WriteLiteral("TECH");
             }
             );
@@ -117,7 +131,7 @@ using Microsoft.AspNetCore.Html;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n                </li>\n                <li class=\"nav-item mx-3\">\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e62044cc3d577f80ca9f02db48edbc70a948d60910409", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e62044cc3d577f80ca9f02db48edbc70a948d60910739", async() => {
                 WriteLiteral("POLITICS");
             }
             );
@@ -142,7 +156,7 @@ using Microsoft.AspNetCore.Html;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n                </li>\n                <li class=\"nav-item mx-3\">\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e62044cc3d577f80ca9f02db48edbc70a948d60912440", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e62044cc3d577f80ca9f02db48edbc70a948d60912770", async() => {
                 WriteLiteral("LIFE");
             }
             );
@@ -167,7 +181,7 @@ using Microsoft.AspNetCore.Html;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n                </li>\n                <li class=\"nav-item mx-3\">\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e62044cc3d577f80ca9f02db48edbc70a948d60914467", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e62044cc3d577f80ca9f02db48edbc70a948d60914797", async() => {
                 WriteLiteral("SCIENCE");
             }
             );
@@ -192,7 +206,7 @@ using Microsoft.AspNetCore.Html;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n                </li>\n                <li class=\"nav-item mx-3\">\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e62044cc3d577f80ca9f02db48edbc70a948d60916497", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e62044cc3d577f80ca9f02db48edbc70a948d60916827", async() => {
                 WriteLiteral("SPORT");
             }
             );
@@ -217,7 +231,7 @@ using Microsoft.AspNetCore.Html;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n                </li>\n                <li class=\"nav-item mx-3\">\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e62044cc3d577f80ca9f02db48edbc70a948d60918525", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e62044cc3d577f80ca9f02db48edbc70a948d60918855", async() => {
                 WriteLiteral("ZEN");
             }
             );

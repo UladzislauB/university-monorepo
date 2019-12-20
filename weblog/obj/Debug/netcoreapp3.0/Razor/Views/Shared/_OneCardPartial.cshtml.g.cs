@@ -14,27 +14,41 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
-using weblog.Models;
+using weblog;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 2 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
-using weblog.ViewModels;
+using weblog.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 3 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
+using weblog.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
+using weblog.Pages;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/_ViewImports.cshtml"
 using Microsoft.AspNetCore.Html;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"70e31780fab2f35c3c60f69370c69f2352b5918f", @"/Views/Shared/_OneCardPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"01dd52a87ef2159f5f0d8abca1e8df52d9ae04ea", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4c089dfe6a9abe1dce7396c8efda09a12aac1c26", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__OneCardPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Post>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Post", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -76,7 +90,7 @@ WriteAttributeValue("", 77, Model.ImageUrl, 77, 15, false);
             BeginWriteAttribute("alt", "\n    alt=\"", 93, "\"", 103, 0);
             EndWriteAttribute();
             WriteLiteral("\n    class=\"card-img-top pt-3\"\n  />\n  <div class=\"card-body px-0\">\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "70e31780fab2f35c3c60f69370c69f2352b5918f4424", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "70e31780fab2f35c3c60f69370c69f2352b5918f4754", async() => {
                 WriteLiteral("\n      <div class=\"card-title h4 text-dark\">");
 #nullable restore
 #line 11 "/home/qwerty/5semester/ASP.net C#/weblog/weblog/Views/Shared/_OneCardPartial.cshtml"
