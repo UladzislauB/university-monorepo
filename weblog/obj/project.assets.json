@@ -9435,7 +9435,7 @@
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/qwerty/.nuget/NuGet/NuGet.Config"
+        "/home/qwerty/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
