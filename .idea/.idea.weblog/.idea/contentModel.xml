@@ -75,6 +75,9 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="ScaffoldingReadme.txt" t="Include" />
+        <e p="Services" t="Include">
+          <e p="EmailService.cs" t="Include" />
+        </e>
         <e p="Startup.cs" t="Include" />
         <e p="TagHelpers" t="Include">
           <e p="EmailTagHelper.cs" t="Include" />

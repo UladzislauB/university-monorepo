@@ -1,6 +1,8 @@
 using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using weblog.Models;
+using weblog.Services;
 using weblog.ViewModels;
 
 namespace weblog.Controllers
@@ -14,6 +16,13 @@ namespace weblog.Controllers
             _postRepository = postRepository;
         }
         
+        
+        public async Task<IActionResult> SendMessage()
+        {
+            EmailService emailService = new EmailService();
+            await emailService.SendEmailAsync("vasilyuk.vlad.kbr@yandex.by", "Тема письма", "Текст письма: текст!");
+            return RedirectToAction("Index");
+        }
         
         // GET
         public IActionResult Index()
