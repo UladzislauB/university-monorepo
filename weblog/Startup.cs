@@ -72,7 +72,10 @@ namespace weblog
             else
             {
                 app.UseExceptionHandler("/Error");
+                app.UseHsts();
             }
+            app.UseStatusCodePages();
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
