@@ -28,6 +28,7 @@
           </e>
         </e>
         <e p="Controllers" t="Include">
+          <e p="ContactController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
           <e p="PostController.cs" t="Include" />
         </e>
@@ -73,12 +74,18 @@
         </e>
         <e p="ScaffoldingReadme.txt" t="Include" />
         <e p="Startup.cs" t="Include" />
+        <e p="TagHelpers" t="Include">
+          <e p="EmailTagHelper.cs" t="Include" />
+        </e>
         <e p="ViewModels" t="Include">
           <e p="HomeViewModel.cs" t="Include" />
           <e p="PostDetailViewModel.cs" t="Include" />
           <e p="PostListViewModel.cs" t="Include" />
         </e>
         <e p="Views" t="Include">
+          <e p="Contact" t="Include">
+            <e p="Index.cshtml" t="Include" />
+          </e>
           <e p="Home" t="Include">
             <e p="Index.cshtml" t="Include" />
           </e>

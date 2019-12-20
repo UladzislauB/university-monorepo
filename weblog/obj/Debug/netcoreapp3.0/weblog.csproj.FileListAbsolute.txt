@@ -210,3 +210,7 @@
 /home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/Razor/Pages/Shared/_Layout.cshtml.g.cs
 /home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/Razor/Pages/Shared/_ValidationScriptsPartial.cshtml.g.cs
 /home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/Razor/Pages/_ViewImports.cshtml.g.cs
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/MailKit.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/MimeKit.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/BouncyCastle.Crypto.dll
+/home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Contact/Index.cshtml.g.cs

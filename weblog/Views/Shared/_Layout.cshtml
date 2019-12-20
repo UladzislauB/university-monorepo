@@ -16,13 +16,14 @@
   <div class="container">
     <div class="d-flex align-items-center">
       <a class="navbar-brand" asp-controller="Home" asp-action="Index">Medium</a> 
-      <a class="nav-link text-dark p-0 h3 mb-0" href="#">@ViewData["category"]</a>
+      <a class="nav-link p-0 h3 mb-0" href="#">@ViewData["category"]</a>
     </div>
     
     <ul class="navbar-nav">
       <li>
         <partial name="_LoginPartial"/>
       </li>
+      
     </ul>
   </div>
 </nav>

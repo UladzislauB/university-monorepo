@@ -43,6 +43,10 @@
               "target": "Package",
               "version": "[6.4.0, )"
             },
+            "MailKit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.0.0, )"
