@@ -33,6 +33,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.0",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.0",
           "Microsoft.EntityFrameworkCore.Tools.DotNet": "2.0.3",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "3.1.0-rc1.final",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",

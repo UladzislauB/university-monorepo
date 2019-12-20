@@ -5,6 +5,8 @@ using weblog.Models;
 using weblog.ViewModels;
 using System.Threading.Tasks;
 using System.Web;
+using Microsoft.Extensions.Logging;
+using weblog.Logging;
 
 
 namespace weblog.Controllers
@@ -14,15 +16,16 @@ namespace weblog.Controllers
         private readonly IPostRepository _postRepository;
         private readonly ICategoryRepository _categoryRepository;
         private readonly ICommentRepository _commentRepository;
-        private readonly AppDbContext _appDbContext;
+        private readonly ILogger _logger;
+        
         
         public PostController(ICategoryRepository categoryRepository, IPostRepository postRepository,
-            ICommentRepository commentRepository, AppDbContext appDbContext)
+            ICommentRepository commentRepository, ILogger<PostController> logger)
         {
             _categoryRepository = categoryRepository;
             _postRepository = postRepository;
             _commentRepository = commentRepository;
-            _appDbContext = appDbContext;
+            _logger = logger;
         }
         
         
@@ -53,8 +56,13 @@ namespace weblog.Controllers
         public IActionResult Detail(int id)
         {
             var post = _postRepository.GetPostById(id);
+            _logger.LogInformation(LoggingEvents.GetItem, "Getting detail {Id}", id);
             if (post == null)
+            {
+                _logger.LogWarning(LoggingEvents.GetItemNotFound, "Detail({Id}) NOT FOUND", id);
                 return NotFound();
+            }
+                
             post.Category = _categoryRepository.AllCategories.FirstOrDefault(c =>
                                        c.CategoryId == post.CategoryId);
             ViewData["category"] = post.Category?.Title;

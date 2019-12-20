@@ -34,6 +34,9 @@
         <e p="Hubs" t="Include">
           <e p="CommentHub.cs" t="Include" />
         </e>
+        <e p="Logging" t="Include">
+          <e p="LoggingEvents.cs" t="Include" />
+        </e>
         <e p="Migrations" t="Include">
           <e p="20191217084418_Initial.Designer.cs" t="Include" />
           <e p="20191217084418_Initial.cs" t="Include" />
