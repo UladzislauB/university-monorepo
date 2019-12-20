@@ -14,6 +14,7 @@ using Microsoft.Extensions.Logging;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using weblog.Models;
 using weblog.Hubs;
+using weblog.Services;
 
 namespace weblog
 {
@@ -24,6 +25,7 @@ namespace weblog
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            
         }
         
         
@@ -43,7 +45,9 @@ namespace weblog
             services.AddScoped<ICommentRepository, CommentRepository>();
             services.AddScoped<IPostRepository, PostRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
-
+            services.AddTransient<EmailService>();
+            
+            
             services.AddSignalR();
             services.AddHttpContextAccessor();
             

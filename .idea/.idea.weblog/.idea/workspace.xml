@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2901d93a-a5e8-4fa7-b544-5302962e78a9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.weblog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.weblog/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/Services/EmailService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/Services/EmailService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.dll" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/bin/Debug/netcoreapp3.0/weblog.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.dll" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/obj/Debug/netcoreapp3.0/weblog.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +24,8 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="package.json" />
+        <option value="tsconfig.json" />
       </list>
     </option>
   </component>
@@ -75,9 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/weblog/Models/CategoryRepository.cs" />
-        <option value="$PROJECT_DIR$/weblog/Models/PortRepository.cs" />
-        <option value="$PROJECT_DIR$/weblog/Views/Shared/_ViewImports.cshtml" />
         <option value="$PROJECT_DIR$/weblog/wwwroot/style.css" />
         <option value="$PROJECT_DIR$/weblog/Views/Shared/_ViewStart.cshtml" />
         <option value="$PROJECT_DIR$/weblog/Controller/PostController.cs" />
@@ -116,16 +125,19 @@
         <option value="$PROJECT_DIR$/weblog/Views/Contact/Index.cshtml" />
         <option value="$PROJECT_DIR$/weblog/Controllers/ContactController.cs" />
         <option value="$PROJECT_DIR$/weblog/Properties/launchSettings.json" />
-        <option value="$PROJECT_DIR$/weblog/Views/Shared/_Layout.cshtml" />
         <option value="$PROJECT_DIR$/weblog/Areas/Identity/Pages/Account/Login.cshtml" />
         <option value="$PROJECT_DIR$/weblog/Controllers/PostController.cs" />
         <option value="$PROJECT_DIR$/weblog/Views/Post/Detail.cshtml" />
-        <option value="$PROJECT_DIR$/weblog/Startup.cs" />
         <option value="$PROJECT_DIR$/weblog/wwwroot/js/comments.js" />
         <option value="$PROJECT_DIR$/weblog/Hubs/CommentHub.cs" />
         <option value="$PROJECT_DIR$/weblog/Views/Home/Contact.cshtml" />
+        <option value="$PROJECT_DIR$/weblog/package.json" />
+        <option value="$PROJECT_DIR$/weblog/stmp.json" />
+        <option value="$PROJECT_DIR$/weblog/appsettings.json" />
+        <option value="$PROJECT_DIR$/weblog/Startup.cs" />
         <option value="$PROJECT_DIR$/weblog/Controllers/HomeController.cs" />
         <option value="$PROJECT_DIR$/weblog/Services/EmailService.cs" />
+        <option value="$PROJECT_DIR$/weblog/Views/Shared/_Layout.cshtml" />
       </list>
     </option>
   </component>
@@ -231,7 +243,8 @@
       <workItem from="1576784436702" duration="8702000" />
       <workItem from="1576819231869" duration="9156000" />
       <workItem from="1576835082483" duration="3476000" />
-      <workItem from="1576842024751" duration="13447000" />
+      <workItem from="1576842024751" duration="15505000" />
+      <workItem from="1576870528152" duration="976000" />
     </task>
     <servers />
   </component>
@@ -262,22 +275,22 @@
       <screen x="67" y="27" width="1533" height="873" />
     </state>
     <state x="616" y="220" width="424" height="484" key="FileChooserDialogImpl/67.27.1533.873@67.27.1533.873" timestamp="1576866918997" />
-    <state width="1487" height="132" key="GridCell.Tab.0.bottom" timestamp="1576867545846">
+    <state width="1487" height="132" key="GridCell.Tab.0.bottom" timestamp="1576871531010">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1487" height="132" key="GridCell.Tab.0.bottom/67.27.1533.873@67.27.1533.873" timestamp="1576867545846" />
-    <state width="1487" height="132" key="GridCell.Tab.0.center" timestamp="1576867545845">
+    <state width="1487" height="132" key="GridCell.Tab.0.bottom/67.27.1533.873@67.27.1533.873" timestamp="1576871531010" />
+    <state width="1487" height="132" key="GridCell.Tab.0.center" timestamp="1576871531010">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1487" height="132" key="GridCell.Tab.0.center/67.27.1533.873@67.27.1533.873" timestamp="1576867545845" />
-    <state width="1487" height="132" key="GridCell.Tab.0.left" timestamp="1576867545844">
+    <state width="1487" height="132" key="GridCell.Tab.0.center/67.27.1533.873@67.27.1533.873" timestamp="1576871531010" />
+    <state width="1487" height="132" key="GridCell.Tab.0.left" timestamp="1576871531008">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1487" height="132" key="GridCell.Tab.0.left/67.27.1533.873@67.27.1533.873" timestamp="1576867545844" />
-    <state width="1487" height="132" key="GridCell.Tab.0.right" timestamp="1576867545846">
+    <state width="1487" height="132" key="GridCell.Tab.0.left/67.27.1533.873@67.27.1533.873" timestamp="1576871531008" />
+    <state width="1487" height="132" key="GridCell.Tab.0.right" timestamp="1576871531010">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1487" height="132" key="GridCell.Tab.0.right/67.27.1533.873@67.27.1533.873" timestamp="1576867545846" />
+    <state width="1487" height="132" key="GridCell.Tab.0.right/67.27.1533.873@67.27.1533.873" timestamp="1576871531010" />
     <state x="333" y="128" width="991" height="668" key="Registry" timestamp="1576784338640">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
