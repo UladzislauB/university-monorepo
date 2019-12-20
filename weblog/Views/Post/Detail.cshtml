@@ -37,12 +37,8 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-2" id="name" data-post-id="@Model.Post.PostId">User</div>
-    <div class="col-4"><input type="text" id="userInput"/></div>
-  </div>
-  <div class="row">
-    <div class="col-2">Comments</div>
-    <div class="col-4"><input type="text" id="commentInput"/></div>
+    <div class="col-2" id="data" data-post-id="@Model.Post.PostId" data-name-user="@User.Identity.Name">Comment</div>
+    <div class="col-4"><textarea id="commentInput" rows="10" cols="45"></textarea></div>
   </div>
   <div class="row">&nbsp;</div>
   <div class="row">
@@ -58,7 +54,7 @@
     <div id="messagesList">
       @foreach (var comment in Model.Comments)
       {
-        <div class="message">
+        <div>
           <hr />
           <h3 class="h4 text-dark">@comment.Name</h3>
           <h4 class="h5 text-muted">@comment.Body</h4>

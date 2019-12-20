@@ -5,6 +5,7 @@ using weblog.Models;
 using weblog.ViewModels;
 using System.Threading.Tasks;
 using System.Web;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Logging;
 using weblog.Logging;
 
@@ -55,6 +56,7 @@ namespace weblog.Controllers
             });
         }
 
+        
         public IActionResult Detail(int id)
         {
             var post = _postRepository.GetPostById(id);
