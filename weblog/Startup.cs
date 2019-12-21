@@ -45,7 +45,7 @@ namespace weblog
             services.AddScoped<ICommentRepository, CommentRepository>();
             services.AddScoped<IPostRepository, PostRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
-            services.AddTransient<EmailService>();
+            services.AddTransient<IEmailService, EmailService>();
             
             
             services.AddSignalR();

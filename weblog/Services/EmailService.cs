@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using MailKit.Net.Smtp;
 using Microsoft.Extensions.Configuration;
@@ -5,7 +6,7 @@ using MimeKit;
 
 namespace weblog.Services
 {
-    public class EmailService
+    public class EmailService: IEmailService
     {
         private readonly IConfiguration Configuration;
 
@@ -17,18 +18,19 @@ namespace weblog.Services
         {
             var emailMessage = new MimeMessage();
  
-            emailMessage.From.Add(new MailboxAddress("Администрация сайта", Configuration.GetSection("Stmp")["email"]));
-            emailMessage.To.Add(new MailboxAddress("", email));
+            emailMessage.From.Add(new MailboxAddress("Администрация сайта", Configuration.GetSection("Smtp")["email"]));
+            emailMessage.To.Add(new MailboxAddress("I", email));
             emailMessage.Subject = subject;
             emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Html)
             {
                 Text = message
             };
-             
+
             using (var client = new SmtpClient())
             {
-                await client.ConnectAsync(Configuration.GetSection("Stmp")["name"], 25, false);
-                await client.AuthenticateAsync(Configuration.GetSection("Stmp")["email"], Configuration.GetSection("Stmp")["password"]);
+                var host = Configuration.GetSection("Smtp")["name"];
+                await client.ConnectAsync(host:host, 25, false);
+                await client.AuthenticateAsync(Configuration.GetSection("Smtp")["email"], Configuration.GetSection("Smtp")["pwd"]);
                 await client.SendAsync(emailMessage);
  
                 await client.DisconnectAsync(true);

@@ -9415,6 +9415,7 @@
       "Microsoft.EntityFrameworkCore.Tools.DotNet >= 2.0.3",
       "Microsoft.Extensions.Logging.Abstractions >= 3.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.0.0",
+      "MimeKit >= 2.4.1",
       "Pomelo.EntityFrameworkCore.MySql >= 3.1.0-rc1.final"
     ]
   },
@@ -9508,6 +9509,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[3.0.0, )"
+          },
+          "MimeKit": {
+            "target": "Package",
+            "version": "[2.4.1, )"
           },
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",

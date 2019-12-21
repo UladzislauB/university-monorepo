@@ -10,9 +10,9 @@ namespace weblog.Controllers
     public class HomeController : Controller
     {
         private readonly IPostRepository _postRepository;
-        private readonly EmailService _emailService;
+        private readonly IEmailService _emailService;
 
-        public HomeController(IPostRepository postRepository, EmailService emailService)
+        public HomeController(IPostRepository postRepository, IEmailService emailService)
         {
             _postRepository = postRepository;
             _emailService = emailService;
@@ -21,7 +21,7 @@ namespace weblog.Controllers
         
         public async Task<IActionResult> SendMessage()
         {
-            await _emailService.SendEmailAsync("vasilyuk.vlad.kbr@yandex.by", "Тема письма", "Текст письма: текст!");
+            await _emailService.SendEmailAsync(email:"suvorovskaya.sveta@mail.ru", "Тема письма", "Текст письма: текст!");
             return RedirectToAction("Index");
         }
         
