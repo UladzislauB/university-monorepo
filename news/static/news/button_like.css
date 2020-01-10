@@ -1,0 +1,81 @@
+
+.like-btn {
+    border: white;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 0rem;
+    height: 14px;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    border-radius: 3rem;
+    color: #8a8a8a;
+    transition: all ease 0.4s;
+}
+
+.like-btn span {
+    margin-left: 0.5rem;
+}
+
+.like-btn .fa,
+.like-btn span {
+    transition: all ease 0.4s;
+}
+
+.like-btn:focus {
+    background-color: transparent;
+}
+
+.like-btn:focus .fa,
+.like-btn:focus span {
+    color: #8a8a8a;
+}
+
+.like-btn:hover {
+    border-color: #cc4b37;
+    background-color: transparent;
+}
+
+.like-btn:hover .fa,
+.like-btn:hover span {
+    color: #cc4b37;
+}
+
+.liked {
+    background-color: #cc4b37;
+    border-color: #cc4b37;
+}
+
+.liked .fa,
+.liked span {
+    color: #fefefe;
+}
+
+.liked:focus {
+    background-color: #cc4b37;
+}
+
+.liked:focus .fa,
+.liked:focus span {
+    color: #fefefe;
+}
+
+.liked:hover {
+    background-color: #cc4b37;
+    border-color: #cc4b37;
+}
+
+.liked:hover .fa,
+.liked:hover span {
+    color: #fefefe;
+}
+
+.fa-eye:before {
+    position: relative;
+    display: inline-block;
+    color: #8a8a8a;
+    padding-top: 0.77rem;
+    vertical-align: middle;
+    content: "\f06e";
+}

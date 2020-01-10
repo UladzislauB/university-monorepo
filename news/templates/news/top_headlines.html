@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'news/base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+{% block content %}
+    <p>Top Headlines</p>
+
+    <ul>
+      {% for elem in top_headlines %}
+        <li>
+            <p>{{ elem.publishedAt|date:'M d, Y H:i' }}</p>
+            <p>Author: {{ elem.author }}</p>
+            <a href="{% url 'news:article' elem.id %}">{{ elem.title }}</a>
+            <p>{{ elem.description }}</p>
+        </li>
+      {% empty %}
+        <li>No news </li>
+      {% endfor %}
+    </ul>
+{% endblock %}
+</body>
+</html>

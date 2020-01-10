@@ -1,0 +1,98 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header .row {
+    display: flex;
+    align-items: center;
+}
+
+
+.btn.btn-primary {
+    border: 0.5px solid;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 30px;
+    align-self: center;
+    margin: 15px;
+}
+
+.col-sm-8 p {
+    margin: 20px 5px 15px;
+    min-width: 60px;
+    padding: 3px 10px 3px 10px;
+    font-size: 16px;
+}
+
+nav>p{
+    cursor: pointer;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+hr {
+    border: none; /* Убираем границу */
+    background-color: black; /* Цвет линии */
+    height: 1px;
+}
+
+.img-feed {
+    object-fit: cover;
+    height: 400px;
+    width: 270px;
+    border-radius: 5px;
+}
+
+.author-feed {
+    font-style: italic;
+    font-size: 15px;
+    width: 270px;
+    padding-top: 10px;
+}
+
+.news-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar>.btn {
+    width: 170px;
+}
+
+.navbar-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.navbar-form>.btn {
+    width: 170px;
+}
+
+.form-control {
+    padding: 6px 6px;
+    margin-top: 3rem;
+}
+
+.navbar-form .form-group {
+    display: flex;
+    vertical-align: middle;
+    flex-direction: column;
+}
+
+.warning {
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+}
