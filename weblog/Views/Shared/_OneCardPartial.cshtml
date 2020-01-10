@@ -1,0 +1,24 @@
+@model Post
+
+<div class="col-4 card border-white one-card">
+  <img
+    src= "@Model.ImageUrl"
+    alt=""
+    class="card-img-top pt-3"
+  />
+  <div class="card-body px-0">
+    <a asp-controller="Post" asp-action="Detail" asp-route-id="@Model.PostId">
+      <div class="card-title h4 text-dark">@Model.Title</div>
+      <div class="card-subtitle text-secondary h6">
+        @Model.ShortDescription
+      </div>
+    </a>
+    <div class="author mt-3 text-dark card-subtitle">Author's Name</div>
+    <div class="mt-1 text-muted card-subtitle star">
+      @Model.DatePosted.ToString("MMM dd") · @Model.TimeToRead min read @if (Model.IsForSubscribersOnly){
+                                                                          <span>★</span>
+                                                                        }
+    </div>
+  </div>
+</div>
+

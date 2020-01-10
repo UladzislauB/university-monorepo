@@ -1,0 +1,91 @@
+@model PostDetailViewModel
+
+
+<div class="detail bg-white">
+  <div class="jumbotron bg-white pt-1">
+    <div class="row">
+      <div class="d-flex flex-column col-6 justify-content-center">
+        @if (Model.Post.IsForSubscribersOnly)
+        {
+          <h6 class="pl-3 text-dark">PREMIUM MEMBER STORIES</h6>
+        }
+        <h1 class="pl-3">
+          @Model.Post.Title
+        </h1>
+        <h3 class="pl-3 text-secondary">
+          @Model.Post.ShortDescription
+        </h3>
+      </div>
+      <div class="col-6">
+        <img src="@Model.Post.ImageUrl" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col-8 offset-2">
+      @(new HtmlString(Model.Post.Text))
+    </div>
+  </div>
+</div>
+
+  <!-- Comments section -->
+<div class="row">
+  <div class="col-12">
+    <hr />
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-2" id="data" data-post-id="@Model.Post.PostId" data-name-user="@User.Identity.Name">Comment</div>
+    <div class="col-4"><textarea id="commentInput" rows="10" cols="45"></textarea></div>
+  </div>
+  <div class="row">&nbsp;</div>
+  <div class="row">
+    <div class="col-6 mb-3">
+      <input type="button" id="sendButton" value="Send Message"/>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-6">
+    <div id="messagesList">
+      @foreach (var comment in Model.Comments)
+      {
+        <div>
+          <hr />
+          <h3 class="h4 text-dark">@comment.Name</h3>
+          <h4 class="h5 text-muted">@comment.Body</h4>
+          <h6 class="text-dark">@comment.Date</h6>
+        </div>
+      }
+    </div>
+  </div>
+</div>
+
+
+
+<div class="fixed hidden"></div>
+<script>
+      var $win = $(window),
+        $fixed = $(".fixed"),
+        limit = 300;
+
+      function tgl(state) {
+        $fixed.toggleClass("hidden", state);
+      }
+
+      $win.on("scroll", function() {
+        var top = $win.scrollTop();
+
+        if (top < limit) {
+          tgl(true);
+        } else {
+          tgl(false);
+        }
+      });
+</script>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/comments.js"></script>

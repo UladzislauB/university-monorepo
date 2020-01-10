@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.3/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.3/system/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_weblog.-1465108193.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="weblog" t="IncludeRecursive">
+        <e p="Areas" t="Include">
+          <e p="Identity" t="Include">
+            <e p="IdentityHostingStartup.cs" t="Include" />
+            <e p="Pages" t="Include">
+              <e p="Account" t="Include">
+                <e p="Login.cshtml" t="Include" />
+                <e p="Login.cshtml.cs" t="Include" />
+                <e p="Logout.cshtml" t="Include" />
+                <e p="Logout.cshtml.cs" t="Include" />
+                <e p="Register.cshtml" t="Include" />
+                <e p="Register.cshtml.cs" t="Include" />
+                <e p="_ViewImports.cshtml" t="Include" />
+              </e>
+              <e p="_ValidationScriptsPartial.cshtml" t="Include" />
+              <e p="_ViewImports.cshtml" t="Include" />
+              <e p="_ViewStart.cshtml" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Controllers" t="Include">
+          <e p="ContactController.cs" t="Include" />
+          <e p="HomeController.cs" t="Include" />
+          <e p="PostController.cs" t="Include" />
+        </e>
+        <e p="Hubs" t="Include">
+          <e p="CommentHub.cs" t="Include" />
+        </e>
+        <e p="Logging" t="Include">
+          <e p="LoggingEvents.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20191217084418_Initial.Designer.cs" t="Include" />
+          <e p="20191217084418_Initial.cs" t="Include" />
+          <e p="20191219092654_CommentModelAdded.Designer.cs" t="Include" />
+          <e p="20191219092654_CommentModelAdded.cs" t="Include" />
+          <e p="20191219205810_CommentDateAdded.Designer.cs" t="Include" />
+          <e p="20191219205810_CommentDateAdded.cs" t="Include" />
+          <e p="20191220110721_IdentityAdded.Designer.cs" t="Include" />
+          <e p="20191220110721_IdentityAdded.cs" t="Include" />
+          <e p="AppDbContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="AppDbContext.cs" t="Include" />
+          <e p="Category.cs" t="Include" />
+          <e p="CategoryRepository.cs" t="Include" />
+          <e p="Comment.cs" t="Include" />
+          <e p="CommentRepository.cs" t="Include" />
+          <e p="ICategoryRepository.cs" t="Include" />
+          <e p="ICommentRepository.cs" t="Include" />
+          <e p="IPostRepository.cs" t="Include" />
+          <e p="Post.cs" t="Include" />
+          <e p="PostRepository.cs" t="Include" />
+        </e>
+        <e p="Pages" t="Include">
+          <e p="Error.cshtml" t="Include" />
+          <e p="Error.cshtml.cs" t="Include" />
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+            <e p="_ValidationScriptsPartial.cshtml" t="Include" />
+          </e>
+          <e p="_ViewImports.cshtml" t="Include" />
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="ScaffoldingReadme.txt" t="Include" />
+        <e p="Services" t="Include">
+          <e p="EmailService.cs" t="Include" />
+          <e p="IEmailService.cs" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="TagHelpers" t="Include">
+          <e p="EmailTagHelper.cs" t="Include" />
+        </e>
+        <e p="ViewModels" t="Include">
+          <e p="HomeViewModel.cs" t="Include" />
+          <e p="PostDetailViewModel.cs" t="Include" />
+          <e p="PostListViewModel.cs" t="Include" />
+        </e>
+        <e p="Views" t="Include">
+          <e p="Contact" t="Include">
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Home" t="Include">
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Post" t="Include">
+            <e p="Detail.cshtml" t="Include" />
+            <e p="List.cshtml" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="_CookieConsentPartial.cshtml" t="Include" />
+            <e p="_Layout.cshtml" t="Include" />
+            <e p="_LoginPartial.cshtml" t="Include" />
+            <e p="_NavbarPartial.cshtml" t="Include" />
+            <e p="_OneCardPartial.cshtml" t="Include" />
+            <e p="_ThreeCardPartial.cshtml" t="Include" />
+            <e p="_TwoCardPartial.cshtml" t="Include" />
+          </e>
+          <e p="_ViewImports.cshtml" t="Include" />
+          <e p="_ViewStart.cshtml" t="Include" />
+        </e>
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="libman.json" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="weblog.AssemblyInfo.cs" t="Include" />
+              <e p="weblog.RazorAssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="weblog.csproj" t="IncludeRecursive" />
+        <e p="wwwroot" t="Include">
+          <e p="Images" t="Include">
+            <e p="Post" t="Include">
+              <e p="Image1.jpeg" t="Include" />
+              <e p="Image2.jpg" t="Include" />
+              <e p="Image3.png" t="Include" />
+              <e p="Image4.jpg" t="Include" />
+              <e p="Image5.jpeg" t="Include" />
+            </e>
+            <e p="image1.jpg" t="Include" />
+            <e p="image2.jpg" t="Include" />
+            <e p="image3.jpg" t="Include" />
+            <e p="image4.jpg" t="Include" />
+            <e p="image5.jpg" t="Include" />
+          </e>
+          <e p="content" t="Include">
+            <e p="style.css" t="Include" />
+          </e>
+          <e p="js" t="Include">
+            <e p="comments.js" t="Include" />
+            <e p="signalr" t="Include">
+              <e p="dist" t="Include">
+                <e p="browser" t="Include">
+                  <e p="signalr.js" t="Include" />
+                  <e p="signalr.min.js" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="weblog.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

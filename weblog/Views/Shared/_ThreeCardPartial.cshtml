@@ -1,0 +1,32 @@
+@model Post
+
+<div class="card mb-3 border-white three-card">
+    <div class="row">
+        <div class="px-0 col d-flex flex-column">
+            <a asp-controller="Post" asp-action="Detail" asp-route-id="@Model.PostId" class="mb-auto">
+                <div class="mb-auto category">@Model.Category?.Title.ToUpper()</div>
+                <div class="card-title h5 mb-1 text-dark">
+                    @Model.Title
+                </div>
+                <div class="card-subtitle text-secondary mb-auto h6">
+                    @Model.ShortDescription
+                </div>
+            </a>
+            <div class="author text-dark card-subtitle">Author's Name</div>
+            <div class="pt-1 mb-0 text-muted card-subtitle star">
+                @Model.DatePosted.ToString("MMM dd") · @Model.TimeToRead min read
+                @if (Model.IsForSubscribersOnly)
+                {
+                    <span>★</span>
+                }
+            </div>
+        </div>
+        <div class="col-auto pr-0">
+            <img
+                src="@Model.ImageUrl"
+                class="pr-1"
+                alt=""
+            />
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+@model PostListViewModel
+
+<partial name="_NavbarPartial"/>
+
+<div class="index container mt-3">
+    <div class="row">
+        @foreach (var post in Model.Posts)
+        {
+            <partial name="_OneCardPartial" model="@post"/>
+        }
+    </div>
+</div>

@@ -1,0 +1,25 @@
+@model HomeViewModel
+
+<partial name="_NavbarPartial"/>
+
+<div class="index container mt-3">
+  <div class="row">
+    
+    <partial name="_OneCardPartial" model="@Model.FirstCategoryPosts[0]"/>
+
+    <div class="col-4 container  pt-3">
+      <partial name="_TwoCardPartial" model="@Model.FirstCategoryPosts[1]"/>
+      <partial name="_TwoCardPartial" model="@Model.FirstCategoryPosts[2]"/>
+      <partial name="_TwoCardPartial" model="@Model.FirstCategoryPosts[3]"/>
+    </div>
+
+    <partial name="_OneCardPartial" model="@Model.FirstCategoryPosts[4]"/>
+  </div>
+  <hr style="border: 1px solid lightgray;" />
+  <div class="col-7">
+    @foreach (var post in Model.SecondCategoryPosts)
+    {
+      <partial name="_ThreeCardPartial" model="@post"/>
+    }
+  </div>
+</div>
