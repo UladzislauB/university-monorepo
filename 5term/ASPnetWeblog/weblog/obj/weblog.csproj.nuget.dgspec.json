@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "/home/qwerty/5semester/ASP.net C#/weblog/weblog/weblog.csproj": {}
+    "/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/weblog.csproj": {}
   },
   "projects": {
-    "/home/qwerty/5semester/ASP.net C#/weblog/weblog/weblog.csproj": {
+    "/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/weblog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/qwerty/5semester/ASP.net C#/weblog/weblog/weblog.csproj",
+        "projectUniqueName": "/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/weblog.csproj",
         "projectName": "weblog",
-        "projectPath": "/home/qwerty/5semester/ASP.net C#/weblog/weblog/weblog.csproj",
+        "projectPath": "/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/weblog.csproj",
         "packagesPath": "/home/qwerty/.nuget/packages/",
-        "outputPath": "/home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/",
+        "outputPath": "/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "/home/qwerty/.config/NuGet/NuGet.Config"
         ],
@@ -112,6 +109,14 @@
           "warn": true,
           "downloadDependencies": [
             {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
               "name": "Microsoft.NETCore.App.Ref",
               "version": "[3.0.0, 3.0.0]"
             }
@@ -124,7 +129,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
         }
       }
     }

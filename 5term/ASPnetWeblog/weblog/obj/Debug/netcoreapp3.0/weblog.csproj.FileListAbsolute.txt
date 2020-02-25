@@ -215,3 +215,43 @@
 /home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/BouncyCastle.Crypto.dll
 /home/qwerty/5semester/ASP.net C#/weblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Contact/Index.cshtml.g.cs
 /home/qwerty/5semester/ASP.net C#/weblog/weblog/bin/Debug/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Google.dll
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/weblog.csprojAssemblyReference.cache
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/staticwebassets/weblog.StaticWebAssets.Manifest.cache
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/staticwebassets/weblog.StaticWebAssets.xml
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/weblog.MvcApplicationPartsAssemblyInfo.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/weblog.MvcApplicationPartsAssemblyInfo.cache
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/weblog.RazorAssemblyInfo.cache
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/weblog.RazorAssemblyInfo.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/weblog.AssemblyInfoInputs.cache
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/weblog.AssemblyInfo.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/weblog.TagHelpers.input.cache
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/weblog.TagHelpers.output.cache
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/weblog.RazorCoreGenerate.cache
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Areas/Identity/Pages/Account/Login.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Areas/Identity/Pages/Account/Logout.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Areas/Identity/Pages/Account/Register.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Areas/Identity/Pages/Account/_ViewImports.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Areas/Identity/Pages/_ViewImports.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Areas/Identity/Pages/_ViewStart.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Pages/Error.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Pages/Shared/_Layout.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Pages/Shared/_ValidationScriptsPartial.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Pages/_ViewImports.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Contact/Index.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Home/Index.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Post/Detail.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Post/List.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Shared/_CookieConsentPartial.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Shared/_Layout.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Shared/_LoginPartial.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Shared/_NavbarPartial.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Shared/_OneCardPartial.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Shared/_ThreeCardPartial.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/Shared/_TwoCardPartial.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/_ViewImports.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/Razor/Views/_ViewStart.cshtml.g.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/weblog.RazorTargetAssemblyInfo.cache
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/weblog.RazorTargetAssemblyInfo.cs
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/weblog.dll
+/home/qwerty/__study__/university-monorepo/5term/ASPnetWeblog/weblog/obj/Debug/netcoreapp3.0/weblog.pdb

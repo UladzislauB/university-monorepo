@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
-    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
     <e p="$USER_HOME$/.Rider2019.3/system/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2019.3/system/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_weblog.-1465108193.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.3/system/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_weblog.1208631653.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="weblog" t="IncludeRecursive">
@@ -82,6 +80,7 @@
         <e p="Startup.cs" t="Include" />
         <e p="TagHelpers" t="Include">
           <e p="EmailTagHelper.cs" t="Include" />
+          <e p="SampleTagHelper.cs" t="Include" />
         </e>
         <e p="ViewModels" t="Include">
           <e p="HomeViewModel.cs" t="Include" />
