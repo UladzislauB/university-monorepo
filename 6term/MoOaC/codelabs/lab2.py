@@ -1,19 +1,6 @@
 import numpy as np
 import math
 
-matrix_A = np.array([[1, 2, 1, 0, 0, 0],
-                     [2, 1, 0, 1, 0, 0],
-                     [1, 0, 0, 0, 1, 0],
-                     [0, 1, 0, 0, 0, 1]])
-
-b = np.array([10, 11, 5, 4])
-
-x = np.array([2, 4, 0, 3, 3, 0])
-
-Jb = np.array([5, 2, 1, 4])
-
-c = np.array([20, 26, 0, 0, 0, 1])
-
 
 def main_phase_simplex_method(matrix_A, x, Jb, c):
     transposed_matrix_a = np.array(get_transposed_matrix(matrix_A))
@@ -26,8 +13,10 @@ def main_phase_simplex_method(matrix_A, x, Jb, c):
 
         # Решение оптимально, выход из цикла
         if is_optimal_solution(delta):
-            print('Bounded')
-            print(x)
+            with open('output.txt', 'w') as f:
+                f.write('Bounded\n')
+                for elem in x:
+                    f.write(str(elem) + ' ')
             return
 
         j0 = get_index_of_first_negative_element(delta)
@@ -35,7 +24,8 @@ def main_phase_simplex_method(matrix_A, x, Jb, c):
         theta = get_vector_theta(z, x, Jb)
 
         if not have_solution(theta):
-            print('Unbounded')
+            with open('output.txt', 'w') as f:
+                f.write('Unbounded')
             return
 
         index_min, theta0 = min(enumerate(theta)
@@ -110,5 +100,26 @@ def get_optimized_inverse_matrix(matrix, inverse_matrix, column, vector):
     return answer
 
 
+def get_list_int_from_string(string):
+    return [int(elem) for elem in string.split()]
+
+
 if __name__ == '__main__':
+    matrix_A = []
+    b = []
+    x = []
+    Jb = []
+    c = []
+
+    np.set_printoptions(precision=6)
+    with open('input.txt', 'r') as f:
+        m, n = [int(elem) for elem in f.readline().split()]
+        for _ in range(m):
+            matrix_A.append(get_list_int_from_string(f.readline()))
+        matrix_A = np.array(matrix_A)
+        b = np.array(get_list_int_from_string(f.readline()))
+        c = np.array(get_list_int_from_string(f.readline()))
+        x = np.array(get_list_int_from_string(f.readline()))
+        Jb = np.array(get_list_int_from_string(f.readline()))
+
     main_phase_simplex_method(matrix_A, x, Jb, c)
