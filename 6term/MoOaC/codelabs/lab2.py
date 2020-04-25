@@ -12,11 +12,13 @@ def main_phase_simplex_method(matrix_A, x, Jb, c):
         delta = get_delta(potential_vector, matrix_A, c)
 
         # Решение оптимально, выход из цикла
-        if is_optimal_solution(delta):
-            with open('output.txt', 'w') as f:
-                f.write('Bounded\n')
-                for elem in x:
-                    f.write(str(elem) + ' ')
+        if is_optimal_solution(delta, Jb):
+            print('Bounded')
+            print(*["{0:0.10f}".format(i) for i in x])
+            # with open('output.txt', 'w') as f:
+            #     f.write('Bounded\n')
+            #     for elem in x:
+            #         f.write(str(elem) + ' ')
             return
 
         j0 = get_index_of_first_negative_element(delta)
@@ -24,8 +26,9 @@ def main_phase_simplex_method(matrix_A, x, Jb, c):
         theta = get_vector_theta(z, x, Jb)
 
         if not have_solution(theta):
-            with open('output.txt', 'w') as f:
-                f.write('Unbounded')
+            print('Unbounded')
+            # with open('output.txt', 'w') as f:
+            #     f.write('Unbounded')
             return
 
         index_min, theta0 = min(enumerate(theta)
@@ -52,9 +55,9 @@ def get_delta(potential_vector, matrix_A, c):
     return potential_vector @ matrix_A - c
 
 
-def is_optimal_solution(delta):
-    for elem in delta:
-        if elem < 0:
+def is_optimal_solution(delta, Jb):
+    for index, value in enumerate(delta):
+        if index + 1 not in Jb and value < 0:
             return False
     return True
 
@@ -69,7 +72,7 @@ def get_vector_theta(z, x, Jb):
 
 def have_solution(theta):
     for elem in theta:
-        if elem is not None:
+        if elem is not math.inf:
             return True
     return False
 
@@ -111,15 +114,23 @@ if __name__ == '__main__':
     Jb = []
     c = []
 
-    np.set_printoptions(precision=6)
-    with open('input.txt', 'r') as f:
-        m, n = [int(elem) for elem in f.readline().split()]
-        for _ in range(m):
-            matrix_A.append(get_list_int_from_string(f.readline()))
-        matrix_A = np.array(matrix_A)
-        b = np.array(get_list_int_from_string(f.readline()))
-        c = np.array(get_list_int_from_string(f.readline()))
-        x = np.array(get_list_int_from_string(f.readline()))
-        Jb = np.array(get_list_int_from_string(f.readline()))
+    m, n = get_list_int_from_string(input())
+    for _ in range(m):
+        matrix_A.append(get_list_int_from_string(input()))
+    matrix_A = np.array(matrix_A)
+    b = np.array(get_list_int_from_string(input()))
+    c = np.array(get_list_int_from_string(input()))
+    x = np.array(get_list_int_from_string(input()))
+    Jb = np.array(get_list_int_from_string(input()))
+
+    # with open('input.txt', 'r') as f:
+    #     m, n = [int(elem) for elem in f.readline().split()]
+    #     for _ in range(m):
+    #         matrix_A.append(get_list_int_from_string(f.readline()))
+    #     matrix_A = np.array(matrix_A)
+    #     b = np.array(get_list_int_from_string(f.readline()))
+    #     c = np.array(get_list_int_from_string(f.readline()))
+    #     x = np.array(get_list_int_from_string(f.readline()))
+    #     Jb = np.array(get_list_int_from_string(f.readline()))
 
     main_phase_simplex_method(matrix_A, x, Jb, c)
