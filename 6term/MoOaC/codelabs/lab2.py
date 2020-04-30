@@ -5,9 +5,19 @@ import math
 def main_phase_simplex_method(matrix_A, x, Jb, c):
     transposed_matrix_a = np.array(get_transposed_matrix(matrix_A))
     basis_matrix = np.array(get_basis_matrix(transposed_matrix_a, Jb))
+    inverse_basis_matrix = np.linalg.inv(np.array(basis_matrix))
+    column = 0
+    vector = []
+
+    is_first_iteration = True
 
     while True:
-        inverse_basis_matrix = np.linalg.inv(np.array(basis_matrix))
+        if not is_first_iteration:
+            inverse_basis_matrix = get_optimized_inverse_matrix(basis_matrix, inverse_basis_matrix, column, vector)
+            basis_matrix = np.array(get_basis_matrix(transposed_matrix_a, Jb))
+        else:
+            is_first_iteration = False
+
         potential_vector = get_potential_vector(inverse_basis_matrix, c, Jb)
         delta = get_delta(potential_vector, matrix_A, c)
 
@@ -34,6 +44,9 @@ def main_phase_simplex_method(matrix_A, x, Jb, c):
         index_min, theta0 = min(enumerate(theta)
                                 , key=lambda pair: pair[1])
         Jb[index_min] = j0 + 1
+        # Defining of vector and column number for optimized inversion of matrix
+        column = index_min
+        vector = matrix_A[:, j0]
         x = get_new_plan_x(x, theta0, Jb, j0, z)
 
 
@@ -91,12 +104,12 @@ def get_optimized_inverse_matrix(matrix, inverse_matrix, column, vector):
     if l[column] == 0:
         return None
 
-    l_tilda = numpy.copy(l)
+    l_tilda = np.copy(l)
     l_tilda[column] = -1
 
     l_upper = -1. / l[column] * l_tilda
-    q = numpy.eye(len(matrix))
-    q[:, column] = l_upper[:, 0]
+    q = np.eye(len(matrix))
+    q[:, column] = l_upper
 
     answer = q @ inverse_matrix
 
@@ -114,23 +127,23 @@ if __name__ == '__main__':
     Jb = []
     c = []
 
-    m, n = get_list_int_from_string(input())
-    for _ in range(m):
-        matrix_A.append(get_list_int_from_string(input()))
-    matrix_A = np.array(matrix_A)
-    b = np.array(get_list_int_from_string(input()))
-    c = np.array(get_list_int_from_string(input()))
-    x = np.array(get_list_int_from_string(input()))
-    Jb = np.array(get_list_int_from_string(input()))
+    # m, n = get_list_int_from_string(input())
+    # for _ in range(m):
+    #     matrix_A.append(get_list_int_from_string(input()))
+    # matrix_A = np.array(matrix_A)
+    # b = np.array(get_list_int_from_string(input()))
+    # c = np.array(get_list_int_from_string(input()))
+    # x = np.array(get_list_int_from_string(input()))
+    # Jb = np.array(get_list_int_from_string(input()))
 
-    # with open('input.txt', 'r') as f:
-    #     m, n = [int(elem) for elem in f.readline().split()]
-    #     for _ in range(m):
-    #         matrix_A.append(get_list_int_from_string(f.readline()))
-    #     matrix_A = np.array(matrix_A)
-    #     b = np.array(get_list_int_from_string(f.readline()))
-    #     c = np.array(get_list_int_from_string(f.readline()))
-    #     x = np.array(get_list_int_from_string(f.readline()))
-    #     Jb = np.array(get_list_int_from_string(f.readline()))
+    with open('input.txt', 'r') as f:
+        m, n = [int(elem) for elem in f.readline().split()]
+        for _ in range(m):
+            matrix_A.append(get_list_int_from_string(f.readline()))
+        matrix_A = np.array(matrix_A)
+        b = np.array(get_list_int_from_string(f.readline()))
+        c = np.array(get_list_int_from_string(f.readline()))
+        x = np.array(get_list_int_from_string(f.readline()))
+        Jb = np.array(get_list_int_from_string(f.readline()))
 
     main_phase_simplex_method(matrix_A, x, Jb, c)
