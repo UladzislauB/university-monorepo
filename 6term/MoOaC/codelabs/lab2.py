@@ -16,7 +16,7 @@ def main_phase_simplex_method(matrix_A, x, Jb, c):
             inverse_basis_matrix = get_optimized_inverse_matrix(basis_matrix, inverse_basis_matrix, column, vector)
             basis_matrix = np.array(get_basis_matrix(transposed_matrix_a, Jb))
         else:
-            is_first_iteration = Falsec
+            is_first_iteration = False
 
         potential_vector = get_potential_vector(inverse_basis_matrix, c, Jb)
         delta = get_delta(potential_vector, matrix_A, c)
