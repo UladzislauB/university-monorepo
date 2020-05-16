@@ -1,0 +1,58 @@
+C:\Users\denek\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.exe
+C:\Users\denek\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.deps.json
+C:\Users\denek\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.runtimeconfig.json
+C:\Users\denek\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.runtimeconfig.dev.json
+C:\Users\denek\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.dll
+C:\Users\denek\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.pdb
+C:\Users\denek\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.AssemblyInfoInputs.cache
+C:\Users\denek\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.AssemblyInfo.cs
+C:\Users\denek\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.dll
+C:\Users\denek\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.pdb
+C:\Users\denek\source\repos\SP-LABS\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.exe
+C:\Users\denek\source\repos\SP-LABS\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.deps.json
+C:\Users\denek\source\repos\SP-LABS\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.runtimeconfig.json
+C:\Users\denek\source\repos\SP-LABS\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.runtimeconfig.dev.json
+C:\Users\denek\source\repos\SP-LABS\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.dll
+C:\Users\denek\source\repos\SP-LABS\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.pdb
+C:\Users\denek\source\repos\SP-LABS\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.csprojAssemblyReference.cache
+C:\Users\denek\source\repos\SP-LABS\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.AssemblyInfoInputs.cache
+C:\Users\denek\source\repos\SP-LABS\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.AssemblyInfo.cs
+C:\Users\denek\source\repos\SP-LABS\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.dll
+C:\Users\denek\source\repos\SP-LABS\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.pdb
+C:\Users\denek\Documents\Уник\СП\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.exe
+C:\Users\denek\Documents\Уник\СП\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.deps.json
+C:\Users\denek\Documents\Уник\СП\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.runtimeconfig.json
+C:\Users\denek\Documents\Уник\СП\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.runtimeconfig.dev.json
+C:\Users\denek\Documents\Уник\СП\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.dll
+C:\Users\denek\Documents\Уник\СП\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.pdb
+C:\Users\denek\Documents\Уник\СП\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.csprojAssemblyReference.cache
+C:\Users\denek\Documents\Уник\СП\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.AssemblyInfoInputs.cache
+C:\Users\denek\Documents\Уник\СП\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.AssemblyInfo.cs
+C:\Users\denek\Documents\Уник\СП\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.dll
+C:\Users\denek\Documents\Уник\СП\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.pdb
+C:\Users\denek\YandexDisk\СП\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.exe
+C:\Users\denek\YandexDisk\СП\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.deps.json
+C:\Users\denek\YandexDisk\СП\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.runtimeconfig.json
+C:\Users\denek\YandexDisk\СП\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.runtimeconfig.dev.json
+C:\Users\denek\YandexDisk\СП\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.dll
+C:\Users\denek\YandexDisk\СП\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.pdb
+C:\Users\denek\YandexDisk\СП\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.csprojAssemblyReference.cache
+C:\Users\denek\YandexDisk\СП\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.csproj.CoreCompileInputs.cache
+C:\Users\denek\YandexDisk\СП\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.AssemblyInfoInputs.cache
+C:\Users\denek\YandexDisk\СП\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.AssemblyInfo.cs
+C:\Users\denek\YandexDisk\СП\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.dll
+C:\Users\denek\YandexDisk\СП\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.pdb
+C:\Users\denek\YandexDisk\СП\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.genruntimeconfig.cache
+C:\Users\denek\Desktop\Новая папка\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.exe
+C:\Users\denek\Desktop\Новая папка\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.deps.json
+C:\Users\denek\Desktop\Новая папка\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.runtimeconfig.json
+C:\Users\denek\Desktop\Новая папка\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.runtimeconfig.dev.json
+C:\Users\denek\Desktop\Новая папка\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.dll
+C:\Users\denek\Desktop\Новая папка\Lab1\ConsoleApp1\bin\Debug\netcoreapp3.0\SP-LAB1.pdb
+C:\Users\denek\Desktop\Новая папка\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.csprojAssemblyReference.cache
+C:\Users\denek\Desktop\Новая папка\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.csproj.CoreCompileInputs.cache
+C:\Users\denek\Desktop\Новая папка\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.AssemblyInfoInputs.cache
+C:\Users\denek\Desktop\Новая папка\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.AssemblyInfo.cs
+C:\Users\denek\Desktop\Новая папка\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.dll
+C:\Users\denek\Desktop\Новая папка\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.pdb
+C:\Users\denek\Desktop\Новая папка\Lab1\ConsoleApp1\obj\Debug\netcoreapp3.0\SP-LAB1.genruntimeconfig.cache

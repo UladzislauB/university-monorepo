@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "I5ZhuHZ1MVpIroOWrodLdGNSPDOkrrJoggprNqr9SKZt0/JEN/siuYD+bGVFZQZ9W7G/HRA4JmA1ASGEPa6K/Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\denek\\Desktop\\Новая папка\\Lab1\\ConsoleApp1\\SP-LAB1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\denek\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\denek\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\denek\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\denek\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
