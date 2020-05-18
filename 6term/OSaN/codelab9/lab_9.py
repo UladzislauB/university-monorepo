@@ -8,11 +8,12 @@ import time
 isOn = False
 step = 1
 WIDTH, HEIGHT = 1000, 1000
-x = WIDTH/2
-y = (HEIGHT-100)/2
-
+x = WIDTH / 2
+y = (HEIGHT - 100) / 2
 
 images = ["1.gif", "2.gif", "3.gif", "4.gif"]
+
+
 # image1 = ImageTk.PhotoImage(Image.open(images[0]))
 # image2 = ImageTk.PhotoImage(Image.open(images[1]))
 # image3 = ImageTk.PhotoImage(Image.open(images[2]))

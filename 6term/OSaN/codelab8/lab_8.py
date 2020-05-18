@@ -6,8 +6,8 @@ import random
 isOn = False
 step = 1
 WIDTH, HEIGHT = 500, 500
-x = WIDTH/2
-y = (HEIGHT-100)/2
+x = WIDTH / 2
+y = (HEIGHT - 100) / 2
 
 
 class MyFirstGUI:

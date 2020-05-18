@@ -11,8 +11,8 @@ class MyFirstGUI:
         master.title("lab_10")
 
         shapes = [
+            ("Square", "square"),
             ("Rhombus", "rhombus"),
-            ("Square200", "square"),
             ("Circle", "circle"),
             ("Star", "star"),
         ]

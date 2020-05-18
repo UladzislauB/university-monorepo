@@ -1,11 +1,12 @@
 class DoublyLinked:
     class Node:
         __slots__ = 'element', 'next', 'previous'
-        def __init__(self, _element = None, _next = None, _previous = None):
+
+        def __init__(self, _element=None, _next=None, _previous=None):
             self.element = _element
             self.next = _next
             self.previous = _previous
-            
+
     def __init__(self, element):
         self._head = self.Node(element, None, None)
         self._tail = self.Node(element, None, None)
@@ -50,7 +51,7 @@ class DoublyLinked:
             self._head = None
             self.tail = None
         else:
-            self._tail= self._tail.previous
+            self._tail = self._tail.previous
             self._tail.next = None
         self.size -= 1
         return value
@@ -62,7 +63,7 @@ class DoublyLinked:
         if self.get_size() == 0:
             print("Лист пуст")
         buf = self._head
-        while(buf != None):
+        while (buf != None):
             print(buf.element)
             buf = buf.next
 
@@ -70,11 +71,10 @@ class DoublyLinked:
         while self.get_size() != 0:
             self.delete_first
 
+
 if __name__ == "__main__":
     dll = DoublyLinked("Privet")
     dll.insert_first("Bimba")
     dll.insert_last("Bombita!")
     dll.insert_first("Belissimo!")
     dll.print_all()
-
-            

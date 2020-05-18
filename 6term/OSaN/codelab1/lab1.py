@@ -1,5 +1,6 @@
 import os
 import pathlib
+
 pathlib.Path().absolute()
 
 matchFiles = []
@@ -26,8 +27,8 @@ def merge(filesLst):
 
 
 if __name__ == "__main__":
-    #print("Введите директорию")
-    #dirname = input()
+    # print("Введите директорию")
+    # dirname = input()
     list_files(str(pathlib.Path().absolute()))
     print(matchFiles)
     merge(matchFiles)
