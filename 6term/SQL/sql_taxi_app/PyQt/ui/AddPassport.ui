@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddPassportWindow</class>
+ <widget class="QMainWindow" name="AddPassportWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>439</width>
+    <height>289</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Add passport</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{
+color: white;
+background: steelblue;
+border-radius: 60px;
+font: 12pt &quot;Comic Sans MS&quot;;
+}
+QLineEdit
+{
+background: transparent;
+border: none;
+border-bottom: 1px solid steelblue;
+font: 12pt &quot;Comic Sans MS&quot;;
+}
+QLineEdit:focus {
+ outline:none; }
+
+QLabel{
+	color: steelblue;
+	transition: all 1s;
+	font: 14pt &quot;Comic Sans MS&quot;;
+	font-weight:bold;
+}
+
+QDateEdit{
+background: transparent;
+border: none;
+font: 14pt &quot;Comic Sans MS&quot;;
+color: steelblue;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_series">
+         <property name="text">
+          <string>Series</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="edit_series">
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2" colspan="2">
+        <widget class="QLabel" name="label_number">
+         <property name="text">
+          <string>Number</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QLineEdit" name="edit_number"/>
+       </item>
+       <item row="1" column="0" colspan="3">
+        <widget class="QLabel" name="label_identification_number">
+         <property name="font">
+          <font>
+           <family>Comic Sans MS</family>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font-seize: 10px</string>
+         </property>
+         <property name="text">
+          <string>Identification number</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3" colspan="3">
+        <widget class="QLineEdit" name="edit_identification_number"/>
+       </item>
+       <item row="2" column="0" colspan="5">
+        <widget class="QFrame" name="frame_2">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_gender">
+            <property name="text">
+             <string>Choose gender</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rbtn_male">
+            <property name="text">
+             <string>Male</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QRadioButton" name="rbtn_female">
+            <property name="text">
+             <string>Female</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="2">
+        <widget class="QLabel" name="label_issue_date">
+         <property name="text">
+          <string>Date of issue</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="4" colspan="2">
+        <widget class="QDateEdit" name="edit_issue_date"/>
+       </item>
+       <item row="4" column="0" colspan="3">
+        <widget class="QLabel" name="label_expiration_date">
+         <property name="text">
+          <string>Date of expiration</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="4" colspan="2">
+        <widget class="QDateEdit" name="edit_expiration_date"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_add">
+      <property name="minimumSize">
+       <size>
+        <width>181</width>
+        <height>41</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

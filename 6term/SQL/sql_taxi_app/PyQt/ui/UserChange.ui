@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>404</width>
+    <height>137</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLineEdit
+{
+background: transparent;
+border: none;
+border-bottom: 1px solid steelblue;
+font: 16pt &quot;Comic Sans MS&quot;;
+}
+QLineEdit:focus {
+ outline:none; }
+
+QLabel{
+	color: steelblue;
+	font: 12pt &quot;Comic Sans MS&quot;;
+	font-weight:bold;
+}
+
+
+QSpinBox{
+background: transparent;
+border: none;
+border-bottom: 1px solid steelblue;
+font: 12pt &quot;Comic Sans MS&quot;;
+}
+
+QPushButton{
+color: white;
+background: steelblue;
+border-radius: 60px;
+font: 12pt &quot;Comic Sans MS&quot;;
+}
+
+QComboBox{
+background: transparent;
+border: none;
+border-bottom: 1px solid steelblue;
+font: 12pt &quot;Comic Sans MS&quot;;
+}
+
+QDateEdit{
+background: transparent;
+border: none;
+font: 14pt &quot;Comic Sans MS&quot;;
+color: steelblue;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0" colspan="2" alignment="Qt::AlignHCenter">
+     <widget class="QLabel" name="lbl_login">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Comic Sans MS</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>UserName - Qwerty</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" rowspan="2">
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="title">
+       <string>Blocking</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="btn_unlock">
+         <property name="text">
+          <string>Unblock</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="btn_lock">
+         <property name="text">
+          <string>Block</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="btn_time_block">
+         <property name="text">
+          <string>Block untill</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QDateEdit" name="dateEdit"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="title">
+       <string>Change Type</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="btn_apply">
+         <property name="text">
+          <string>Apply</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_userType">
+         <item>
+          <property name="text">
+           <string>Client</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Provider</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Admin</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="btn_delete">
+      <property name="text">
+       <string>Delete User</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
