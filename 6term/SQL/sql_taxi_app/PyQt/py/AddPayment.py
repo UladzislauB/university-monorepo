@@ -14,17 +14,18 @@ class Ui_AddPaymentWindow(object):
     def setupUi(self, AddPaymentWindow):
         AddPaymentWindow.setObjectName("AddPaymentWindow")
         AddPaymentWindow.resize(338, 497)
-        AddPaymentWindow.setStyleSheet("QLineEdit\n"
+        AddPaymentWindow.setStyleSheet("* {background: #212121}\n"
+                                       "QLineEdit\n"
                                        "{\n"
                                        "background: transparent;\n"
                                        "border: none;\n"
-                                       "border-bottom: 1px solid steelblue;\n"
+                                       "border-bottom: 1px solid #1db954;\n"
                                        "font: 10pt \"Comic Sans MS\";\n"
-                                       "color: steelblue;\n"
+                                       "color: #b3b3b3;\n"
                                        "}\n"
                                        "\n"
                                        "QLabel{\n"
-                                       "    color: steelblue;\n"
+                                       "    color: #b3b3b3;\n"
                                        "    transition: all 1s;\n"
                                        "    font: 10pt \"Comic Sans MS\";\n"
                                        "    font-weight:bold;\n"
@@ -32,15 +33,15 @@ class Ui_AddPaymentWindow(object):
                                        "\n"
                                        "QPushButton{\n"
                                        "color: white;\n"
-                                       "background: steelblue;\n"
-                                       "border-radius: 60px;\n"
+                                       "background: #1db954;\n"
+                                       "border-radius: 10px;\n"
                                        "font: 12pt \"Comic Sans MS\";\n"
                                        "}\n"
                                        "\n"
                                        "QComboBox{\n"
                                        "background: transparent;\n"
                                        "border: none;\n"
-                                       "border-bottom: 1px solid steelblue;\n"
+                                       "border-bottom: 1px solid #1db954;\n"
                                        "font: 12pt \"Comic Sans MS\";\n"
                                        "}\n"
                                        "\n"
@@ -48,7 +49,7 @@ class Ui_AddPaymentWindow(object):
                                        "background: transparent;\n"
                                        "border: none;\n"
                                        "font: 14pt \"Comic Sans MS\";\n"
-                                       "color: steelblue;\n"
+                                       "color: #b3b3b3;\n"
                                        "}")
         self.centralwidget = QtWidgets.QWidget(AddPaymentWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -124,11 +125,6 @@ class Ui_AddPaymentWindow(object):
         self.edit_card_number.setObjectName("edit_card_number")
         self.verticalLayout.addWidget(self.edit_card_number)
         self.gridLayout.addWidget(self.frame, 1, 0, 1, 2)
-        self.frame_5 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_5.setGeometry(QtCore.QRect(20, 0, 280, 79))
-        self.frame_5.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_5.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_5.setObjectName("frame_5")
         AddPaymentWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(AddPaymentWindow)
@@ -136,13 +132,13 @@ class Ui_AddPaymentWindow(object):
 
     def retranslateUi(self, AddPaymentWindow):
         _translate = QtCore.QCoreApplication.translate
-        AddPaymentWindow.setWindowTitle(_translate("AddPaymentWindow", "Add payment method"))
-        self.btn_add.setText(_translate("AddPaymentWindow", "Add"))
-        self.label_expiration_date.setText(_translate("AddPaymentWindow", "Expiration date"))
+        AddPaymentWindow.setWindowTitle(_translate("AddPaymentWindow", "Добавить карту"))
+        self.btn_add.setText(_translate("AddPaymentWindow", "Добавить"))
+        self.label_expiration_date.setText(_translate("AddPaymentWindow", "Срок действия"))
         self.dateEdit_expiration_date.setDisplayFormat(_translate("AddPaymentWindow", "MM/yy"))
-        self.label_security_code.setText(_translate("AddPaymentWindow", "Security code"))
-        self.label_card_holder.setText(_translate("AddPaymentWindow", "Card holder"))
-        self.label_card_number.setText(_translate("AddPaymentWindow", "Card Number"))
+        self.label_security_code.setText(_translate("AddPaymentWindow", "CVC"))
+        self.label_card_holder.setText(_translate("AddPaymentWindow", "Владелец карты"))
+        self.label_card_number.setText(_translate("AddPaymentWindow", "Номер карты"))
 
 
 if __name__ == "__main__":

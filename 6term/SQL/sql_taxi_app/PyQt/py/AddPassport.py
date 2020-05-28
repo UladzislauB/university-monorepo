@@ -14,24 +14,28 @@ class Ui_AddPassportWindow(object):
     def setupUi(self, AddPassportWindow):
         AddPassportWindow.setObjectName("AddPassportWindow")
         AddPassportWindow.resize(439, 289)
-        AddPassportWindow.setStyleSheet("QPushButton{\n"
+        AddPassportWindow.setStyleSheet("* {background: #212121}\n"
+                                        "QRadioButton{\n"
+                                        "color: #b3b3b3;\n"
+                                        "}\n"
+                                        "QPushButton{\n"
                                         "color: white;\n"
-                                        "background: steelblue;\n"
-                                        "border-radius: 60px;\n"
+                                        "background: #1db954;\n"
+                                        "border-radius: 10px;\n"
                                         "font: 12pt \"Comic Sans MS\";\n"
                                         "}\n"
                                         "QLineEdit\n"
                                         "{\n"
                                         "background: transparent;\n"
                                         "border: none;\n"
-                                        "border-bottom: 1px solid steelblue;\n"
+                                        "border-bottom: 1px solid #1db954;\n"
                                         "font: 12pt \"Comic Sans MS\";\n"
                                         "}\n"
                                         "QLineEdit:focus {\n"
                                         " outline:none; }\n"
                                         "\n"
                                         "QLabel{\n"
-                                        "    color: steelblue;\n"
+                                        "    color: #b3b3b3;\n"
                                         "    transition: all 1s;\n"
                                         "    font: 14pt \"Comic Sans MS\";\n"
                                         "    font-weight:bold;\n"
@@ -41,7 +45,7 @@ class Ui_AddPassportWindow(object):
                                         "background: transparent;\n"
                                         "border: none;\n"
                                         "font: 14pt \"Comic Sans MS\";\n"
-                                        "color: steelblue;\n"
+                                        "color: #b3b3b3;\n"
                                         "}")
         self.centralwidget = QtWidgets.QWidget(AddPassportWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -123,16 +127,16 @@ class Ui_AddPassportWindow(object):
 
     def retranslateUi(self, AddPassportWindow):
         _translate = QtCore.QCoreApplication.translate
-        AddPassportWindow.setWindowTitle(_translate("AddPassportWindow", "Add passport"))
-        self.label_series.setText(_translate("AddPassportWindow", "Series"))
-        self.label_number.setText(_translate("AddPassportWindow", "Number"))
-        self.label_identification_number.setText(_translate("AddPassportWindow", "Identification number"))
-        self.label_gender.setText(_translate("AddPassportWindow", "Choose gender"))
-        self.rbtn_male.setText(_translate("AddPassportWindow", "Male"))
-        self.rbtn_female.setText(_translate("AddPassportWindow", "Female"))
-        self.label_issue_date.setText(_translate("AddPassportWindow", "Date of issue"))
-        self.label_expiration_date.setText(_translate("AddPassportWindow", "Date of expiration"))
-        self.btn_add.setText(_translate("AddPassportWindow", "Add"))
+        AddPassportWindow.setWindowTitle(_translate("AddPassportWindow", "Добавить паспорт"))
+        self.label_series.setText(_translate("AddPassportWindow", "Серия"))
+        self.label_number.setText(_translate("AddPassportWindow", "Номер"))
+        self.label_identification_number.setText(_translate("AddPassportWindow", "Идентификационный номер"))
+        self.label_gender.setText(_translate("AddPassportWindow", "Пол"))
+        self.rbtn_male.setText(_translate("AddPassportWindow", "Мужской"))
+        self.rbtn_female.setText(_translate("AddPassportWindow", "Женский"))
+        self.label_issue_date.setText(_translate("AddPassportWindow", "Дата выдачи"))
+        self.label_expiration_date.setText(_translate("AddPassportWindow", "Срок действия"))
+        self.btn_add.setText(_translate("AddPassportWindow", "Добавить"))
 
 
 if __name__ == "__main__":

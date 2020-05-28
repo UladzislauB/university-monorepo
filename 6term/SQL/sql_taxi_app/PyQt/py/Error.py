@@ -44,6 +44,7 @@ class Ui_ErrorDialog(object):
     def retranslateUi(self, ErrorDialog):
         _translate = QtCore.QCoreApplication.translate
         ErrorDialog.setWindowTitle(_translate("ErrorDialog", "Error"))
+        self.plainTextEdit.setPlainText(_translate("DialogError", "Hui"))
 
 
 if __name__ == "__main__":

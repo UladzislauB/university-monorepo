@@ -14,26 +14,28 @@ class Ui_RegisterWindow(object):
     def setupUi(self, RegisterWindow):
         RegisterWindow.setObjectName("RegisterWindow")
         RegisterWindow.resize(290, 493)
-        RegisterWindow.setStyleSheet("QLineEdit\n"
+        RegisterWindow.setStyleSheet("* {background: #212121}\n"
+                                     "QLineEdit\n"
                                      "{\n"
                                      "background: transparent;\n"
                                      "border: none;\n"
-                                     "border-bottom: 1px solid steelblue;\n"
+                                     "border-bottom: 1px solid #1db954;\n"
                                      "font: 12pt \"Comic Sans MS\";\n"
                                      "}\n"
                                      "QLineEdit:focus {\n"
                                      " outline:none; }\n"
                                      "\n"
                                      "QLabel{\n"
-                                     "    color: steelblue;\n"
+                                     "    color: #b3b3b3;\n"
                                      "    font: 15pt \"Comic Sans MS\";\n"
                                      "    font-weight:bold;\n"
                                      "}\n"
                                      "\n"
+                                     "QRadioButton{\n"
+                                     "color: #b3b3b3;\n"
+                                     "}\n"
                                      "QPushButton{\n"
                                      "color: white;\n"
-                                     "background: steelblue;\n"
-                                     "border-radius: 60px;\n"
                                      "font: 12pt \"Comic Sans MS\";\n"
                                      "}")
         self.centralwidget = QtWidgets.QWidget(RegisterWindow)
@@ -177,16 +179,16 @@ class Ui_RegisterWindow(object):
 
     def retranslateUi(self, RegisterWindow):
         _translate = QtCore.QCoreApplication.translate
-        RegisterWindow.setWindowTitle(_translate("RegisterWindow", "Register"))
-        self.label_login.setText(_translate("RegisterWindow", "Login"))
-        self.label.setText(_translate("RegisterWindow", "Password"))
-        self.label_lastname.setText(_translate("RegisterWindow", "LastName"))
-        self.label_patronymic.setText(_translate("RegisterWindow", "Patronymic"))
-        self.label_firstname.setText(_translate("RegisterWindow", "FirsName"))
-        self.rbtn_driver.setText(_translate("RegisterWindow", "Driver"))
-        self.rbtn_client.setText(_translate("RegisterWindow", "Client"))
-        self.label_1.setText(_translate("RegisterWindow", "Select Type"))
-        self.btn_register.setText(_translate("RegisterWindow", "Register"))
+        RegisterWindow.setWindowTitle(_translate("RegisterWindow", "Регистрация"))
+        self.label_login.setText(_translate("RegisterWindow", "Логин"))
+        self.label.setText(_translate("RegisterWindow", "Пароль"))
+        self.label_lastname.setText(_translate("RegisterWindow", "Фамилия"))
+        self.label_patronymic.setText(_translate("RegisterWindow", "Имя"))
+        self.label_firstname.setText(_translate("RegisterWindow", "Отчество"))
+        self.rbtn_driver.setText(_translate("RegisterWindow", "Водитель"))
+        self.rbtn_client.setText(_translate("RegisterWindow", "Клиент"))
+        self.label_1.setText(_translate("RegisterWindow", "Выберите тип"))
+        self.btn_register.setText(_translate("RegisterWindow", "Регистрация"))
 
 
 if __name__ == "__main__":

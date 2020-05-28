@@ -14,6 +14,11 @@ class Ui_AddCarWindow(object):
     def setupUi(self, AddCarWindow):
         AddCarWindow.setObjectName("AddCarWindow")
         AddCarWindow.resize(290, 320)
+        AddCarWindow.setStyleSheet("\n"
+                                       "*{\n"
+                                       "background: #212121;\n"
+                                       "}\n"
+                                       "\n")
         self.centralwidget = QtWidgets.QWidget(AddCarWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
@@ -25,7 +30,7 @@ class Ui_AddCarWindow(object):
                                  "{\n"
                                  "background: transparent;\n"
                                  "border: none;\n"
-                                 "border-bottom: 1px solid steelblue;\n"
+                                 "border-bottom: 1px solid #1db954;\n"
                                  "font: 12pt \"Comic Sans MS\";\n"
                                  "}\n"
                                  "QLineEdit:focus {\n"
@@ -44,7 +49,7 @@ class Ui_AddCarWindow(object):
                                  "               -3px 3px 2px #BBB,\n"
                                  "               3px 3px 2px #BBB,\n"
                                  "               3px -3px 2px #BBB;\n"
-                                 "    color: steelblue;\n"
+                                 "    color: #b3b3b3;\n"
                                  "    transition: all 1s;\n"
                                  "    font: 15pt \"Comic Sans MS\";\n"
                                  "    font-weight:bold;\n"
@@ -90,8 +95,8 @@ class Ui_AddCarWindow(object):
         self.btn_add.setMinimumSize(QtCore.QSize(181, 41))
         self.btn_add.setStyleSheet("QPushButton{\n"
                                    "color: white;\n"
-                                   "background: steelblue;\n"
-                                   "border-radius: 60px;\n"
+                                   "background: #1db954;\n"
+                                   "border-radius: 10px;\n"
                                    "font: 12pt \"Comic Sans MS\";\n"
                                    "}")
         self.btn_add.setObjectName("btn_add")
@@ -103,10 +108,10 @@ class Ui_AddCarWindow(object):
 
     def retranslateUi(self, AddCarWindow):
         _translate = QtCore.QCoreApplication.translate
-        AddCarWindow.setWindowTitle(_translate("AddCarWindow", "Add car"))
-        self.label_number.setText(_translate("AddCarWindow", "Number"))
-        self.label_model.setText(_translate("AddCarWindow", "Model"))
-        self.btn_add.setText(_translate("AddCarWindow", "Add"))
+        AddCarWindow.setWindowTitle(_translate("AddCarWindow", "Добавить машину"))
+        self.label_number.setText(_translate("AddCarWindow", "Номер"))
+        self.label_model.setText(_translate("AddCarWindow", "Модель"))
+        self.btn_add.setText(_translate("AddCarWindow", "Добавить"))
 
 
 if __name__ == "__main__":

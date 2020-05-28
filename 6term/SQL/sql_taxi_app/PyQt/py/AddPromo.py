@@ -14,18 +14,19 @@ class Ui_AddPromoWindow(object):
     def setupUi(self, AddPromoWindow):
         AddPromoWindow.setObjectName("AddPromoWindow")
         AddPromoWindow.resize(258, 160)
-        AddPromoWindow.setStyleSheet("QLineEdit\n"
+        AddPromoWindow.setStyleSheet("* {background: #212121}\n"
+                                     "QLineEdit\n"
                                      "{\n"
                                      "background: transparent;\n"
                                      "border: none;\n"
-                                     "border-bottom: 1px solid steelblue;\n"
+                                     "border-bottom: 1px solid #1db954;\n"
                                      "font: 16pt \"Comic Sans MS\";\n"
                                      "}\n"
                                      "QLineEdit:focus {\n"
                                      " outline:none; }\n"
                                      "\n"
                                      "QLabel{\n"
-                                     "    color: steelblue;\n"
+                                     "    color: #b3b3b3;\n"
                                      "    font: 12pt \"Comic Sans MS\";\n"
                                      "    font-weight:bold;\n"
                                      "}\n"
@@ -34,14 +35,14 @@ class Ui_AddPromoWindow(object):
                                      "QSpinBox{\n"
                                      "background: transparent;\n"
                                      "border: none;\n"
-                                     "border-bottom: 1px solid steelblue;\n"
+                                     "border-bottom: 1px solid #1db954;\n"
                                      "font: 12pt \"Comic Sans MS\";\n"
                                      "}\n"
                                      "\n"
                                      "QPushButton{\n"
                                      "color: white;\n"
-                                     "background: steelblue;\n"
-                                     "border-radius: 60px;\n"
+                                     "background: #1db954;\n"
+                                     "border-radius: 5px;\n"
                                      "font: 12pt \"Comic Sans MS\";\n"
                                      "}\n"
                                      "\n"
@@ -49,7 +50,7 @@ class Ui_AddPromoWindow(object):
                                      "background: transparent;\n"
                                      "border: none;\n"
                                      "font: 14pt \"Comic Sans MS\";\n"
-                                     "color: steelblue;\n"
+                                     "color: #b3b3b3;\n"
                                      "}")
         self.centralwidget = QtWidgets.QWidget(AddPromoWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -91,11 +92,11 @@ class Ui_AddPromoWindow(object):
 
     def retranslateUi(self, AddPromoWindow):
         _translate = QtCore.QCoreApplication.translate
-        AddPromoWindow.setWindowTitle(_translate("AddPromoWindow", "Add promo code"))
-        self.btn_add.setText(_translate("AddPromoWindow", "Add"))
-        self.lbl_promo.setText(_translate("AddPromoWindow", "Promo"))
-        self.label_discount.setText(_translate("AddPromoWindow", "Discount"))
-        self.lbl_expires.setText(_translate("AddPromoWindow", "Expires"))
+        AddPromoWindow.setWindowTitle(_translate("AddPromoWindow", "Добавить промокод"))
+        self.btn_add.setText(_translate("AddPromoWindow", "Добавить"))
+        self.lbl_promo.setText(_translate("AddPromoWindow", "Промокод"))
+        self.label_discount.setText(_translate("AddPromoWindow", "Скидка"))
+        self.lbl_expires.setText(_translate("AddPromoWindow", "Истекает"))
 
 
 if __name__ == "__main__":

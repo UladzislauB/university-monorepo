@@ -14,8 +14,9 @@ class Ui_HistoryWindow(object):
     def setupUi(self, HistoryWindow):
         HistoryWindow.setObjectName("HistoryWindow")
         HistoryWindow.resize(653, 320)
-        HistoryWindow.setStyleSheet("QLabel{\n"
-                                    "    color: steelblue;\n"
+        HistoryWindow.setStyleSheet("* {background: #212121}\n"
+                                    "QLabel{\n"
+                                    "    color:  #b3b3b3;\n"
                                     "    font: 16pt \"Comic Sans MS\";\n"
                                     "    font-weight:bold;\n"
                                     "}")
@@ -45,8 +46,8 @@ class Ui_HistoryWindow(object):
 
     def retranslateUi(self, HistoryWindow):
         _translate = QtCore.QCoreApplication.translate
-        HistoryWindow.setWindowTitle(_translate("HistoryWindow", "History"))
-        self.lbl_title.setText(_translate("HistoryWindow", "Login - history"))
+        HistoryWindow.setWindowTitle(_translate("HistoryWindow", "История"))
+        self.lbl_title.setText(_translate("HistoryWindow", "История поездок"))
 
 
 if __name__ == "__main__":

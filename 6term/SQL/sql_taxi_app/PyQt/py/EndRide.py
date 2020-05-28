@@ -14,18 +14,19 @@ class Ui_EndRide(object):
     def setupUi(self, EndRide):
         EndRide.setObjectName("EndRide")
         EndRide.resize(326, 191)
-        EndRide.setStyleSheet("QLineEdit\n"
+        EndRide.setStyleSheet("* {background: #212121}\n"
+                              "QLineEdit\n"
                               "{\n"
                               "background: transparent;\n"
                               "border: none;\n"
-                              "border-bottom: 1px solid steelblue;\n"
+                              "border-bottom: 1px solid #1db954;\n"
                               "font: 16pt \"Comic Sans MS\";\n"
                               "}\n"
                               "QLineEdit:focus {\n"
                               " outline:none; }\n"
                               "\n"
                               "QLabel{\n"
-                              "    color: steelblue;\n"
+                              "    color: #b3b3b3;\n"
                               "    font: 10pt \"Comic Sans MS\";\n"
                               "    font-weight:bold;\n"
                               "}\n"
@@ -34,14 +35,14 @@ class Ui_EndRide(object):
                               "QSpinBox{\n"
                               "background: transparent;\n"
                               "border: none;\n"
-                              "border-bottom: 1px solid steelblue;\n"
+                              "border-bottom: 1px solid #1db954;\n"
                               "font: 12pt \"Comic Sans MS\";\n"
                               "}\n"
                               "\n"
                               "QPushButton{\n"
                               "color: white;\n"
-                              "background: steelblue;\n"
-                              "border-radius: 60px;\n"
+                              "background: #1db954;\n"
+                              "border-radius: 5px;\n"
                               "font: 12pt \"Comic Sans MS\";\n"
                               "}\n"
                               "\n"
@@ -82,9 +83,9 @@ class Ui_EndRide(object):
 
     def retranslateUi(self, EndRide):
         _translate = QtCore.QCoreApplication.translate
-        EndRide.setWindowTitle(_translate("EndRide", "End of taxi ride"))
-        self.label_raiting.setText(_translate("EndRide", "Raiting"))
-        self.pushButton.setText(_translate("EndRide", "PushButton"))
+        EndRide.setWindowTitle(_translate("EndRide", "Конец поездки"))
+        self.label_raiting.setText(_translate("EndRide", "Рейтинг"))
+        self.pushButton.setText(_translate("EndRide", "Подтвердить"))
 
 
 if __name__ == "__main__":

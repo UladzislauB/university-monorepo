@@ -14,16 +14,17 @@ class Ui_ProfileWindow(object):
     def setupUi(self, ProfileWindow):
         ProfileWindow.setObjectName("ProfileWindow")
         ProfileWindow.resize(291, 470)
-        ProfileWindow.setStyleSheet("QLineEdit\n"
+        ProfileWindow.setStyleSheet("* {background: #212121}\n"
+                                    "QLineEdit\n"
                                     "{\n"
                                     "background: transparent;\n"
                                     "border: none;\n"
                                     "font: 14pt \"Comic Sans MS\";\n"
-                                    "color: steelblue;\n"
+                                    "color: #b3b3b3;\n"
                                     "}\n"
                                     "\n"
                                     "QLabel{\n"
-                                    "    color: steelblue;\n"
+                                    "    color: #b3b3b3;;\n"
                                     "    transition: all 1s;\n"
                                     "    font: 14pt \"Comic Sans MS\";\n"
                                     "    font-weight:bold;\n"
@@ -151,9 +152,9 @@ class Ui_ProfileWindow(object):
                                     "{\n"
                                     "background: transparent;\n"
                                     "border: none;\n"
-                                    "border-bottom: 1px solid steelblue;\n"
+                                    "border-bottom: 1px solid #1db954;\n"
                                     "font: 10pt \"Comic Sans MS\";\n"
-                                    "color: steelblue;\n"
+                                    "color: #b3b3b3;\n"
                                     "}")
         self.edit_car.setReadOnly(False)
         self.edit_car.setObjectName("edit_car")
@@ -174,9 +175,9 @@ class Ui_ProfileWindow(object):
                                          "{\n"
                                          "background: transparent;\n"
                                          "border: none;\n"
-                                         "border-bottom: 1px solid steelblue;\n"
+                                         "border-bottom: 1px solid #1db954;\n"
                                          "font: 10pt \"Comic Sans MS\";\n"
-                                         "color: steelblue;\n"
+                                         "color: #b3b3b3;\n"
                                          "}")
         self.edit_passport.setReadOnly(False)
         self.edit_passport.setObjectName("edit_passport")
@@ -208,8 +209,8 @@ class Ui_ProfileWindow(object):
         self.btn_order.setMinimumSize(QtCore.QSize(170, 30))
         self.btn_order.setStyleSheet("QPushButton{\n"
                                      "color: white;\n"
-                                     "background: steelblue;\n"
-                                     "border-radius: 60px;\n"
+                                     "background: #1db954;\n"
+                                     "border-radius: 10px;\n"
                                      "font: 12pt \"Comic Sans MS\";\n"
                                      "}")
         self.btn_order.setObjectName("btn_order")
@@ -218,8 +219,8 @@ class Ui_ProfileWindow(object):
         self.btn_history.setMinimumSize(QtCore.QSize(170, 30))
         self.btn_history.setStyleSheet("QPushButton{\n"
                                        "color: white;\n"
-                                       "background: steelblue;\n"
-                                       "border-radius: 60px;\n"
+                                       "background: #1db954;\n"
+                                       "border-radius: 10px;\n"
                                        "font: 12pt \"Comic Sans MS\";\n"
                                        "}")
         self.btn_history.setObjectName("btn_history")
@@ -228,8 +229,8 @@ class Ui_ProfileWindow(object):
         self.btn_adminitration.setMinimumSize(QtCore.QSize(170, 30))
         self.btn_adminitration.setStyleSheet("QPushButton{\n"
                                              "color: white;\n"
-                                             "background: steelblue;\n"
-                                             "border-radius: 60px;\n"
+                                             "background: #1db954;\n"
+                                             "border-radius: 10px;\n"
                                              "font: 12pt \"Comic Sans MS\";\n"
                                              "}")
         self.btn_adminitration.setObjectName("btn_adminitration")
@@ -242,26 +243,26 @@ class Ui_ProfileWindow(object):
 
     def retranslateUi(self, ProfileWindow):
         _translate = QtCore.QCoreApplication.translate
-        ProfileWindow.setWindowTitle(_translate("ProfileWindow", "Profile"))
-        self.label_login.setText(_translate("ProfileWindow", "Login"))
-        self.edit_login.setText(_translate("ProfileWindow", "DeneKyn"))
-        self.label_role.setText(_translate("ProfileWindow", "Role"))
-        self.edit_role.setText(_translate("ProfileWindow", "Driver"))
-        self.label_firstname.setText(_translate("ProfileWindow", "FirsName"))
-        self.edit_firstname.setText(_translate("ProfileWindow", "Denis"))
-        self.label_lastname.setText(_translate("ProfileWindow", "LastName"))
-        self.edit_lastname.setText(_translate("ProfileWindow", "Solovjov"))
-        self.label_patronymic.setText(_translate("ProfileWindow", "Patronymic"))
-        self.edit_patronymic.setText(_translate("ProfileWindow", "MIK"))
-        self.label_car.setText(_translate("ProfileWindow", "Car"))
-        self.edit_car.setText(_translate("ProfileWindow", "Click to add"))
-        self.label_passport.setText(_translate("ProfileWindow", "Passport"))
-        self.edit_passport.setText(_translate("ProfileWindow", "Clock to add"))
-        self.label_rating.setText(_translate("ProfileWindow", "Raiting"))
-        self.edit_rating.setText(_translate("ProfileWindow", "10 star"))
-        self.btn_order.setText(_translate("ProfileWindow", "Order a taxi"))
-        self.btn_history.setText(_translate("ProfileWindow", "History"))
-        self.btn_adminitration.setText(_translate("ProfileWindow", "Administration"))
+        ProfileWindow.setWindowTitle(_translate("ProfileWindow", "Профиль"))
+        self.label_login.setText(_translate("ProfileWindow", "Логин"))
+        self.edit_login.setText(_translate("ProfileWindow", "admin"))
+        self.label_role.setText(_translate("ProfileWindow", "Роль"))
+        self.edit_role.setText(_translate("ProfileWindow", "Водитель"))
+        self.label_firstname.setText(_translate("ProfileWindow", "Админ"))
+        self.edit_firstname.setText(_translate("ProfileWindow", "Тихоновский"))
+        self.label_lastname.setText(_translate("ProfileWindow", "Фамилия"))
+        self.edit_lastname.setText(_translate("ProfileWindow", "Сослан"))
+        self.label_patronymic.setText(_translate("ProfileWindow", "Отчество"))
+        self.edit_patronymic.setText(_translate("ProfileWindow", "Ахмедович"))
+        self.label_car.setText(_translate("ProfileWindow", "Машина"))
+        self.edit_car.setText(_translate("ProfileWindow", "Добавить"))
+        self.label_passport.setText(_translate("ProfileWindow", "Пасспорт"))
+        self.edit_passport.setText(_translate("ProfileWindow", "Добавить"))
+        self.label_rating.setText(_translate("ProfileWindow", "Рейтинг"))
+        self.edit_rating.setText(_translate("ProfileWindow", "9 звезд"))
+        self.btn_order.setText(_translate("ProfileWindow", "Заказать такси"))
+        self.btn_history.setText(_translate("ProfileWindow", "История"))
+        self.btn_adminitration.setText(_translate("ProfileWindow", "Администрация"))
 
 
 from PyQt.mycomponent.clickablelineedit import ClickableLineEdit

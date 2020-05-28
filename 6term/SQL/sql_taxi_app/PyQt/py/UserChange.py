@@ -14,7 +14,8 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(404, 137)
-        MainWindow.setStyleSheet("QLineEdit\n"
+        MainWindow.setStyleSheet("* {background: #212121}\n"
+                                 "QLineEdit\n"
                                  "{\n"
                                  "background: transparent;\n"
                                  "border: none;\n"
@@ -25,7 +26,7 @@ class Ui_MainWindow(object):
                                  " outline:none; }\n"
                                  "\n"
                                  "QLabel{\n"
-                                 "    color: steelblue;\n"
+                                 "    color: #b3b3b3;\n"
                                  "    font: 12pt \"Comic Sans MS\";\n"
                                  "    font-weight:bold;\n"
                                  "}\n"
@@ -40,8 +41,8 @@ class Ui_MainWindow(object):
                                  "\n"
                                  "QPushButton{\n"
                                  "color: white;\n"
-                                 "background: steelblue;\n"
-                                 "border-radius: 60px;\n"
+                                 "background: #1db954;\n"
+                                 "border-radius: 5px;\n"
                                  "font: 12pt \"Comic Sans MS\";\n"
                                  "}\n"
                                  "\n"
@@ -56,7 +57,7 @@ class Ui_MainWindow(object):
                                  "background: transparent;\n"
                                  "border: none;\n"
                                  "font: 14pt \"Comic Sans MS\";\n"
-                                 "color: steelblue;\n"
+                                 "color: #b3b3b3;\n"
                                  "}")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -117,18 +118,18 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.lbl_login.setText(_translate("MainWindow", "UserName - Qwerty"))
-        self.groupBox_2.setTitle(_translate("MainWindow", "Blocking"))
-        self.btn_unlock.setText(_translate("MainWindow", "Unblock"))
-        self.btn_lock.setText(_translate("MainWindow", "Block"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Конфигурация"))
+        self.lbl_login.setText(_translate("MainWindow", "Юзернейм - UladBlr"))
+        self.groupBox_2.setTitle(_translate("MainWindow", ""))
+        self.btn_unlock.setText(_translate("MainWindow", "Разблокировать"))
+        self.btn_lock.setText(_translate("MainWindow", "Блокировать"))
         self.btn_time_block.setText(_translate("MainWindow", "Block untill"))
-        self.groupBox.setTitle(_translate("MainWindow", "Change Type"))
+        self.groupBox.setTitle(_translate("MainWindow", ""))
         self.btn_apply.setText(_translate("MainWindow", "Apply"))
-        self.comboBox_userType.setItemText(0, _translate("MainWindow", "Client"))
-        self.comboBox_userType.setItemText(1, _translate("MainWindow", "Provider"))
-        self.comboBox_userType.setItemText(2, _translate("MainWindow", "Admin"))
-        self.btn_delete.setText(_translate("MainWindow", "Delete User"))
+        self.comboBox_userType.setItemText(0, _translate("MainWindow", "Клиент"))
+        self.comboBox_userType.setItemText(1, _translate("MainWindow", "Провайдер"))
+        self.comboBox_userType.setItemText(2, _translate("MainWindow", "Админ"))
+        self.btn_delete.setText(_translate("MainWindow", "Удалить пользователя"))
 
 
 if __name__ == "__main__":

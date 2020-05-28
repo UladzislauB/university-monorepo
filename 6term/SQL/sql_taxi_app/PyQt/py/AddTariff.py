@@ -14,18 +14,19 @@ class Ui_AddTariffWindow(object):
     def setupUi(self, AddTariffWindow):
         AddTariffWindow.setObjectName("AddTariffWindow")
         AddTariffWindow.resize(240, 163)
-        AddTariffWindow.setStyleSheet("QLineEdit\n"
+        AddTariffWindow.setStyleSheet("* {background: #212121}\n"
+                                      "QLineEdit\n"
                                       "{\n"
                                       "background: transparent;\n"
                                       "border: none;\n"
-                                      "border-bottom: 1px solid steelblue;\n"
+                                      "border-bottom: 1px solid #1db954;\n"
                                       "font: 16pt \"Comic Sans MS\";\n"
                                       "}\n"
                                       "QLineEdit:focus {\n"
                                       " outline:none; }\n"
                                       "\n"
                                       "QLabel{\n"
-                                      "    color: steelblue;\n"
+                                      "    color: #b3b3b3;\n"
                                       "    font: 12pt \"Comic Sans MS\";\n"
                                       "    font-weight:bold;\n"
                                       "}\n"
@@ -33,14 +34,14 @@ class Ui_AddTariffWindow(object):
                                       "QSpinBox{\n"
                                       "background: transparent;\n"
                                       "border: none;\n"
-                                      "border-bottom: 1px solid steelblue;\n"
+                                      "border-bottom: 1px solid #1db954;\n"
                                       "font: 12pt \"Comic Sans MS\";\n"
                                       "}\n"
                                       "\n"
                                       "QPushButton{\n"
                                       "color: white;\n"
-                                      "background: steelblue;\n"
-                                      "border-radius: 60px;\n"
+                                      "background: #1db954;\n"
+                                      "border-radius: 5px;\n"
                                       "font: 12pt \"Comic Sans MS\";\n"
                                       "}\n"
                                       "\n"
@@ -85,11 +86,11 @@ class Ui_AddTariffWindow(object):
 
     def retranslateUi(self, AddTariffWindow):
         _translate = QtCore.QCoreApplication.translate
-        AddTariffWindow.setWindowTitle(_translate("AddTariffWindow", "Add tariff"))
-        self.btn_add.setText(_translate("AddTariffWindow", "Add"))
-        self.lbl_name.setText(_translate("AddTariffWindow", "Name"))
-        self.label_city.setText(_translate("AddTariffWindow", "City"))
-        self.label_3.setText(_translate("AddTariffWindow", "No city"))
+        AddTariffWindow.setWindowTitle(_translate("AddTariffWindow", "Добавить тариф"))
+        self.btn_add.setText(_translate("AddTariffWindow", "Добавить"))
+        self.lbl_name.setText(_translate("AddTariffWindow", "Название"))
+        self.label_city.setText(_translate("AddTariffWindow", "В городе"))
+        self.label_3.setText(_translate("AddTariffWindow", "За чертой"))
 
 
 if __name__ == "__main__":

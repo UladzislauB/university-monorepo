@@ -14,6 +14,7 @@ class Ui_LoginWindow(object):
     def setupUi(self, LoginWindow):
         LoginWindow.setObjectName("LoginWindow")
         LoginWindow.resize(289, 255)
+        LoginWindow.setStyleSheet("* {background: #212121}\n")
         self.centralwidget = QtWidgets.QWidget(LoginWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.centralwidget)
@@ -25,14 +26,14 @@ class Ui_LoginWindow(object):
                                    "{\n"
                                    "background: transparent;\n"
                                    "border: none;\n"
-                                   "border-bottom: 1px solid steelblue;\n"
+                                   "border-bottom: 1px solid #1db954;\n"
                                    "font: 12pt \"Comic Sans MS\";\n"
                                    "}\n"
                                    "QLineEdit:focus {\n"
                                    " outline:none; }\n"
                                    "\n"
                                    "QLabel{\n"
-                                   "    color: steelblue;\n"
+                                   "    color: #b3b3b3;\n"
                                    "    font: 15pt \"Comic Sans MS\";\n"
                                    "    font-weight:bold;\n"
                                    "}")
@@ -44,6 +45,7 @@ class Ui_LoginWindow(object):
         self.img = QtWidgets.QLabel(self.frame_2)
         self.img.setMaximumSize(QtCore.QSize(100, 100))
         self.img.setText("")
+        self.img.setPixmap(QtGui.QPixmap("../../ico/taxi.png"))
         self.img.setScaledContents(True)
         self.img.setObjectName("img")
         self.gridLayout.addWidget(self.img, 0, 0, 1, 2, QtCore.Qt.AlignHCenter)
@@ -76,8 +78,8 @@ class Ui_LoginWindow(object):
         self.btn_login.setMinimumSize(QtCore.QSize(100, 41))
         self.btn_login.setStyleSheet("QPushButton{\n"
                                      "color: white;\n"
-                                     "background: steelblue;\n"
-                                     "border-radius: 60px;\n"
+                                     "background: #1db954;\n"
+                                     "border-radius: 10px;\n"
                                      "font: 12pt \"Comic Sans MS\";\n"
                                      "}")
         self.btn_login.setObjectName("btn_login")
@@ -86,8 +88,8 @@ class Ui_LoginWindow(object):
         self.btn_register.setMinimumSize(QtCore.QSize(100, 41))
         self.btn_register.setStyleSheet("QPushButton{\n"
                                         "color: white;\n"
-                                        "background: steelblue;\n"
-                                        "border-radius: 60px;\n"
+                                        "background: #1db954;\n"
+                                        "border-radius: 10px;\n"
                                         "font: 12pt \"Comic Sans MS\";\n"
                                         "}")
         self.btn_register.setObjectName("btn_register")
@@ -99,11 +101,11 @@ class Ui_LoginWindow(object):
 
     def retranslateUi(self, LoginWindow):
         _translate = QtCore.QCoreApplication.translate
-        LoginWindow.setWindowTitle(_translate("LoginWindow", "Login"))
-        self.label_login.setText(_translate("LoginWindow", "Login"))
-        self.label_password.setText(_translate("LoginWindow", "Password"))
-        self.btn_login.setText(_translate("LoginWindow", "Login"))
-        self.btn_register.setText(_translate("LoginWindow", "Register"))
+        LoginWindow.setWindowTitle(_translate("LoginWindow", "Авторизация"))
+        self.label_login.setText(_translate("LoginWindow", "Логин"))
+        self.label_password.setText(_translate("LoginWindow", "Пароль"))
+        self.btn_login.setText(_translate("LoginWindow", "Логин"))
+        self.btn_register.setText(_translate("LoginWindow", "Регистрация"))
 
 
 if __name__ == "__main__":

@@ -14,18 +14,19 @@ class Ui_AdministrationWindow(object):
     def setupUi(self, AdministrationWindow):
         AdministrationWindow.setObjectName("AdministrationWindow")
         AdministrationWindow.resize(678, 521)
-        AdministrationWindow.setStyleSheet("QLineEdit\n"
+        AdministrationWindow.setStyleSheet("* {background: #212121}\n"
+                                           "QLineEdit\n"
                                            "{\n"
                                            "background: transparent;\n"
                                            "border: none;\n"
-                                           "border-bottom: 1px solid steelblue;\n"
+                                           "border-bottom: 1px solid #1db954;\n"
                                            "font: 16pt \"Comic Sans MS\";\n"
                                            "}\n"
                                            "QLineEdit:focus {\n"
                                            " outline:none; }\n"
                                            "\n"
                                            "QLabel{\n"
-                                           "    color: steelblue;\n"
+                                           "    color: #b3b3b3;\n"
                                            "    font: 16pt \"Comic Sans MS\";\n"
                                            "    font-weight:bold;\n"
                                            "}\n"
@@ -34,14 +35,20 @@ class Ui_AdministrationWindow(object):
                                            "QSpinBox{\n"
                                            "background: transparent;\n"
                                            "border: none;\n"
-                                           "border-bottom: 1px solid steelblue;\n"
+                                           "border-bottom: 1px solid #1db954;\n"
                                            "font: 12pt \"Comic Sans MS\";\n"
                                            "}\n"
                                            "\n"
+                                           "QRadioButton{\n"
+                                           "color: #b3b3b3;\n"
+                                           "}\n"
+                                           "QHeaderView::section {\n"
+                                           "color:#b3b3b3;\n"
+                                           "}\n"
                                            "QPushButton{\n"
                                            "color: white;\n"
-                                           "background: steelblue;\n"
-                                           "border-radius: 60px;\n"
+                                           "background: #1db954;\n"
+                                           "border-radius: 5px;\n"
                                            "font: 12pt \"Comic Sans MS\";\n"
                                            "}\n"
                                            "\n"
@@ -174,43 +181,43 @@ class Ui_AdministrationWindow(object):
 
     def retranslateUi(self, AdministrationWindow):
         _translate = QtCore.QCoreApplication.translate
-        AdministrationWindow.setWindowTitle(_translate("AdministrationWindow", "Administration"))
+        AdministrationWindow.setWindowTitle(_translate("AdministrationWindow", "Администрирование"))
         item = self.tableWidget.verticalHeaderItem(0)
         item.setText(_translate("AdministrationWindow", "1"))
         item = self.tableWidget.verticalHeaderItem(1)
         item.setText(_translate("AdministrationWindow", "2"))
         item = self.tableWidget.horizontalHeaderItem(0)
-        item.setText(_translate("AdministrationWindow", "UserName"))
+        item.setText(_translate("AdministrationWindow", "Юзернейм"))
         item = self.tableWidget.horizontalHeaderItem(1)
-        item.setText(_translate("AdministrationWindow", "Role"))
+        item.setText(_translate("AdministrationWindow", "Роль"))
         item = self.tableWidget.horizontalHeaderItem(2)
-        item.setText(_translate("AdministrationWindow", "First Name"))
+        item.setText(_translate("AdministrationWindow", "Имя"))
         item = self.tableWidget.horizontalHeaderItem(3)
-        item.setText(_translate("AdministrationWindow", "Patronymic "))
+        item.setText(_translate("AdministrationWindow", "Отчество "))
         item = self.tableWidget.horizontalHeaderItem(4)
-        item.setText(_translate("AdministrationWindow", "Lsat Name"))
+        item.setText(_translate("AdministrationWindow", "Фамилия"))
         item = self.tableWidget.horizontalHeaderItem(5)
-        item.setText(_translate("AdministrationWindow", "Status"))
+        item.setText(_translate("AdministrationWindow", "Статус"))
         __sortingEnabled = self.tableWidget.isSortingEnabled()
         self.tableWidget.setSortingEnabled(False)
         self.tableWidget.setSortingEnabled(__sortingEnabled)
-        self.BoxFullName.setTitle(_translate("AdministrationWindow", "Full Name"))
-        self.lbl_name2.setText(_translate("AdministrationWindow", "First name"))
-        self.lbl_name1.setText(_translate("AdministrationWindow", "Last name"))
-        self.lbl_name3.setText(_translate("AdministrationWindow", "Patronymic"))
-        self.btn_add_tarif.setText(_translate("AdministrationWindow", "Tariffs"))
-        self.btn_undo.setText(_translate("AdministrationWindow", "Undo"))
-        self.btn_find.setText(_translate("AdministrationWindow", "Find"))
-        self.groupBox.setTitle(_translate("AdministrationWindow", "User Status"))
+        self.BoxFullName.setTitle(_translate("AdministrationWindow", ""))
+        self.lbl_name2.setText(_translate("AdministrationWindow", "Имя"))
+        self.lbl_name1.setText(_translate("AdministrationWindow", "Фамилия"))
+        self.lbl_name3.setText(_translate("AdministrationWindow", "Отчество"))
+        self.btn_add_tarif.setText(_translate("AdministrationWindow", "Тарифы"))
+        self.btn_undo.setText(_translate("AdministrationWindow", "Отменить"))
+        self.btn_find.setText(_translate("AdministrationWindow", "Найти"))
+        self.groupBox.setTitle(_translate("AdministrationWindow", ""))
         self.rBtn_Blocked.setText(_translate("AdministrationWindow", "Blocked"))
         self.rBtn_Active_2.setText(_translate("AdministrationWindow", "Active"))
-        self.rBtn_all_2.setText(_translate("AdministrationWindow", "All"))
-        self.BoxUserType.setTitle(_translate("AdministrationWindow", "User Type"))
-        self.rBtn_admin.setText(_translate("AdministrationWindow", "Admin"))
-        self.rBtn_driver.setText(_translate("AdministrationWindow", "Driver"))
-        self.rBtn_client.setText(_translate("AdministrationWindow", "Client"))
-        self.rBtn_all.setText(_translate("AdministrationWindow", "All"))
-        self.btn_promo_codes.setText(_translate("AdministrationWindow", "Promo"))
+        self.rBtn_all_2.setText(_translate("AdministrationWindow", "Все"))
+        self.BoxUserType.setTitle(_translate("AdministrationWindow", ""))
+        self.rBtn_admin.setText(_translate("AdministrationWindow", "Админ"))
+        self.rBtn_driver.setText(_translate("AdministrationWindow", "Водитель"))
+        self.rBtn_client.setText(_translate("AdministrationWindow", "Клиент"))
+        self.rBtn_all.setText(_translate("AdministrationWindow", "Все"))
+        self.btn_promo_codes.setText(_translate("AdministrationWindow", "Промокоды"))
 
 
 if __name__ == "__main__":
