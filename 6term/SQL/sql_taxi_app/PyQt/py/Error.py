@@ -14,20 +14,21 @@ class Ui_ErrorDialog(object):
     def setupUi(self, ErrorDialog):
         ErrorDialog.setObjectName("ErrorDialog")
         ErrorDialog.resize(291, 104)
+        ErrorDialog.setStyleSheet("* {background: #212121}\n")
         self.horizontalLayout = QtWidgets.QHBoxLayout(ErrorDialog)
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.plainTextEdit = QtWidgets.QPlainTextEdit(ErrorDialog)
         self.plainTextEdit.setEnabled(False)
         self.plainTextEdit.setStyleSheet("font: 12pt \"Comic Sans MS\";\n"
-                                         "color: steelblue;")
+                                         "color: #b3b3b3;")
         self.plainTextEdit.setPlainText("")
         self.plainTextEdit.setObjectName("plainTextEdit")
         self.horizontalLayout.addWidget(self.plainTextEdit)
         self.buttonBox = QtWidgets.QDialogButtonBox(ErrorDialog)
         self.buttonBox.setStyleSheet("QPushButton{\n"
                                      "color: white;\n"
-                                     "background: steelblue;\n"
-                                     "border-radius: 60px;\n"
+                                     "background: #1db954;\n"
+                                     "border-radius: 5px;\n"
                                      "font: 12pt \"Comic Sans MS\";\n"
                                      "width: 70px;\n"
                                      "}")
@@ -44,7 +45,7 @@ class Ui_ErrorDialog(object):
     def retranslateUi(self, ErrorDialog):
         _translate = QtCore.QCoreApplication.translate
         ErrorDialog.setWindowTitle(_translate("ErrorDialog", "Error"))
-        self.plainTextEdit.setPlainText(_translate("DialogError", "Hui"))
+        self.plainTextEdit.setPlainText(_translate("DialogError", "Промокод не существует"))
 
 
 if __name__ == "__main__":

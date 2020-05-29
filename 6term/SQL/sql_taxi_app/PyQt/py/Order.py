@@ -14,17 +14,18 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(475, 268)
-        MainWindow.setStyleSheet("QLineEdit\n"
+        MainWindow.setStyleSheet("* {background: #212121}\n"
+                                 "QLineEdit\n"
                                  "{\n"
                                  "background: transparent;\n"
                                  "border: none;\n"
-                                 "border-bottom: 1px solid steelblue;\n"
+                                 "border-bottom: 1px solid #1db954;\n"
                                  "font: 10pt \"Comic Sans MS\";\n"
-                                 "color: steelblue;\n"
+                                 "color: #b3b3b3;\n"
                                  "}\n"
                                  "\n"
                                  "QLabel{\n"
-                                 "    color: steelblue;\n"
+                                 "    color: #b3b3b3;\n"
                                  "    transition: all 1s;\n"
                                  "    font: 14pt \"Comic Sans MS\";\n"
                                  "    font-weight:bold;\n"
@@ -32,15 +33,15 @@ class Ui_MainWindow(object):
                                  "\n"
                                  "QPushButton{\n"
                                  "color: white;\n"
-                                 "background: steelblue;\n"
-                                 "border-radius: 60px;\n"
+                                 "background: #1db954;\n"
+                                 "border-radius: 10px;\n"
                                  "font: 12pt \"Comic Sans MS\";\n"
                                  "}\n"
                                  "\n"
                                  "QComboBox{\n"
                                  "background: transparent;\n"
                                  "border: none;\n"
-                                 "border-bottom: 1px solid steelblue;\n"
+                                 "border-bottom: 1px solid #1db954;\n"
                                  "font: 12pt \"Comic Sans MS\";\n"
                                  "}\n"
                                  "")
@@ -135,7 +136,7 @@ class Ui_MainWindow(object):
                                       "background: transparent;\n"
                                       "border: none;\n"
                                       "font: 16pt \"Comic Sans MS\";\n"
-                                      "color: steelblue;\n"
+                                      "color: #b3b3b3;\n"
                                       "}")
         self.edit_price.setObjectName("edit_price")
         self.gridLayout_2.addWidget(self.edit_price, 2, 2, 2, 1)
@@ -179,18 +180,18 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Order Taxi"))
-        self.label_from.setText(_translate("MainWindow", "From"))
-        self.edit_from.setText(_translate("MainWindow", "ул. Пономаренко д.56 кв.83"))
-        self.label_to.setText(_translate("MainWindow", "To"))
-        self.edit_to.setText(_translate("MainWindow", "ул. Пономаренко д.56 кв.83"))
-        self.lbl_payment.setText(_translate("MainWindow", "Select payment"))
-        self.btn_add.setText(_translate("MainWindow", "Add"))
-        self.lbl_tarif.setText(_translate("MainWindow", "Select tarif"))
-        self.lbl_price.setText(_translate("MainWindow", "Price"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Заказать такси"))
+        self.label_from.setText(_translate("MainWindow", "Откуда"))
+        self.edit_from.setText(_translate("MainWindow", ""))
+        self.label_to.setText(_translate("MainWindow", "Куда"))
+        self.edit_to.setText(_translate("MainWindow", ""))
+        self.lbl_payment.setText(_translate("MainWindow", "Способ оплаты"))
+        self.btn_add.setText(_translate("MainWindow", "+"))
+        self.lbl_tarif.setText(_translate("MainWindow", "Выбрать тариф"))
+        self.lbl_price.setText(_translate("MainWindow", "Цена"))
         self.edit_price.setText(_translate("MainWindow", "1100"))
-        self.lbl_promo.setText(_translate("MainWindow", "Promo"))
-        self.btn_submit.setText(_translate("MainWindow", "Submit"))
+        self.lbl_promo.setText(_translate("MainWindow", "Промокод"))
+        self.btn_submit.setText(_translate("MainWindow", "Подтвердить"))
 
 
 from PyQt.mycomponent.clickablelineedit import ClickableLineEdit

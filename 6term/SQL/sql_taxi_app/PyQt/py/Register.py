@@ -36,6 +36,8 @@ class Ui_RegisterWindow(object):
                                      "}\n"
                                      "QPushButton{\n"
                                      "color: white;\n"
+                                     "background: #1db954;\n"
+                                     "border-radius: 10px;\n"
                                      "font: 12pt \"Comic Sans MS\";\n"
                                      "}")
         self.centralwidget = QtWidgets.QWidget(RegisterWindow)
