@@ -49,7 +49,7 @@ class Ui_AddAddressWindow(object):
                                  "               3px -3px 2px #BBB;\n"
                                  "    color: #b3b3b3;\n"
                                  "    transition: all 1s;\n"
-                                 "    font: 10pt \"Comic Sans MS\";\n"
+                                 "    font: 10pt;\n"
                                  "    font-weight:bold;\n"
                                  "}\n"
                                  "\n"
@@ -162,10 +162,10 @@ class Ui_AddAddressWindow(object):
         self.btn_add = QtWidgets.QPushButton(self.frame)
         self.btn_add.setMinimumSize(QtCore.QSize(181, 41))
         self.btn_add.setStyleSheet("QPushButton{\n"
-                                   "color: white;\n"
+                                   "color:  white;\n"
                                    "background: #1db954;\n"
                                    "border-radius: 10px;\n"
-                                   "font: 12pt \"Comic Sans MS\";\n"
+                                   "font: 12pt;\n"
                                    "}")
         self.btn_add.setObjectName("btn_add")
         self.verticalLayout.addWidget(self.btn_add)
