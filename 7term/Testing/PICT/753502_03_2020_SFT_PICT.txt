@@ -1,0 +1,164 @@
+Manufacturer: AOC, Acer, Asus, BVK, BenQ, Dell, HP, Iiyama, LG, NEC, Philips, Samsung, Apple, Dahua, Gigabyte, Lenovo, Viewsonic, Xiaomi
+Diagonal: 17', 19', 20', 21', 22', 23', 24', 25', 27', 28', 29', 32', 34', 35', 43', 49'
+Resolution: 1280×1024, 1360×768, 1600×900, 1920×1080, 1920×1200, 1920×1280, 2560×1080, 2560×1440, 3840x1080, 3840x1200, 3440×1440, 3840×2160, 5120×1440, 6016×3384
+Aspect ratio: 4:3, 5:4, 16:9, 16:10, 21:9, 32:10, 32:9
+Screen refresh rate: 60 Гц, 75 Гц, 100 Гц, 120 Гц, 144 Гц, 155 Гц, 165 Гц, 240 Гц, 280 Гц
+Type of matrix: ADS-IPS, AH-IPS, AMVA, AMVA+, E-IPS, IPS, MVA, PLS, TN+Film, VA
+Input/output: BNC IN, LAN, USB Type-C, аудиовход RCA (L/R), MHL, Mini DisplayPort, HDMI, DisplayPort, S-video вход, VGA (D-Sub), аудиовход 3.5 мм, аудиовыход 3.5 мм, Thunderbolt, DVI-D
+Contrast ratio: 1000:1, 1200:1, 1300:1, 1500:1, 3000:1, 4000:1, 600:1, 700:1, 2500:1
+
+IF [Manufacturer] = "AOC" THEN
+	[Diagonal] IN {"19'", "20'","22'","24'","25'","27'","32'","34'"}
+	AND [Resolution] IN {"1280×1024", "1360×768", "1600×900", "1920×1080", "1920×1200", "2560×1440", "3840×2160"}
+	AND [Aspect ratio] IN {"5:4", "16:9", "16:10"}
+	AND [Screen refresh rate] IN {"60 Гц", "75 Гц", "100 Гц", "144 Гц", "165 Гц", "240 Гц"}
+	AND [Type of matrix] IN {"ADS-IPS", "AH-IPS", "IPS", "MVA", "TN+Film", "VA"}
+	AND [Input/output] NOt IN {"BNC IN", "LAN", "USB Type-C", "аудиовход RCA (L/R)", "Mini DisplayPort", "S-video вход", "Thunderbolt"}
+	AND [Contrast ratio] NOT IN {"1300:1", "1500:1", "2500:1"};
+
+IF [Manufacturer] = "Acer" THEN
+	[Diagonal] IN {"22'","24'","27'"}
+	AND [Resolution] IN {"1920×1080"}
+	AND [Aspect ratio] IN {"16:9"}
+	AND [Screen refresh rate] IN {"60 Гц"}
+	AND [Type of matrix] IN {"IPS","TN+Film"}
+	AND [Input/output] IN {"HDMI", "VGA (D-Sub)", "аудиовыход 3.5 мм", "DVI-D"}
+	AND [Contrast ratio] IN {"1000:1"};
+
+IF [Manufacturer] = "Asus" THEN
+	[Diagonal] IN {"22'","24'","25'","27'"}
+	AND [Resolution] IN {"1920×1080"}
+	AND [Aspect ratio] IN {"16:9"}
+	AND [Screen refresh rate] IN {"60 Гц", "75 Гц", "144 Гц", "165 Гц", "280 Гц"}
+	AND [Type of matrix] IN {"IPS","TN+Film", "VA"}
+	AND [Input/output] IN {"HDMI","DisplayPort", "VGA (D-Sub)", "аудиовыход 3.5 мм", "DVI-D"}
+	AND [Contrast ratio] IN {"1000:1","3000:1"};
+
+IF [Manufacturer] = "BVK" THEN
+	[Diagonal] IN {"20'","22'","24'"}
+	AND [Resolution] IN {"1600×900","1920×1080"}
+	AND [Aspect ratio] IN {"16:9"}
+	AND [Screen refresh rate] IN {"60 Гц"}
+	AND [Type of matrix] IN {"IPS"}
+	AND [Input/output] IN {"HDMI", "VGA (D-Sub)"}
+	AND [Contrast ratio] IN {"1000:1","3000:1"};
+
+IF [Manufacturer] = "BenQ" THEN
+	[Diagonal] IN {"17'","22'","24'", "27'", "28'", "32'", "35'"}
+	AND [Resolution] IN {"1280×1024","1920×1080", "3440×1440", "3840×2160"}
+	AND [Aspect ratio] IN {"5:4", "16:9", "21:9"}
+	AND [Screen refresh rate] IN {"60 Гц", "75 Гц", "100 Гц", "144 Гц"}
+	AND [Type of matrix] IN {"AMVA+", "IPS", "TN+Film", "VA"}
+	AND [Input/output] NOT IN {"BNC IN", "LAN", "MHL", "S-video вход", "Thunderbolt"}
+	AND [Contrast ratio] IN {"1000:1","1300:1","3000:1","2500:1"};
+
+IF [Manufacturer] = "Dell" THEN
+	[Diagonal] NOT IN {"17'","19'","21'", "28'", "29'", "35'"}
+	AND [Resolution] IN {"1600×900","1920×1080","1920×1200", "3440×1440", "3840×2160","5120×1440"}
+	AND [Aspect ratio] NOT IN {"5:4", "4:3", "32:10"}
+	AND [Screen refresh rate] NOT IN {"75 Гц", "100 Гц", "120 Гц", "280 Гц"}
+	AND [Type of matrix] IN {"AH-IPS", "E-IPS", "IPS", "TN+Film", "VA"}
+	AND [Input/output] NOT IN {"BNC IN", "аудиовход RCA (L/R)", "S-video вход", "Thunderbolt"}
+	AND [Contrast ratio] IN {"1000:1","1300:1","600:1"};
+
+IF [Manufacturer] = "HP" THEN
+	[Diagonal] IN {"22'", "23'", "24'", "25'", "27'", "32'","34'", "43'"}
+	AND [Resolution] IN {"1920×1080","1920×1200", "2560×1440", "3840x1200", "3440×1440", "3840×2160"}
+	AND [Aspect ratio] NOT IN {"5:4", "4:3", "32:9"}
+	AND [Screen refresh rate] NOT IN {"155 Гц", "240 Гц", "280 Гц"}
+	AND [Type of matrix] IN {"AH-IPS", "IPS", "TN+Film", "VA"}
+	AND [Input/output] NOT IN {"BNC IN", "LAN", "аудиовход RCA (L/R)", "MHL", "S-video вход", "Thunderbolt"}
+	AND [Contrast ratio] IN {"1000:1","1200:1","1300:1","3000:1", "600:1"};
+
+IF [Manufacturer] = "Iiyama" THEN
+	[Diagonal] IN {"22'", "23'", "24'", "25'", "27'", "32'","34'"}
+	AND [Resolution] IN {"1920×1080","1920×1200", "2560×1440", "3440×1440", "3840×2160"}
+	AND [Aspect ratio] NOT IN {"5:4", "4:3","32:10", "32:9"}
+	AND [Screen refresh rate] IN {"60 Гц", "75 Гц", "144 Гц"}
+	AND [Type of matrix] NOT IN {"E-IPS", "MVA", "PLS"}
+	AND [Input/output] NOT IN {"BNC IN", "LAN", "USB Type-C", "аудиовход RCA (L/R)", "Mini DisplayPort", "S-video вход", "Thunderbolt"}
+	AND [Contrast ratio] IN {"1000:1","1200:1","3000:1"};
+
+IF [Manufacturer] = "LG" THEN
+	[Diagonal] IN {"22'", "24'", "25'", "27'","29'", "32'","34'"}
+	AND [Resolution] IN {"1920×1080","1920×1280", "2560×1080", "2560×1440", "3440×1440", "3840×2160"}
+	AND [Aspect ratio] IN {"16:9", "21:9"}
+	AND [Screen refresh rate] IN {"60 Гц", "75 Гц", "144 Гц",  "240 Гц"}
+	AND [Type of matrix] IN {"IPS", "TN+Film", "VA"}
+	AND [Input/output] NOT IN {"BNC IN", "LAN", "USB Type-C", "аудиовход RCA (L/R)", "MHL", "Mini DisplayPort", "S-video вход"}
+	AND [Contrast ratio] IN {"1000:1","1200:1","1300:1", "3000:1", "600:1"};
+
+IF [Manufacturer] = "NEC" THEN
+	[Diagonal] IN {"21'","22'", "24'", "27'"}
+	AND [Resolution] IN {"1920×1080", "3840×2160"}
+	AND [Aspect ratio] IN {"4:3","16:9"}
+	AND [Screen refresh rate] IN {"60 Гц"}
+	AND [Type of matrix] IN {"AH-IPS","IPS"}
+	AND [Input/output] NOT IN {"BNC IN", "LAN", "USB Type-C", "аудиовход RCA (L/R)", "MHL", "Mini DisplayPort", "S-video вход", "Thunderbolt"}
+	AND [Contrast ratio] IN {"1000:1","1500:1"};
+
+IF [Manufacturer] = "Philips" THEN
+	[Diagonal] IN {"19'","20'","22'", "24'", "27'", "32'", "34'"}
+	AND [Resolution] IN {"1360×768","1600×900","1920×1080","1920×1280", "2560×1440", "3440×1440", "3840×2160"}
+	AND [Aspect ratio] IN {"21:9","16:9"}
+	AND [Screen refresh rate] IN {"60 Гц", "75 Гц" }
+	AND [Type of matrix] IN {"AH-IPS", "IPS", "MVA", "TN+Film", "VA"}
+	AND [Input/output] NOT IN {"BNC IN", "LAN", "аудиовход RCA (L/R)", "MHL", "S-video вход", "Thunderbolt"}
+	AND [Contrast ratio] NOT IN {"1200:1","1500:1", "2500:1"};
+
+IF [Manufacturer] = "Samsung" THEN
+	[Diagonal] IN {"24'", "27'", "28'", "32'", "34'", "49'"}
+	AND [Resolution] IN {"1920×1080", "3840×1080", "2560×1440", "3440×1440", "3840×2160"}
+	AND [Aspect ratio] IN {"21:9","16:9","32:9"}
+	AND [Screen refresh rate] IN {"60 Гц", "75 Гц", "100 Гц", "144 Гц"}
+	AND [Type of matrix] IN {"IPS", "PLS", "TN+Film", "VA"}
+	AND [Input/output] NOT IN {"BNC IN", "LAN", "аудиовход RCA (L/R)", "MHL", "S-video вход", "Thunderbolt"}
+	AND [Contrast ratio] NOT IN {"1000:1", "3000:1"};
+
+IF [Manufacturer] = "Apple" THEN
+	[Diagonal] IN {"32'"}
+	AND [Resolution] IN {"6016×3384"}
+	AND [Aspect ratio] IN {"16:9"}
+	AND [Screen refresh rate] IN {"60 Гц"}
+	AND [Type of matrix] IN {"IPS"}
+	AND [Input/output] IN {"USB Type-C", "DisplayPort","Thunderbolt"}
+	AND [Contrast ratio] NOT IN {"2500:1"};
+
+IF [Manufacturer] = "Dahua" THEN
+	[Diagonal] IN {"20'","32'"}
+	AND [Resolution] IN {"1920×1080"}
+	AND [Aspect ratio] IN {"16:9"}
+	AND [Screen refresh rate] IN {"60 Гц"}
+	AND [Type of matrix] IN {"IPS"}
+	AND [Input/output] IN {"BNC IN", "HDMI", "S-video вход", "VGA (D-Sub)","аудиовыход 3.5 мм", "Thunderbolt"}
+	AND [Contrast ratio] NOT IN {"1000:1", "1200:1"};
+
+IF [Manufacturer] = "Gigabyte" THEN
+	[Diagonal] IN {"27'"}
+	AND [Resolution] IN {"1920×1080", "2560×1440"}
+	AND [Aspect ratio] IN {"16:9"}
+	AND [Screen refresh rate] IN {"165 Гц"}
+	AND [Type of matrix] IN {"IPS", "VA"}
+	AND [Input/output] IN {"HDMI", "DisplayPort", "аудиовход 3.5 мм","аудиовыход 3.5 мм"}
+	AND [Contrast ratio] NOT IN {"1000:1", "3000:1"};
+
+IF [Manufacturer] = "Lenovo" THEN
+	[Diagonal] IN {"23'", "24'", "25'", "27'","28'","32'"}
+	AND [Resolution] IN {"1920×1080","1920×1200", "2560×1440"}
+	AND [Aspect ratio] IN {"16:9"}
+	AND [Screen refresh rate] IN {"60 Гц","75 Гц", "144 Гц", "165 Гц", "240 Гц"}
+	AND [Type of matrix] IN {"IPS", "TN+Film", "VA"}
+	AND [Input/output] IN {"USB Type-C", "HDMI", "DisplayPort", "VGA (D-Sub)", "аудиовход 3.5 мм","аудиовыход 3.5 мм"}
+	AND [Contrast ratio] NOT IN {"1000:1", "3000:1"};
+
+IF [Manufacturer] = "Viewsonic" THEN
+	[Diagonal] IN {"27'","32'"}
+	AND [Resolution] IN {"1920×1080", "2560×1440"}
+	AND [Aspect ratio] IN {"16:9"}
+	AND [Screen refresh rate] IN {"60 Гц", "144 Гц"}
+	AND [Type of matrix] IN {"IPS","TN+Film", "VA"}
+	AND [Input/output] IN {"USB Type-C", "HDMI", "DisplayPort", "VGA (D-Sub)", "аудиовход 3.5 мм","аудиовыход 3.5 мм",  "DVI-D"}
+	AND [Contrast ratio] NOT IN {"1000:1", "3000:1"};
+
+
+
